@@ -1,0 +1,19 @@
+# Data (Kaggle, large — do not track)
+/data/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Kaggle credentials
+.kaggle/
+kaggle.json
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

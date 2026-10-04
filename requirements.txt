@@ -1,0 +1,17 @@
+# Core data handling
+pandas
+numpy
+
+# Modeling
+scikit-learn
+lightgbm
+xgboost
+
+# Evaluation and interpretation
+matplotlib
+seaborn
+shap
+
+# Interactive environment
+jupyter
+ipykernel
