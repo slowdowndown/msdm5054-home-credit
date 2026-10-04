@@ -3,8 +3,17 @@
 ## Workflow
 
 - Work directly on main. The timeline is short, so skip feature branches.
-- Pull before starting work and again before pushing. Never force-push.
 - Edit only the files you own. Sync before editing shared files (README.md, docs/).
+
+### Pull before every push (important)
+
+All four members push to the same main branch. If someone else pushed after your last pull, your push is rejected. Run this before every push:
+
+```bash
+git pull --rebase origin main
+```
+
+If a push is still rejected, do not force-push. Pull again, resolve the conflict, then push. Never use `--force`.
 
 ## Commit messages
 
