@@ -1,0 +1,18 @@
+{
+  "train_rows": 307511,
+  "train_columns": 122,
+  "test_rows": 48744,
+  "test_columns": 121,
+  "duplicate_train_ids": 0,
+  "duplicate_train_rows": 0,
+  "duplicate_test_ids": 0,
+  "train_test_id_overlap": 0,
+  "target_missing": 0,
+  "positive_count": 24825,
+  "positive_rate": 0.08072881945686496,
+  "employment_positive_days": 55374,
+  "employment_365243": 55374,
+  "max_income": 117000000.0,
+  "categorical_features": 16,
+  "numeric_features": 104
+}

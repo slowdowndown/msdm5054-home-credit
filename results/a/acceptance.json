@@ -1,0 +1,43 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scikit-learn": "1.5.1",
+    "matplotlib": "3.9.2",
+    "joblib": "1.4.2",
+    "jupyterlab": "4.6.4",
+    "ipykernel": "7.4.0",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1"
+  },
+  "code_cells_executed": 7,
+  "cell_errors": 0,
+  "split_identical_to_original": true,
+  "metrics_identical_to_original": true,
+  "max_validation_prediction_difference": 2.7339464025999405e-09,
+  "saved_model_test_predictions_match_csv": true,
+  "submission_check": "PASS: 48744 rows, unique matching IDs, correct columns, valid probabilities; nothing submitted.",
+  "roc_auc": 0.7512390547194826,
+  "average_precision": 0.2375040096222531,
+  "submission_sha256": "ddcd568f1d95bc5ad4b6dfd6439ded13cde24c9af2ce3ea823b21c8cf001ce26",
+  "kaggle_submitted": false,
+  "runtime_note": "All cells completed. Kernel shutdown process enumeration encountered sandbox PermissionError after computation; outputs independently rechecked.",
+  "source_sha256": {
+    "src/data_pipeline.py": "44afafe8049e041d4b253fee9e121a73db05ed46977292505206b34e25e6ea16",
+    "src/baseline.py": "349f6edca2509a2f49ce85fbc4e95cd0ecc5bf4925cf67a63520838739f3bcf4",
+    "src/validate_submission.py": "1c219b848722001ea5215d5e2b4eb586d8a40a63808d1eb73b92ddda5f8c4e2a",
+    "src/reproduce_split.py": "168ed6c0db309be261c33b0a6329b475980db634300ef5cd81fb5971531f39f2",
+    "notebooks/A_data_and_baseline.ipynb": "6b3939b7d8401234aa173fdc02dbdffd2103c2b1ffadc86a3545fbd28b908df7"
+  },
+  "additional_checks": [
+    "train-only preprocessing statistics",
+    "unknown category handling",
+    "ID and target excluded",
+    "learned missing-column selection",
+    "sklearn clone compatibility",
+    "six invalid submission formats rejected"
+  ]
+}

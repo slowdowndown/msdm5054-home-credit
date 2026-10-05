@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "validation_fraction": 0.2,
+  "method": "sklearn.model_selection.train_test_split on np.arange(n), stratify=TARGET",
+  "sklearn_version": "1.5.1",
+  "input": "data/raw/application_train.csv",
+  "input_sha256": "52e96b895b1112e1c853f670e58372719c8441c5ed1c57ac2f7fad559d784f5f",
+  "preserve_original_row_order": true,
+  "output": "data/processed/v0/split_assignments.csv",
+  "train_rows": 246008,
+  "validation_rows": 61503
+}
