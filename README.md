@@ -47,3 +47,33 @@ Code is organized by artifact type, not by owner:
 - data/ is not tracked (see .gitignore).
 - Field definitions, missing-value handling, encoding, split, and metrics are agreed in docs/division-of-labor.md (Phase 2).
 - Development workflow: see CONTRIBUTING.md.
+
+
+## V0 data pipeline and baseline
+
+The A-part V0 workflow has been validated locally end to end. Start with [the notebook](notebooks/A_data_and_baseline.ipynb) and [the run and handoff guide](docs/a/使用与交接说明.md). Shared loading, splitting and preprocessing are in `src/data_pipeline.py`; `src/baseline.py` builds the baseline pipeline.
+
+### Run V0
+
+1. Use a separate Python 3.12 environment and install `python -m pip install -r docs/a/requirements-a.txt`. Register/select that environment as the Jupyter kernel as described in the handoff guide. The complete tested macOS ARM64 environment is recorded in `docs/a/requirements-lock.txt`; other platforms should use the main dependency list.
+2. Download the official Kaggle files into `data/raw/`: `application_train.csv`, `application_test.csv`, `HomeCredit_columns_description.csv` and `sample_submission.csv`. Keep raw files unchanged and outside Git.
+3. Open `notebooks/A_data_and_baseline.ipynb` from the repository root or `notebooks/`, restart the kernel and run all cells. The workflow checks input fingerprints, builds the fixed split, trains and evaluates the baseline, and exports test predictions.
+4. Generated models, splits and record-level validation predictions stay in ignored `data/processed/v0/`. The candidate CSV is `results/submissions/submission_v0.csv`; an existing candidate is not overwritten. Check it with `python src/validate_submission.py results/submissions/submission_v0.csv`. This does not submit to Kaggle.
+
+### Proposed V0 comparison protocol — pending team confirmation
+
+These settings are implemented in the current handoff; SHU Yi and the modeling, feature and evaluation owners should confirm them before using them as the shared comparison standard.
+
+- **Data and alignment:** application main tables only. Align all features and predictions by `SK_ID_CURR`; exclude this ID and `TARGET` from model inputs. Input fingerprints are recorded in `docs/a/data_manifest_v0.json`.
+- **Split:** stratify by `TARGET`, seed **42**, **80% training / 20% validation** (246,008 / 61,503 rows). Reuse the customer assignments generated from `docs/a/split_protocol.json`; do not independently resplit and compare scores directly.
+- **Preprocessing:** treat `DAYS_EMPLOYED=365243` as missing; apply `log1p` to income, credit, annuity and goods-price amounts, with negative values treated as missing. Drop columns with more than 80% missing values using training data only. Use median imputation, missing indicators and scaling for numeric fields; `Missing` imputation and one-hot encoding for categories, allowing unseen categories. Learned preprocessing is fitted only on training data, including within each future CV fold.
+- **Evaluation:** use holdout ROC AUC as the primary metric and Average Precision as a supplementary metric. The current holdout is not cross-validation. Any V1/V2 comparison should record changes and use the agreed validation setup.
+- **Ownership:** SHU Yi maintains the data entry point, split and end-to-end checks; ZHANG Yajing owns modeling/CV/tuning. The shared baseline is a starting point, not a reassignment of modeling responsibilities.
+
+### Validated results and limits
+
+Local validation: **ROC AUC 0.751239**, **Average Precision 0.237504**. The fixed customer split and reported metrics match the previous baseline. See [acceptance record](results/a/acceptance.json), [metrics](results/a/metrics.csv) and [figures](results/a/figures/); earlier aggregate snapshots are under `results/a/history/pre_refactor/`.
+
+A **48,744-row** candidate CSV was generated and passed ID, column and probability checks. It is a local output, not an uploaded repository artifact; there is **no Kaggle submission or platform score yet**. The candidate uses the model fitted on the 80% training subset. Final model selection and any full-data refit should be coordinated with the modeling owner.
+
+The saved V0 model now includes cleaning: add `src/` to the Python module path and pass raw application rows to `predict_proba`; do not clean them twice. All notebook code cells completed successfully. A sandbox warning occurred during kernel shutdown cleanup after computation; saved-model predictions and output files were independently checked.
