@@ -23,16 +23,23 @@ See docs/division-of-labor.md for the full division of labor.
 msdm5054-home-credit/
 ├── README.md                  # Overview and usage
 ├── requirements.txt           # Dependencies
+├── CONTRIBUTING.md            # Workflow and commit conventions
 ├── .gitignore
 ├── docs/
 │   ├── division-of-labor.md   # Division of labor
+│   ├── a/                     # SHU Yi: V0 data entry and handoff
+│   ├── eda/                   # CAO Yixin: EDA and feature handoff
 │   └── report/                # Final report (poster or NIPS-style PDF)
 ├── data/                      # Data (not tracked)
 │   ├── raw/                   # Raw Kaggle data
 │   └── processed/             # Processed data (V0/V1/V2)
 ├── notebooks/                 # Exploratory notebooks (.ipynb)
-├── src/                       # Reusable Python modules (.py)
-└── results/                   # Submissions and figures
+├── scripts/
+│   └── eda/                   # CAO Yixin: EDA and feature scripts
+├── src/                       # Shared Python modules (.py)
+└── results/
+    ├── a/                     # SHU Yi: V0 acceptance snapshot
+    └── eda/                   # CAO Yixin: EDA results and figures
 ```
 
 ## Code organization
@@ -77,3 +84,7 @@ Local validation: **ROC AUC 0.751239**, **Average Precision 0.237504**. The fixe
 A **48,744-row** candidate CSV was generated and passed ID, column and probability checks. It is a local output, not an uploaded repository artifact; there is **no Kaggle submission or platform score yet**. The candidate uses the model fitted on the 80% training subset. Final model selection and any full-data refit should be coordinated with the modeling owner.
 
 The saved V0 model now includes cleaning: add `src/` to the Python module path and pass raw application rows to `predict_proba`; do not clean them twice. All notebook code cells completed successfully. A sandbox warning occurred during kernel shutdown cleanup after computation; saved-model predictions and output files were independently checked.
+
+## EDA and feature handoff
+
+CAO Yixin's EDA phase (steps 1–8) is complete. Per-column keep/drop/transform decisions for V1 are in [docs/eda/column_decisions.md](docs/eda/column_decisions.md), with the machine-readable list in `results/eda/column_decisions.csv`. Full findings are in [docs/eda/eda_findings.md](docs/eda/eda_findings.md); figures 00–27 are in `results/eda/figures/`. See the [handoff guide](docs/eda/使用与交接说明.md) for reproduction and the relationship to the V0 protocol. Statistics use the 80% train fold of the fixed split only.
