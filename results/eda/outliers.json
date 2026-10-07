@@ -1,0 +1,326 @@
+{
+  "tail_max_over_p99_ge_5": {
+    "AMT_INCOME_TOTAL": {
+      "n": 307511,
+      "min": 25650.0,
+      "p50": 147150.0,
+      "p99": 472500.0,
+      "p999": 900000.0,
+      "max": 117000000.0,
+      "n_gt_p99": 3014,
+      "max_over_p99": 247.6
+    },
+    "AMT_REQ_CREDIT_BUREAU_QRT": {
+      "n": 265992,
+      "min": 0.0,
+      "p50": 0.0,
+      "p99": 2.0,
+      "p999": 4.0,
+      "max": 261.0,
+      "n_gt_p99": 2301,
+      "max_over_p99": 130.5
+    },
+    "OBS_30_CNT_SOCIAL_CIRCLE": {
+      "n": 306490,
+      "min": 0.0,
+      "p50": 0.0,
+      "p99": 10.0,
+      "p999": 17.0,
+      "max": 348.0,
+      "n_gt_p99": 2782,
+      "max_over_p99": 34.8
+    },
+    "OBS_60_CNT_SOCIAL_CIRCLE": {
+      "n": 306490,
+      "min": 0.0,
+      "p50": 0.0,
+      "p99": 10.0,
+      "p999": 16.0,
+      "max": 344.0,
+      "n_gt_p99": 2691,
+      "max_over_p99": 34.4
+    },
+    "DEF_30_CNT_SOCIAL_CIRCLE": {
+      "n": 306490,
+      "min": 0.0,
+      "p50": 0.0,
+      "p99": 2.0,
+      "p999": 4.0,
+      "max": 34.0,
+      "n_gt_p99": 1515,
+      "max_over_p99": 17.0
+    },
+    "DEF_60_CNT_SOCIAL_CIRCLE": {
+      "n": 306490,
+      "min": 0.0,
+      "p50": 0.0,
+      "p99": 2.0,
+      "p999": 3.0,
+      "max": 24.0,
+      "n_gt_p99": 758,
+      "max_over_p99": 12.0
+    },
+    "NONLIVINGAPARTMENTS_MODE": {
+      "n": 93997,
+      "min": 0.0,
+      "p50": 0.0,
+      "p99": 0.0973,
+      "p999": 1.0,
+      "max": 1.0,
+      "n_gt_p99": 917,
+      "max_over_p99": 10.3
+    },
+    "NONLIVINGAPARTMENTS_MEDI": {
+      "n": 93997,
+      "min": 0.0,
+      "p50": 0.0,
+      "p99": 0.1048,
+      "p999": 1.0,
+      "max": 1.0,
+      "n_gt_p99": 933,
+      "max_over_p99": 9.5
+    },
+    "NONLIVINGAPARTMENTS_AVG": {
+      "n": 93997,
+      "min": 0.0,
+      "p50": 0.0,
+      "p99": 0.1081,
+      "p999": 1.0,
+      "max": 1.0,
+      "n_gt_p99": 918,
+      "max_over_p99": 9.3
+    },
+    "AMT_REQ_CREDIT_BUREAU_WEEK": {
+      "n": 265992,
+      "min": 0.0,
+      "p50": 0.0,
+      "p99": 1.0,
+      "p999": 2.0,
+      "max": 8.0,
+      "n_gt_p99": 328,
+      "max_over_p99": 8.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_MON": {
+      "n": 265992,
+      "min": 0.0,
+      "p50": 0.0,
+      "p99": 4.0,
+      "p999": 12.0,
+      "max": 27.0,
+      "n_gt_p99": 2159,
+      "max_over_p99": 6.8
+    },
+    "CNT_CHILDREN": {
+      "n": 307511,
+      "min": 0.0,
+      "p50": 0.0,
+      "p99": 3.0,
+      "p999": 4.0,
+      "max": 19.0,
+      "n_gt_p99": 555,
+      "max_over_p99": 6.3
+    }
+  },
+  "income_amt": {
+    "n": 307511,
+    "min": 25650.0,
+    "p50": 147150.0,
+    "p99": 472500.0,
+    "p999": 900000.0,
+    "max": 117000000.0,
+    "n_gt_p99": 3014,
+    "max_over_p99": 247.6,
+    "n_gt_1e6": 250,
+    "n_gt_5e6": 5,
+    "n_gt_1e7": 3,
+    "top10": [
+      117000000,
+      18000090,
+      13500000,
+      9000000,
+      6750000,
+      4500000,
+      4500000,
+      4500000,
+      4500000,
+      3950059
+    ]
+  },
+  "age_years": {
+    "min": 20.5,
+    "median": 43.12,
+    "max": 69.07,
+    "n_gt_100": 0,
+    "n_gt_90": 0,
+    "n_gt_80": 0,
+    "n_gt_75": 0,
+    "oldest10": [
+      69.1,
+      69.0,
+      69.0,
+      69.0,
+      69.0,
+      69.0,
+      69.0,
+      69.0,
+      69.0,
+      69.0
+    ]
+  },
+  "annuity_ratio": {
+    "n": 307499,
+    "min": 8.036674497520229,
+    "p50": 20.0,
+    "p99": 37.7941,
+    "p999": 37.9156,
+    "max": 45.30507855316039,
+    "n_gt_p99": 3074,
+    "max_over_p99": 1.2,
+    "n_gt_50": 0,
+    "n_gt_100": 0,
+    "n_gt_200": 0,
+    "top10": [
+      45.3,
+      45.3,
+      45.3,
+      45.3,
+      45.3,
+      45.3,
+      45.3,
+      45.3,
+      45.3,
+      45.2
+    ]
+  },
+  "rare_categories": {
+    "CODE_GENDER": {
+      "n_levels": 3,
+      "n_levels_lt_0p5pct": 1,
+      "share_lt_0p5pct": 0.001,
+      "rare_levels": {
+        "XNA": {
+          "n": 4,
+          "pct": 0.001
+        }
+      }
+    },
+    "NAME_TYPE_SUITE": {
+      "n_levels": 7,
+      "n_levels_lt_0p5pct": 2,
+      "share_lt_0p5pct": 0.37,
+      "rare_levels": {
+        "Other_A": {
+          "n": 866,
+          "pct": 0.282
+        },
+        "Group of people": {
+          "n": 271,
+          "pct": 0.088
+        }
+      }
+    },
+    "NAME_INCOME_TYPE": {
+      "n_levels": 8,
+      "n_levels_lt_0p5pct": 4,
+      "share_lt_0p5pct": 0.018,
+      "rare_levels": {
+        "Unemployed": {
+          "n": 22,
+          "pct": 0.007
+        },
+        "Student": {
+          "n": 18,
+          "pct": 0.006
+        },
+        "Businessman": {
+          "n": 10,
+          "pct": 0.003
+        },
+        "Maternity leave": {
+          "n": 5,
+          "pct": 0.002
+        }
+      }
+    },
+    "NAME_EDUCATION_TYPE": {
+      "n_levels": 5,
+      "n_levels_lt_0p5pct": 1,
+      "share_lt_0p5pct": 0.053,
+      "rare_levels": {
+        "Academic degree": {
+          "n": 164,
+          "pct": 0.053
+        }
+      }
+    },
+    "NAME_FAMILY_STATUS": {
+      "n_levels": 6,
+      "n_levels_lt_0p5pct": 1,
+      "share_lt_0p5pct": 0.001,
+      "rare_levels": {
+        "Unknown": {
+          "n": 2,
+          "pct": 0.001
+        }
+      }
+    },
+    "NAME_HOUSING_TYPE": {
+      "n_levels": 6,
+      "n_levels_lt_0p5pct": 1,
+      "share_lt_0p5pct": 0.365,
+      "rare_levels": {
+        "Co-op apartment": {
+          "n": 1122,
+          "pct": 0.365
+        }
+      }
+    },
+    "OCCUPATION_TYPE": {
+      "n_levels": 18,
+      "n_levels_lt_0p5pct": 5,
+      "share_lt_0p5pct": 1.461,
+      "rare_levels": {
+        "Waiters/barmen staff": {
+          "n": 1348,
+          "pct": 0.438
+        },
+        "Secretaries": {
+          "n": 1305,
+          "pct": 0.424
+        },
+        "Realty agents": {
+          "n": 751,
+          "pct": 0.244
+        },
+        "HR staff": {
+          "n": 563,
+          "pct": 0.183
+        },
+        "IT staff": {
+          "n": 526,
+          "pct": 0.171
+        }
+      }
+    },
+    "ORGANIZATION_TYPE": {
+      "n_levels": 58,
+      "n_levels_lt_0p5pct": 29,
+      "share_lt_0p5pct": 4.744
+    },
+    "HOUSETYPE_MODE": {
+      "n_levels": 3,
+      "n_levels_lt_0p5pct": 2,
+      "share_lt_0p5pct": 0.882,
+      "rare_levels": {
+        "specific housing": {
+          "n": 1499,
+          "pct": 0.487
+        },
+        "terraced house": {
+          "n": 1212,
+          "pct": 0.394
+        }
+      }
+    }
+  }
+}

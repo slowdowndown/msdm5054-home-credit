@@ -1,0 +1,142 @@
+{
+  "n_cont_columns": 72,
+  "pair_threshold": 0.8,
+  "group_threshold": 0.9,
+  "n_groups": 14,
+  "n_dropped": 35,
+  "groups": [
+    {
+      "representative": "AMT_GOODS_PRICE",
+      "representative_iv": 0.0914,
+      "drop": [
+        "AMT_CREDIT"
+      ],
+      "n_members": 2
+    },
+    {
+      "representative": "REGION_RATING_CLIENT_W_CITY",
+      "representative_iv": 0.0516,
+      "drop": [
+        "REGION_RATING_CLIENT"
+      ],
+      "n_members": 2
+    },
+    {
+      "representative": "FLOORSMAX_AVG",
+      "representative_iv": 0.0379,
+      "drop": [
+        "FLOORSMAX_MEDI",
+        "FLOORSMAX_MODE"
+      ],
+      "n_members": 3
+    },
+    {
+      "representative": "TOTALAREA_MODE",
+      "representative_iv": 0.0352,
+      "drop": [
+        "LIVINGAREA_AVG",
+        "LIVINGAREA_MEDI",
+        "APARTMENTS_AVG",
+        "LIVINGAREA_MODE",
+        "APARTMENTS_MEDI",
+        "APARTMENTS_MODE",
+        "LIVINGAPARTMENTS_MEDI",
+        "LIVINGAPARTMENTS_AVG",
+        "LIVINGAPARTMENTS_MODE"
+      ],
+      "n_members": 10
+    },
+    {
+      "representative": "ELEVATORS_AVG",
+      "representative_iv": 0.0316,
+      "drop": [
+        "ELEVATORS_MEDI",
+        "ELEVATORS_MODE"
+      ],
+      "n_members": 3
+    },
+    {
+      "representative": "YEARS_BEGINEXPLUATATION_MEDI",
+      "representative_iv": 0.0285,
+      "drop": [
+        "YEARS_BEGINEXPLUATATION_AVG",
+        "YEARS_BEGINEXPLUATATION_MODE",
+        "YEARS_BUILD_MODE",
+        "YEARS_BUILD_MEDI",
+        "YEARS_BUILD_AVG"
+      ],
+      "n_members": 6
+    },
+    {
+      "representative": "ENTRANCES_AVG",
+      "representative_iv": 0.0271,
+      "drop": [
+        "ENTRANCES_MEDI",
+        "ENTRANCES_MODE"
+      ],
+      "n_members": 3
+    },
+    {
+      "representative": "NONLIVINGAREA_AVG",
+      "representative_iv": 0.0224,
+      "drop": [
+        "NONLIVINGAREA_MEDI",
+        "NONLIVINGAREA_MODE"
+      ],
+      "n_members": 3
+    },
+    {
+      "representative": "BASEMENTAREA_AVG",
+      "representative_iv": 0.0211,
+      "drop": [
+        "BASEMENTAREA_MEDI",
+        "BASEMENTAREA_MODE"
+      ],
+      "n_members": 3
+    },
+    {
+      "representative": "FLOORSMIN_MEDI",
+      "representative_iv": 0.0194,
+      "drop": [
+        "FLOORSMIN_MODE",
+        "FLOORSMIN_AVG"
+      ],
+      "n_members": 3
+    },
+    {
+      "representative": "LANDAREA_AVG",
+      "representative_iv": 0.0158,
+      "drop": [
+        "LANDAREA_MODE",
+        "LANDAREA_MEDI"
+      ],
+      "n_members": 3
+    },
+    {
+      "representative": "COMMONAREA_AVG",
+      "representative_iv": 0.0136,
+      "drop": [
+        "COMMONAREA_MEDI",
+        "COMMONAREA_MODE"
+      ],
+      "n_members": 3
+    },
+    {
+      "representative": "NONLIVINGAPARTMENTS_MEDI",
+      "representative_iv": 0.0111,
+      "drop": [
+        "NONLIVINGAPARTMENTS_AVG",
+        "NONLIVINGAPARTMENTS_MODE"
+      ],
+      "n_members": 3
+    },
+    {
+      "representative": "OBS_30_CNT_SOCIAL_CIRCLE",
+      "representative_iv": 0.0032,
+      "drop": [
+        "OBS_60_CNT_SOCIAL_CIRCLE"
+      ],
+      "n_members": 2
+    }
+  ]
+}

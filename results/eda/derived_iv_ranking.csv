@@ -1,0 +1,12 @@
+feature,type,n_bins,iv,monotonic,direction
+ANNUITY_TO_CREDIT,continuous,11,0.0915,False,
+EMPLOYED_TO_AGE,continuous,11,0.0907,False,
+CREDIT_TO_GOODS,continuous,9,0.0725,False,
+ID_TO_AGE,continuous,10,0.0203,False,
+DEF60_TO_OBS60,continuous,7,0.0119,False,
+CREDIT_TO_INCOME,continuous,10,0.0112,False,
+DEF30_TO_OBS30,continuous,4,0.011,True,increasing
+CHILDREN_TO_FAMILY,ordinal,7,0.0068,True,increasing
+ANNUITY_TO_INCOME,continuous,11,0.0063,False,
+REGISTRATION_TO_AGE,continuous,10,0.0047,False,
+INCOME_PER_MEMBER,continuous,11,0.0045,False,

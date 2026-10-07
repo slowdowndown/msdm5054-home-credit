@@ -1,0 +1,122 @@
+feature,decision,transform,reason,iv,type
+ANNUITY_TO_CREDIT,ADD,AMT_ANNUITY / AMT_CREDIT; zero denominator -> NaN,only derived ratio beating both parents (IV 0.0915 vs 0.0247/0.0448),0.0915,derived
+REGION_RATING_CLIENT,DROP,,collinear with REGION_RATING_CLIENT_W_CITY (|r| > 0.9),0.0482,ordinal
+AMT_CREDIT,DROP,,collinear with AMT_GOODS_PRICE (|r| > 0.9); its amount signal is absorbed by ANNUITY_TO_CREDIT,0.0448,continuous
+FLOORSMAX_MEDI,DROP,,collinear with FLOORSMAX_AVG (|r| > 0.9),0.0379,continuous
+FLOORSMAX_MODE,DROP,,collinear with FLOORSMAX_AVG (|r| > 0.9),0.0374,continuous
+LIVINGAREA_AVG,DROP,,collinear with TOTALAREA_MODE (|r| > 0.9),0.0328,continuous
+LIVINGAREA_MEDI,DROP,,collinear with TOTALAREA_MODE (|r| > 0.9),0.0325,continuous
+APARTMENTS_AVG,DROP,,collinear with TOTALAREA_MODE (|r| > 0.9),0.0321,continuous
+LIVINGAREA_MODE,DROP,,collinear with TOTALAREA_MODE (|r| > 0.9),0.032,continuous
+APARTMENTS_MEDI,DROP,,collinear with TOTALAREA_MODE (|r| > 0.9),0.0317,continuous
+APARTMENTS_MODE,DROP,,collinear with TOTALAREA_MODE (|r| > 0.9),0.0315,continuous
+ELEVATORS_MEDI,DROP,,collinear with ELEVATORS_AVG (|r| > 0.9),0.0293,continuous
+ELEVATORS_MODE,DROP,,collinear with ELEVATORS_AVG (|r| > 0.9),0.0286,continuous
+YEARS_BEGINEXPLUATATION_AVG,DROP,,collinear with YEARS_BEGINEXPLUATATION_MEDI (|r| > 0.9),0.0284,continuous
+YEARS_BEGINEXPLUATATION_MODE,DROP,,collinear with YEARS_BEGINEXPLUATATION_MEDI (|r| > 0.9),0.0283,continuous
+ENTRANCES_MEDI,DROP,,collinear with ENTRANCES_AVG (|r| > 0.9),0.0268,continuous
+ENTRANCES_MODE,DROP,,collinear with ENTRANCES_AVG (|r| > 0.9),0.026,continuous
+NONLIVINGAREA_MEDI,DROP,,collinear with NONLIVINGAREA_AVG (|r| > 0.9),0.0221,continuous
+NONLIVINGAREA_MODE,DROP,,collinear with NONLIVINGAREA_AVG (|r| > 0.9),0.0219,continuous
+BASEMENTAREA_MEDI,DROP,,collinear with BASEMENTAREA_AVG (|r| > 0.9),0.0211,continuous
+BASEMENTAREA_MODE,DROP,,collinear with BASEMENTAREA_AVG (|r| > 0.9),0.0204,continuous
+FLOORSMIN_MODE,DROP,,collinear with FLOORSMIN_MEDI (|r| > 0.9),0.0189,continuous
+FLOORSMIN_AVG,DROP,,collinear with FLOORSMIN_MEDI (|r| > 0.9),0.0188,continuous
+YEARS_BUILD_MODE,DROP,,collinear with YEARS_BEGINEXPLUATATION_MEDI (|r| > 0.9),0.017,continuous
+YEARS_BUILD_MEDI,DROP,,collinear with YEARS_BEGINEXPLUATATION_MEDI (|r| > 0.9),0.017,continuous
+YEARS_BUILD_AVG,DROP,,collinear with YEARS_BEGINEXPLUATATION_MEDI (|r| > 0.9),0.0169,continuous
+LIVINGAPARTMENTS_AVG,DROP,,collinear with TOTALAREA_MODE (|r| > 0.9),0.0163,continuous
+LIVINGAPARTMENTS_MEDI,DROP,,collinear with TOTALAREA_MODE (|r| > 0.9),0.0163,continuous
+LIVINGAPARTMENTS_MODE,DROP,,collinear with TOTALAREA_MODE (|r| > 0.9),0.0161,continuous
+LANDAREA_MODE,DROP,,collinear with LANDAREA_AVG (|r| > 0.9),0.0158,continuous
+LANDAREA_MEDI,DROP,,collinear with LANDAREA_AVG (|r| > 0.9),0.0157,continuous
+AMT_REQ_CREDIT_BUREAU_DAY,DROP,,near-constant (>=99% single value),0.0136,ordinal
+COMMONAREA_MEDI,DROP,,collinear with COMMONAREA_AVG (|r| > 0.9),0.0133,continuous
+AMT_REQ_CREDIT_BUREAU_HOUR,DROP,,near-constant (>=99% single value),0.0133,ordinal
+COMMONAREA_MODE,DROP,,collinear with COMMONAREA_AVG (|r| > 0.9),0.0118,continuous
+NONLIVINGAPARTMENTS_AVG,DROP,,collinear with NONLIVINGAPARTMENTS_MEDI (|r| > 0.9),0.011,continuous
+NONLIVINGAPARTMENTS_MODE,DROP,,collinear with NONLIVINGAPARTMENTS_MEDI (|r| > 0.9),0.0109,continuous
+OBS_60_CNT_SOCIAL_CIRCLE,DROP,,collinear with OBS_30_CNT_SOCIAL_CIRCLE (|r| > 0.9),0.0031,continuous
+FLAG_DOCUMENT_13,DROP,,near-constant (>=99% single value),0.0027,nominal
+FLAG_DOCUMENT_16,DROP,,near-constant (>=99% single value),0.0021,nominal
+FLAG_DOCUMENT_14,DROP,,near-constant (>=99% single value),0.0014,nominal
+FLAG_DOCUMENT_15,DROP,,near-constant (>=99% single value),0.0009,nominal
+FLAG_DOCUMENT_18,DROP,,near-constant (>=99% single value),0.0008,nominal
+FLAG_DOCUMENT_9,DROP,,near-constant (>=99% single value),0.0003,nominal
+FLAG_DOCUMENT_17,DROP,,near-constant (>=99% single value),0.0003,nominal
+FLAG_DOCUMENT_11,DROP,,near-constant (>=99% single value),0.0002,nominal
+FLAG_DOCUMENT_2,DROP,,near-constant (>=99% single value),0.0002,nominal
+FLAG_DOCUMENT_21,DROP,,near-constant (>=99% single value),0.0002,nominal
+FLAG_DOCUMENT_4,DROP,,near-constant (>=99% single value),0.0001,nominal
+FLAG_DOCUMENT_20,DROP,,near-constant (>=99% single value),0.0,nominal
+FLAG_CONT_MOBILE,DROP,,near-constant (>=99% single value),0.0,nominal
+FLAG_DOCUMENT_19,DROP,,near-constant (>=99% single value),0.0,nominal
+FLAG_DOCUMENT_12,DROP,,near-constant (>=99% single value),-0.0,nominal
+FLAG_DOCUMENT_7,DROP,,near-constant (>=99% single value),0.0,nominal
+FLAG_MOBIL,DROP,,near-constant (>=99% single value),-0.0,nominal
+FLAG_DOCUMENT_10,DROP,,near-constant (>=99% single value),-0.0,nominal
+EXT_SOURCE_3,KEEP,,,0.3297,continuous
+EXT_SOURCE_2,KEEP,,,0.3031,continuous
+EXT_SOURCE_1,KEEP,missing indicator + bin,,0.1512,continuous
+DAYS_EMPLOYED,KEEP,sentinel 365243 -> NaN,,0.1115,continuous
+AMT_GOODS_PRICE,KEEP,,,0.0914,continuous
+DAYS_BIRTH,KEEP,,,0.0868,continuous
+OCCUPATION_TYPE,KEEP,rare-merge + target encode,,0.0832,nominal
+ORGANIZATION_TYPE,KEEP,rare-merge + target encode,,0.0682,nominal
+NAME_INCOME_TYPE,KEEP,rare-merge + label encode,,0.0559,nominal
+REGION_RATING_CLIENT_W_CITY,KEEP,,,0.0516,ordinal
+NAME_EDUCATION_TYPE,KEEP,rare-merge + label encode,,0.0492,nominal
+DAYS_LAST_PHONE_CHANGE,KEEP,,,0.0446,continuous
+CODE_GENDER,KEEP,rare-merge + label encode,,0.0384,nominal
+FLOORSMAX_AVG,KEEP,missing indicator + bin,,0.0379,continuous
+DAYS_ID_PUBLISH,KEEP,,,0.0359,continuous
+TOTALAREA_MODE,KEEP,missing indicator + bin,,0.0352,continuous
+REGION_POPULATION_RELATIVE,KEEP,,,0.0342,continuous
+FLAG_EMP_PHONE,KEEP,,,0.0336,nominal
+REG_CITY_NOT_WORK_CITY,KEEP,,,0.033,nominal
+ELEVATORS_AVG,KEEP,missing indicator + bin,,0.0316,continuous
+FLAG_DOCUMENT_3,KEEP,,,0.0285,nominal
+YEARS_BEGINEXPLUATATION_MEDI,KEEP,missing indicator + bin,,0.0285,continuous
+DAYS_REGISTRATION,KEEP,,,0.0274,continuous
+ENTRANCES_AVG,KEEP,missing indicator + bin,,0.0271,continuous
+WALLSMATERIAL_MODE,KEEP,missing indicator + bin,,0.0271,nominal
+AMT_ANNUITY,KEEP,,,0.0247,continuous
+EMERGENCYSTATE_MODE,KEEP,missing indicator + bin,,0.0236,nominal
+REG_CITY_NOT_LIVE_CITY,KEEP,,,0.0235,nominal
+NAME_FAMILY_STATUS,KEEP,rare-merge + label encode,,0.0233,nominal
+OWN_CAR_AGE,KEEP,missing indicator + bin,,0.0231,continuous
+NONLIVINGAREA_AVG,KEEP,missing indicator + bin,,0.0224,continuous
+HOUSETYPE_MODE,KEEP,missing indicator + bin,,0.0216,nominal
+BASEMENTAREA_AVG,KEEP,missing indicator + bin,,0.0211,continuous
+FLOORSMIN_MEDI,KEEP,missing indicator + bin,,0.0194,continuous
+AMT_REQ_CREDIT_BUREAU_YEAR,KEEP,,,0.0176,continuous
+AMT_REQ_CREDIT_BUREAU_QRT,KEEP,cap at P99.9,,0.0172,ordinal
+NAME_HOUSING_TYPE,KEEP,rare-merge + label encode,,0.016,nominal
+LANDAREA_AVG,KEEP,missing indicator + bin,,0.0158,continuous
+AMT_REQ_CREDIT_BUREAU_MON,KEEP,,,0.0155,continuous
+NAME_CONTRACT_TYPE,KEEP,rare-merge + label encode,,0.0149,nominal
+DEF_30_CNT_SOCIAL_CIRCLE,KEEP,,,0.0142,ordinal
+LIVE_CITY_NOT_WORK_CITY,KEEP,,,0.0139,nominal
+DEF_60_CNT_SOCIAL_CIRCLE,KEEP,,,0.0138,ordinal
+COMMONAREA_AVG,KEEP,missing indicator + bin,,0.0136,continuous
+AMT_REQ_CREDIT_BUREAU_WEEK,KEEP,,,0.0134,ordinal
+FLAG_DOCUMENT_6,KEEP,,,0.0121,nominal
+FONDKAPREMONT_MODE,KEEP,missing indicator + bin,,0.0118,nominal
+AMT_INCOME_TOTAL,KEEP,log1p; cap at P99.9,,0.0113,continuous
+NONLIVINGAPARTMENTS_MEDI,KEEP,missing indicator + bin,,0.0111,continuous
+HOUR_APPR_PROCESS_START,KEEP,,,0.0109,continuous
+FLAG_WORK_PHONE,KEEP,,,0.0102,nominal
+FLAG_PHONE,KEEP,,,0.0079,nominal
+CNT_CHILDREN,KEEP,,,0.0068,ordinal
+CNT_FAM_MEMBERS,KEEP,,,0.0066,ordinal
+FLAG_OWN_CAR,KEEP,rare-merge + label encode,,0.0061,nominal
+OBS_30_CNT_SOCIAL_CIRCLE,KEEP,cap at P99.9,,0.0032,continuous
+NAME_TYPE_SUITE,KEEP,rare-merge + label encode,,0.0022,nominal
+FLAG_DOCUMENT_8,KEEP,,,0.001,nominal
+WEEKDAY_APPR_PROCESS_START,KEEP,rare-merge + label encode,,0.0007,nominal
+REG_REGION_NOT_WORK_REGION,KEEP,,,0.0006,nominal
+FLAG_OWN_REALTY,KEEP,rare-merge + label encode,,0.0005,nominal
+REG_REGION_NOT_LIVE_REGION,KEEP,,,0.0003,nominal
+LIVE_REGION_NOT_WORK_REGION,KEEP,,,0.0001,nominal
+FLAG_DOCUMENT_5,KEEP,,,0.0,nominal
+FLAG_EMAIL,KEEP,,,0.0,nominal

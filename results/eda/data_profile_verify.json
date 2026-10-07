@@ -1,0 +1,117 @@
+{
+  "verification": [
+    {
+      "check": "train_rows",
+      "got": 307511,
+      "want": 307511,
+      "ok": true
+    },
+    {
+      "check": "train_columns",
+      "got": 122,
+      "want": 122,
+      "ok": true
+    },
+    {
+      "check": "test_rows",
+      "got": 48744,
+      "want": 48744,
+      "ok": true
+    },
+    {
+      "check": "test_columns",
+      "got": 121,
+      "want": 121,
+      "ok": true
+    },
+    {
+      "check": "duplicate_train_ids",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "check": "duplicate_train_rows",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "check": "train_test_id_overlap",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "check": "target_missing",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "check": "positive_count",
+      "got": 24825,
+      "want": 24825,
+      "ok": true
+    },
+    {
+      "check": "positive_rate",
+      "got": 0.08072881945686496,
+      "want": 0.08072881945686496,
+      "ok": true
+    },
+    {
+      "check": "employment_365243",
+      "got": 55374,
+      "want": 55374,
+      "ok": true
+    },
+    {
+      "check": "max_income",
+      "got": 117000000.0,
+      "want": 117000000.0,
+      "ok": true
+    },
+    {
+      "check": "categorical_features",
+      "got": 16,
+      "want": 16,
+      "ok": true
+    },
+    {
+      "check": "numeric_features",
+      "got": 104,
+      "want": 104,
+      "ok": true
+    },
+    {
+      "check": "field_profile:all_columns",
+      "got": "122 match / 0 mismatch",
+      "want": "all match",
+      "ok": true
+    }
+  ],
+  "supplements": {
+    "columns_missing_gt80pct": 0,
+    "columns_missing_gt80pct_names": [],
+    "constant_columns": [],
+    "employment_sentinel": {
+      "n": 55374,
+      "default_rate": 0.05399646043269404
+    },
+    "employment_normal": {
+      "n": 252137,
+      "default_rate": 0.0865997453765215
+    },
+    "top_categorical_cardinality": {
+      "ORGANIZATION_TYPE": 58,
+      "OCCUPATION_TYPE": 18,
+      "NAME_INCOME_TYPE": 8,
+      "NAME_TYPE_SUITE": 7,
+      "WEEKDAY_APPR_PROCESS_START": 7,
+      "WALLSMATERIAL_MODE": 7,
+      "NAME_FAMILY_STATUS": 6,
+      "NAME_HOUSING_TYPE": 6
+    }
+  }
+}

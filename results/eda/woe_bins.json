@@ -1,0 +1,8144 @@
+{
+  "NAME_CONTRACT_TYPE": {
+    "type": "nominal",
+    "iv": 0.0149,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Cash loans",
+        "order": NaN,
+        "n": 222560,
+        "bad": 18572,
+        "bad_rate": 0.0834,
+        "woe": -0.0361,
+        "iv": 0.001196
+      },
+      {
+        "bin": "Revolving loans",
+        "order": NaN,
+        "n": 23448,
+        "bad": 1288,
+        "bad_rate": 0.0549,
+        "woe": 0.4124,
+        "iv": 0.013663
+      }
+    ]
+  },
+  "CODE_GENDER": {
+    "type": "nominal",
+    "iv": 0.0384,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "F",
+        "order": NaN,
+        "n": 161887,
+        "bad": 11334,
+        "bad_rate": 0.07,
+        "woe": 0.154,
+        "iv": 0.014634
+      },
+      {
+        "bin": "M",
+        "order": NaN,
+        "n": 84119,
+        "bad": 8526,
+        "bad_rate": 0.1014,
+        "woe": -0.2503,
+        "iv": 0.023788
+      },
+      {
+        "bin": "Other",
+        "order": NaN,
+        "n": 2,
+        "bad": 0,
+        "bad_rate": 0.0,
+        "woe": -0.823,
+        "iv": -7e-06
+      }
+    ]
+  },
+  "FLAG_OWN_CAR": {
+    "type": "nominal",
+    "iv": 0.0061,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "N",
+        "order": NaN,
+        "n": 162413,
+        "bad": 13779,
+        "bad_rate": 0.0848,
+        "woe": -0.0542,
+        "iv": 0.001981
+      },
+      {
+        "bin": "Y",
+        "order": NaN,
+        "n": 83595,
+        "bad": 6081,
+        "bad_rate": 0.0727,
+        "woe": 0.1127,
+        "iv": 0.004122
+      }
+    ]
+  },
+  "FLAG_OWN_REALTY": {
+    "type": "nominal",
+    "iv": 0.0005,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "N",
+        "order": NaN,
+        "n": 75318,
+        "bad": 6260,
+        "bad_rate": 0.0831,
+        "woe": -0.0318,
+        "iv": 0.000313
+      },
+      {
+        "bin": "Y",
+        "order": NaN,
+        "n": 170690,
+        "bad": 13600,
+        "bad_rate": 0.0797,
+        "woe": 0.0142,
+        "iv": 0.00014
+      }
+    ]
+  },
+  "CNT_CHILDREN": {
+    "type": "ordinal",
+    "iv": 0.0068,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 172232,
+        "bad": 13236,
+        "bad_rate": 0.0768,
+        "woe": 0.0534,
+        "iv": 0.001955
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 49106,
+        "bad": 4427,
+        "bad_rate": 0.0902,
+        "woe": -0.1208,
+        "iv": 0.003062
+      },
+      {
+        "bin": "2",
+        "order": 2.0,
+        "n": 21304,
+        "bad": 1860,
+        "bad_rate": 0.0873,
+        "woe": -0.0858,
+        "iv": 0.000658
+      },
+      {
+        "bin": "3",
+        "order": 3.0,
+        "n": 2936,
+        "bad": 279,
+        "bad_rate": 0.095,
+        "woe": -0.1803,
+        "iv": 0.000415
+      },
+      {
+        "bin": "Other",
+        "order": 4.0,
+        "n": 430,
+        "bad": 58,
+        "bad_rate": 0.1349,
+        "woe": -0.5813,
+        "iv": 0.000741
+      }
+    ]
+  },
+  "AMT_INCOME_TOTAL": {
+    "type": "continuous",
+    "iv": 0.0113,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 67500.0,
+        "n": 26666,
+        "bad": 2225,
+        "bad_rate": 0.0834,
+        "woe": -0.0362,
+        "iv": 0.000143
+      },
+      {
+        "bin": "1",
+        "order": 90000.0,
+        "n": 24307,
+        "bad": 1993,
+        "bad_rate": 0.082,
+        "woe": -0.0171,
+        "iv": 2.9e-05
+      },
+      {
+        "bin": "2",
+        "order": 112500.0,
+        "n": 29530,
+        "bad": 2583,
+        "bad_rate": 0.0875,
+        "woe": -0.0877,
+        "iv": 0.000957
+      },
+      {
+        "bin": "3",
+        "order": 135000.0,
+        "n": 39057,
+        "bad": 3304,
+        "bad_rate": 0.0846,
+        "woe": -0.0511,
+        "iv": 0.000423
+      },
+      {
+        "bin": "4",
+        "order": 144000.0,
+        "n": 3451,
+        "bad": 313,
+        "bad_rate": 0.0907,
+        "woe": -0.1288,
+        "iv": 0.000243
+      },
+      {
+        "bin": "5",
+        "order": 157500.0,
+        "n": 25051,
+        "bad": 2138,
+        "bad_rate": 0.0853,
+        "woe": -0.0609,
+        "iv": 0.000386
+      },
+      {
+        "bin": "6",
+        "order": 180000.0,
+        "n": 24476,
+        "bad": 2068,
+        "bad_rate": 0.0845,
+        "woe": -0.0499,
+        "iv": 0.000251
+      },
+      {
+        "bin": "7",
+        "order": 216000.0,
+        "n": 35840,
+        "bad": 2804,
+        "bad_rate": 0.0782,
+        "woe": 0.0339,
+        "iv": 0.000166
+      },
+      {
+        "bin": "8",
+        "order": 270000.0,
+        "n": 15960,
+        "bad": 1113,
+        "bad_rate": 0.0697,
+        "woe": 0.1578,
+        "iv": 0.001517
+      },
+      {
+        "bin": "9",
+        "order": 360000.0,
+        "n": 21670,
+        "bad": 1319,
+        "bad_rate": 0.0609,
+        "woe": 0.3034,
+        "iv": 0.007153
+      }
+    ]
+  },
+  "AMT_CREDIT": {
+    "type": "continuous",
+    "iv": 0.0448,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 143910.0,
+        "n": 26601,
+        "bad": 1790,
+        "bad_rate": 0.0673,
+        "woe": 0.1963,
+        "iv": 0.003844
+      },
+      {
+        "bin": "1",
+        "order": 225000.0,
+        "n": 25300,
+        "bad": 1978,
+        "bad_rate": 0.0782,
+        "woe": 0.0346,
+        "iv": 0.000122
+      },
+      {
+        "bin": "2",
+        "order": 271066.5,
+        "n": 21946,
+        "bad": 1791,
+        "bad_rate": 0.0816,
+        "woe": -0.0121,
+        "iv": 1.3e-05
+      },
+      {
+        "bin": "3",
+        "order": 353241.0,
+        "n": 24579,
+        "bad": 2487,
+        "bad_rate": 0.1012,
+        "woe": -0.2485,
+        "iv": 0.006844
+      },
+      {
+        "bin": "4",
+        "order": 454500.0,
+        "n": 24644,
+        "bad": 2393,
+        "bad_rate": 0.0971,
+        "woe": -0.2028,
+        "iv": 0.004483
+      },
+      {
+        "bin": "5",
+        "order": 545040.0,
+        "n": 24535,
+        "bad": 2557,
+        "bad_rate": 0.1042,
+        "woe": -0.2814,
+        "iv": 0.008884
+      },
+      {
+        "bin": "6",
+        "order": 675000.0,
+        "n": 27220,
+        "bad": 2300,
+        "bad_rate": 0.0845,
+        "woe": -0.0499,
+        "iv": 0.00028
+      },
+      {
+        "bin": "7",
+        "order": 818671.5,
+        "n": 24007,
+        "bad": 1701,
+        "bad_rate": 0.0709,
+        "woe": 0.1409,
+        "iv": 0.001829
+      },
+      {
+        "bin": "8",
+        "order": 1035832.5,
+        "n": 22652,
+        "bad": 1541,
+        "bad_rate": 0.068,
+        "woe": 0.1846,
+        "iv": 0.002908
+      },
+      {
+        "bin": "9",
+        "order": 1350000.0,
+        "n": 24524,
+        "bad": 1322,
+        "bad_rate": 0.0539,
+        "woe": 0.4323,
+        "iv": 0.015574
+      }
+    ]
+  },
+  "AMT_ANNUITY": {
+    "type": "continuous",
+    "iv": 0.0247,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 9000.0,
+        "n": 24763,
+        "bad": 1755,
+        "bad_rate": 0.0709,
+        "woe": 0.1406,
+        "iv": 0.00188
+      },
+      {
+        "bin": "1.0",
+        "order": 13306.5,
+        "n": 24462,
+        "bad": 1686,
+        "bad_rate": 0.0689,
+        "woe": 0.1706,
+        "iv": 0.002699
+      },
+      {
+        "bin": "2.0",
+        "order": 16519.5,
+        "n": 24659,
+        "bad": 2069,
+        "bad_rate": 0.0839,
+        "woe": -0.0423,
+        "iv": 0.000181
+      },
+      {
+        "bin": "3.0",
+        "order": 20151.0,
+        "n": 24590,
+        "bad": 2132,
+        "bad_rate": 0.0867,
+        "woe": -0.0781,
+        "iv": 0.000628
+      },
+      {
+        "bin": "4.0",
+        "order": 23346.0,
+        "n": 24614,
+        "bad": 2117,
+        "bad_rate": 0.086,
+        "woe": -0.0693,
+        "iv": 0.000493
+      },
+      {
+        "bin": "5.0",
+        "order": 26316.0,
+        "n": 24520,
+        "bad": 2227,
+        "bad_rate": 0.0908,
+        "woe": -0.1291,
+        "iv": 0.00175
+      },
+      {
+        "bin": "6.0",
+        "order": 30091.5,
+        "n": 24736,
+        "bad": 2476,
+        "bad_rate": 0.1001,
+        "woe": -0.2365,
+        "iv": 0.006207
+      },
+      {
+        "bin": "7.0",
+        "order": 34596.0,
+        "n": 24458,
+        "bad": 2062,
+        "bad_rate": 0.0843,
+        "woe": -0.0475,
+        "iv": 0.000228
+      },
+      {
+        "bin": "8.0",
+        "order": 40846.5,
+        "n": 24596,
+        "bad": 1898,
+        "bad_rate": 0.0772,
+        "woe": 0.0488,
+        "iv": 0.000234
+      },
+      {
+        "bin": "9.0",
+        "order": 53325.0,
+        "n": 24600,
+        "bad": 1438,
+        "bad_rate": 0.0585,
+        "woe": 0.3465,
+        "iv": 0.010398
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 10,
+        "bad": 0,
+        "bad_rate": 0.0,
+        "woe": 0.612,
+        "iv": 2.7e-05
+      }
+    ]
+  },
+  "AMT_GOODS_PRICE": {
+    "type": "continuous",
+    "iv": 0.0914,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 135000.0,
+        "n": 31580,
+        "bad": 2322,
+        "bad_rate": 0.0735,
+        "woe": 0.101,
+        "iv": 0.001259
+      },
+      {
+        "bin": "1.0",
+        "order": 225000.0,
+        "n": 25564,
+        "bad": 2227,
+        "bad_rate": 0.0871,
+        "woe": -0.0833,
+        "iv": 0.000745
+      },
+      {
+        "bin": "2.0",
+        "order": 252000.0,
+        "n": 22429,
+        "bad": 1763,
+        "bad_rate": 0.0786,
+        "woe": 0.0287,
+        "iv": 7.5e-05
+      },
+      {
+        "bin": "3.0",
+        "order": 324000.0,
+        "n": 18895,
+        "bad": 1927,
+        "bad_rate": 0.102,
+        "woe": -0.2573,
+        "iv": 0.005661
+      },
+      {
+        "bin": "4.0",
+        "order": 450000.0,
+        "n": 27768,
+        "bad": 3687,
+        "bad_rate": 0.1328,
+        "woe": -0.556,
+        "iv": 0.044015
+      },
+      {
+        "bin": "5.0",
+        "order": 463500.0,
+        "n": 21454,
+        "bad": 1412,
+        "bad_rate": 0.0658,
+        "woe": 0.22,
+        "iv": 0.003856
+      },
+      {
+        "bin": "6.0",
+        "order": 675000.0,
+        "n": 33740,
+        "bad": 2853,
+        "bad_rate": 0.0846,
+        "woe": -0.0507,
+        "iv": 0.000359
+      },
+      {
+        "bin": "7.0",
+        "order": 702000.0,
+        "n": 15240,
+        "bad": 850,
+        "bad_rate": 0.0558,
+        "woe": 0.396,
+        "iv": 0.00825
+      },
+      {
+        "bin": "8.0",
+        "order": 900000.0,
+        "n": 24550,
+        "bad": 1586,
+        "bad_rate": 0.0646,
+        "woe": 0.2399,
+        "iv": 0.005203
+      },
+      {
+        "bin": "9.0",
+        "order": 1305000.0,
+        "n": 24567,
+        "bad": 1216,
+        "bad_rate": 0.0495,
+        "woe": 0.5222,
+        "iv": 0.021946
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 221,
+        "bad": 17,
+        "bad_rate": 0.0769,
+        "woe": 0.0259,
+        "iv": 1e-06
+      }
+    ]
+  },
+  "NAME_TYPE_SUITE": {
+    "type": "nominal",
+    "iv": 0.0022,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Children",
+        "order": NaN,
+        "n": 2673,
+        "bad": 194,
+        "bad_rate": 0.0726,
+        "woe": 0.1129,
+        "iv": 0.000135
+      },
+      {
+        "bin": "Family",
+        "order": NaN,
+        "n": 32080,
+        "bad": 2390,
+        "bad_rate": 0.0745,
+        "woe": 0.0868,
+        "iv": 0.00095
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 1029,
+        "bad": 57,
+        "bad_rate": 0.0554,
+        "woe": 0.3956,
+        "iv": 0.000565
+      },
+      {
+        "bin": "Other",
+        "order": NaN,
+        "n": 918,
+        "bad": 80,
+        "bad_rate": 0.0871,
+        "woe": -0.0891,
+        "iv": 2.9e-05
+      },
+      {
+        "bin": "Other_B",
+        "order": NaN,
+        "n": 1432,
+        "bad": 139,
+        "bad_rate": 0.0971,
+        "woe": -0.2054,
+        "iv": 0.000263
+      },
+      {
+        "bin": "Spouse, partner",
+        "order": NaN,
+        "n": 9068,
+        "bad": 714,
+        "bad_rate": 0.0787,
+        "woe": 0.0265,
+        "iv": 2.6e-05
+      },
+      {
+        "bin": "Unaccompanied",
+        "order": NaN,
+        "n": 198808,
+        "bad": 16286,
+        "bad_rate": 0.0819,
+        "woe": -0.0159,
+        "iv": 0.000206
+      }
+    ]
+  },
+  "NAME_INCOME_TYPE": {
+    "type": "nominal",
+    "iv": 0.0559,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Commercial associate",
+        "order": NaN,
+        "n": 57273,
+        "bad": 4348,
+        "bad_rate": 0.0759,
+        "woe": 0.0666,
+        "iv": 0.001005
+      },
+      {
+        "bin": "Other",
+        "order": NaN,
+        "n": 40,
+        "bad": 5,
+        "bad_rate": 0.125,
+        "woe": -0.5677,
+        "iv": 5.5e-05
+      },
+      {
+        "bin": "Pensioner",
+        "order": NaN,
+        "n": 44134,
+        "bad": 2365,
+        "bad_rate": 0.0536,
+        "woe": 0.4387,
+        "iv": 0.028785
+      },
+      {
+        "bin": "State servant",
+        "order": NaN,
+        "n": 17518,
+        "bad": 1024,
+        "bad_rate": 0.0585,
+        "woe": 0.3463,
+        "iv": 0.007403
+      },
+      {
+        "bin": "Working",
+        "order": NaN,
+        "n": 127043,
+        "bad": 12118,
+        "bad_rate": 0.0954,
+        "woe": -0.1829,
+        "iv": 0.018656
+      }
+    ]
+  },
+  "NAME_EDUCATION_TYPE": {
+    "type": "nominal",
+    "iv": 0.0492,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Higher education",
+        "order": NaN,
+        "n": 59802,
+        "bad": 3226,
+        "bad_rate": 0.0539,
+        "woe": 0.4317,
+        "iv": 0.037877
+      },
+      {
+        "bin": "Incomplete higher",
+        "order": NaN,
+        "n": 8289,
+        "bad": 715,
+        "bad_rate": 0.0863,
+        "woe": -0.0729,
+        "iv": 0.000183
+      },
+      {
+        "bin": "Lower secondary",
+        "order": NaN,
+        "n": 3025,
+        "bad": 335,
+        "bad_rate": 0.1107,
+        "woe": -0.3506,
+        "iv": 0.001744
+      },
+      {
+        "bin": "Other",
+        "order": NaN,
+        "n": 124,
+        "bad": 2,
+        "bad_rate": 0.0161,
+        "woe": 1.4593,
+        "iv": 0.00064
+      },
+      {
+        "bin": "Secondary / secondary special",
+        "order": NaN,
+        "n": 174768,
+        "bad": 15582,
+        "bad_rate": 0.0892,
+        "woe": -0.1086,
+        "iv": 0.008759
+      }
+    ]
+  },
+  "NAME_FAMILY_STATUS": {
+    "type": "nominal",
+    "iv": 0.0233,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Civil marriage",
+        "order": NaN,
+        "n": 23812,
+        "bad": 2385,
+        "bad_rate": 0.1002,
+        "woe": -0.2372,
+        "iv": 0.006012
+      },
+      {
+        "bin": "Married",
+        "order": NaN,
+        "n": 157153,
+        "bad": 11840,
+        "bad_rate": 0.0753,
+        "woe": 0.0749,
+        "iv": 0.003473
+      },
+      {
+        "bin": "Other",
+        "order": NaN,
+        "n": 2,
+        "bad": 0,
+        "bad_rate": 0.0,
+        "woe": -0.823,
+        "iv": -7e-06
+      },
+      {
+        "bin": "Separated",
+        "order": NaN,
+        "n": 15840,
+        "bad": 1265,
+        "bad_rate": 0.0799,
+        "woe": 0.0114,
+        "iv": 9e-06
+      },
+      {
+        "bin": "Single / not married",
+        "order": NaN,
+        "n": 36359,
+        "bad": 3616,
+        "bad_rate": 0.0995,
+        "woe": -0.2293,
+        "iv": 0.00855
+      },
+      {
+        "bin": "Widow",
+        "order": NaN,
+        "n": 12842,
+        "bad": 754,
+        "bad_rate": 0.0587,
+        "woe": 0.3415,
+        "iv": 0.005288
+      }
+    ]
+  },
+  "NAME_HOUSING_TYPE": {
+    "type": "nominal",
+    "iv": 0.016,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "House / apartment",
+        "order": NaN,
+        "n": 218383,
+        "bad": 17020,
+        "bad_rate": 0.0779,
+        "woe": 0.0382,
+        "iv": 0.001276
+      },
+      {
+        "bin": "Municipal apartment",
+        "order": NaN,
+        "n": 8916,
+        "bad": 758,
+        "bad_rate": 0.085,
+        "woe": -0.057,
+        "iv": 0.000119
+      },
+      {
+        "bin": "Office apartment",
+        "order": NaN,
+        "n": 2097,
+        "bad": 136,
+        "bad_rate": 0.0649,
+        "woe": 0.2327,
+        "iv": 0.000424
+      },
+      {
+        "bin": "Other",
+        "order": NaN,
+        "n": 882,
+        "bad": 78,
+        "bad_rate": 0.0884,
+        "woe": -0.1054,
+        "iv": 3.9e-05
+      },
+      {
+        "bin": "Rented apartment",
+        "order": NaN,
+        "n": 3873,
+        "bad": 478,
+        "bad_rate": 0.1234,
+        "woe": -0.4729,
+        "iv": 0.004283
+      },
+      {
+        "bin": "With parents",
+        "order": NaN,
+        "n": 11857,
+        "bad": 1390,
+        "bad_rate": 0.1172,
+        "woe": -0.4139,
+        "iv": 0.009811
+      }
+    ]
+  },
+  "REGION_POPULATION_RELATIVE": {
+    "type": "continuous",
+    "iv": 0.0342,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.00496,
+        "n": 24845,
+        "bad": 2142,
+        "bad_rate": 0.0862,
+        "woe": -0.0719,
+        "iv": 0.000537
+      },
+      {
+        "bin": "1",
+        "order": 0.007305,
+        "n": 24415,
+        "bad": 2262,
+        "bad_rate": 0.0926,
+        "woe": -0.151,
+        "iv": 0.002406
+      },
+      {
+        "bin": "2",
+        "order": 0.010006,
+        "n": 24619,
+        "bad": 1944,
+        "bad_rate": 0.079,
+        "woe": 0.0238,
+        "iv": 5.7e-05
+      },
+      {
+        "bin": "3",
+        "order": 0.0145199999999999,
+        "n": 25525,
+        "bad": 2049,
+        "bad_rate": 0.0803,
+        "woe": 0.0059,
+        "iv": 4e-06
+      },
+      {
+        "bin": "4",
+        "order": 0.018634,
+        "n": 26467,
+        "bad": 2483,
+        "bad_rate": 0.0938,
+        "woe": -0.1647,
+        "iv": 0.003125
+      },
+      {
+        "bin": "5",
+        "order": 0.020246,
+        "n": 23997,
+        "bad": 2326,
+        "bad_rate": 0.0969,
+        "woe": -0.2008,
+        "iv": 0.004277
+      },
+      {
+        "bin": "6",
+        "order": 0.02461,
+        "n": 23266,
+        "bad": 1856,
+        "bad_rate": 0.0798,
+        "woe": 0.0127,
+        "iv": 1.5e-05
+      },
+      {
+        "bin": "7",
+        "order": 0.028663,
+        "n": 27999,
+        "bad": 2097,
+        "bad_rate": 0.0749,
+        "woe": 0.0811,
+        "iv": 0.000726
+      },
+      {
+        "bin": "8",
+        "order": 0.032561,
+        "n": 27387,
+        "bad": 1902,
+        "bad_rate": 0.0694,
+        "woe": 0.1625,
+        "iv": 0.002749
+      },
+      {
+        "bin": "9",
+        "order": 0.04622,
+        "n": 17488,
+        "bad": 799,
+        "bad_rate": 0.0457,
+        "woe": 0.6061,
+        "iv": 0.020343
+      }
+    ]
+  },
+  "DAYS_BIRTH": {
+    "type": "continuous",
+    "iv": 0.0868,
+    "monotonic": true,
+    "direction": "increasing",
+    "bins": [
+      {
+        "bin": "0",
+        "order": -23196.0,
+        "n": 24602,
+        "bad": 1199,
+        "bad_rate": 0.0487,
+        "woe": 0.5385,
+        "iv": 0.023216
+      },
+      {
+        "bin": "1",
+        "order": -21301.0,
+        "n": 24600,
+        "bad": 1326,
+        "bad_rate": 0.0539,
+        "woe": 0.4323,
+        "iv": 0.015628
+      },
+      {
+        "bin": "2",
+        "order": -19673.0,
+        "n": 24610,
+        "bad": 1553,
+        "bad_rate": 0.0631,
+        "woe": 0.265,
+        "iv": 0.006296
+      },
+      {
+        "bin": "3",
+        "order": -18030.0,
+        "n": 24600,
+        "bad": 1737,
+        "bad_rate": 0.0706,
+        "woe": 0.1446,
+        "iv": 0.001972
+      },
+      {
+        "bin": "4",
+        "order": -16446.5,
+        "n": 24606,
+        "bad": 1900,
+        "bad_rate": 0.0772,
+        "woe": 0.0481,
+        "iv": 0.000227
+      },
+      {
+        "bin": "5",
+        "order": -15063.0,
+        "n": 24596,
+        "bad": 1978,
+        "bad_rate": 0.0804,
+        "woe": 0.0039,
+        "iv": 2e-06
+      },
+      {
+        "bin": "6",
+        "order": -13780.0,
+        "n": 24604,
+        "bad": 2174,
+        "bad_rate": 0.0884,
+        "woe": -0.0989,
+        "iv": 0.001017
+      },
+      {
+        "bin": "7",
+        "order": -12400.0,
+        "n": 24610,
+        "bad": 2416,
+        "bad_rate": 0.0982,
+        "woe": -0.215,
+        "iv": 0.005054
+      },
+      {
+        "bin": "8",
+        "order": -10995.0,
+        "n": 24593,
+        "bad": 2711,
+        "bad_rate": 0.1102,
+        "woe": -0.3443,
+        "iv": 0.013684
+      },
+      {
+        "bin": "9",
+        "order": -9400.0,
+        "n": 24587,
+        "bad": 2866,
+        "bad_rate": 0.1166,
+        "woe": -0.4073,
+        "iv": 0.019656
+      }
+    ]
+  },
+  "DAYS_EMPLOYED": {
+    "type": "continuous",
+    "iv": 0.1115,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": -7296.0,
+        "n": 20189,
+        "bad": 905,
+        "bad_rate": 0.0448,
+        "woe": 0.6261,
+        "iv": 0.024857
+      },
+      {
+        "bin": "1.0",
+        "order": -4380.0,
+        "n": 20185,
+        "bad": 1182,
+        "bad_rate": 0.0586,
+        "woe": 0.3445,
+        "iv": 0.008445
+      },
+      {
+        "bin": "2.0",
+        "order": -3176.0,
+        "n": 20197,
+        "bad": 1403,
+        "bad_rate": 0.0695,
+        "woe": 0.1621,
+        "iv": 0.00202
+      },
+      {
+        "bin": "3.0",
+        "order": -2457.0,
+        "n": 20181,
+        "bad": 1525,
+        "bad_rate": 0.0756,
+        "woe": 0.0714,
+        "iv": 0.000407
+      },
+      {
+        "bin": "4.0",
+        "order": -1870.0,
+        "n": 20187,
+        "bad": 1705,
+        "bad_rate": 0.0845,
+        "woe": -0.0495,
+        "iv": 0.000204
+      },
+      {
+        "bin": "5.0",
+        "order": -1442.0,
+        "n": 20212,
+        "bad": 1913,
+        "bad_rate": 0.0946,
+        "woe": -0.1745,
+        "iv": 0.002689
+      },
+      {
+        "bin": "6.0",
+        "order": -1079.0,
+        "n": 20187,
+        "bad": 2082,
+        "bad_rate": 0.1031,
+        "woe": -0.2698,
+        "iv": 0.006685
+      },
+      {
+        "bin": "7.0",
+        "order": -766.0,
+        "n": 20166,
+        "bad": 2204,
+        "bad_rate": 0.1093,
+        "woe": -0.3347,
+        "iv": 0.01056
+      },
+      {
+        "bin": "8.0",
+        "order": -467.0,
+        "n": 20193,
+        "bad": 2347,
+        "bad_rate": 0.1162,
+        "woe": -0.404,
+        "iv": 0.015864
+      },
+      {
+        "bin": "9.0",
+        "order": -206.0,
+        "n": 20168,
+        "bad": 2224,
+        "bad_rate": 0.1103,
+        "woe": -0.3447,
+        "iv": 0.011251
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 44143,
+        "bad": 2370,
+        "bad_rate": 0.0537,
+        "woe": 0.4367,
+        "iv": 0.02855
+      }
+    ]
+  },
+  "DAYS_REGISTRATION": {
+    "type": "continuous",
+    "iv": 0.0274,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": -11427.0,
+        "n": 24605,
+        "bad": 1383,
+        "bad_rate": 0.0562,
+        "woe": 0.388,
+        "iv": 0.012823
+      },
+      {
+        "bin": "1",
+        "order": -9023.0,
+        "n": 24606,
+        "bad": 1628,
+        "bad_rate": 0.0662,
+        "woe": 0.2144,
+        "iv": 0.004209
+      },
+      {
+        "bin": "2",
+        "order": -7480.0,
+        "n": 24606,
+        "bad": 1772,
+        "bad_rate": 0.072,
+        "woe": 0.1234,
+        "iv": 0.001449
+      },
+      {
+        "bin": "3",
+        "order": -6104.0,
+        "n": 24607,
+        "bad": 1943,
+        "bad_rate": 0.079,
+        "woe": 0.0238,
+        "iv": 5.7e-05
+      },
+      {
+        "bin": "4",
+        "order": -4940.0,
+        "n": 24595,
+        "bad": 2143,
+        "bad_rate": 0.0871,
+        "woe": -0.0835,
+        "iv": 0.00072
+      },
+      {
+        "bin": "5",
+        "order": -4060.0,
+        "n": 24600,
+        "bad": 2137,
+        "bad_rate": 0.0869,
+        "woe": -0.0802,
+        "iv": 0.000664
+      },
+      {
+        "bin": "6",
+        "order": -3025.0,
+        "n": 24599,
+        "bad": 2175,
+        "bad_rate": 0.0884,
+        "woe": -0.0996,
+        "iv": 0.001032
+      },
+      {
+        "bin": "7",
+        "order": -2015.0,
+        "n": 24594,
+        "bad": 2076,
+        "bad_rate": 0.0844,
+        "woe": -0.0488,
+        "iv": 0.000242
+      },
+      {
+        "bin": "8",
+        "order": -1064.0,
+        "n": 24623,
+        "bad": 2195,
+        "bad_rate": 0.0891,
+        "woe": -0.1086,
+        "iv": 0.001232
+      },
+      {
+        "bin": "9",
+        "order": -330.0,
+        "n": 24573,
+        "bad": 2408,
+        "bad_rate": 0.098,
+        "woe": -0.2129,
+        "iv": 0.004948
+      }
+    ]
+  },
+  "DAYS_ID_PUBLISH": {
+    "type": "continuous",
+    "iv": 0.0359,
+    "monotonic": true,
+    "direction": "increasing",
+    "bins": [
+      {
+        "bin": "0",
+        "order": -4942.0,
+        "n": 24624,
+        "bad": 1477,
+        "bad_rate": 0.06,
+        "woe": 0.3191,
+        "iv": 0.008928
+      },
+      {
+        "bin": "1",
+        "order": -4566.0,
+        "n": 24636,
+        "bad": 1531,
+        "bad_rate": 0.0621,
+        "woe": 0.2813,
+        "iv": 0.007055
+      },
+      {
+        "bin": "2",
+        "order": -4298.0,
+        "n": 24580,
+        "bad": 1620,
+        "bad_rate": 0.0659,
+        "woe": 0.2186,
+        "iv": 0.004361
+      },
+      {
+        "bin": "3",
+        "order": -4047.0,
+        "n": 24566,
+        "bad": 1878,
+        "bad_rate": 0.0764,
+        "woe": 0.0589,
+        "iv": 0.000339
+      },
+      {
+        "bin": "4",
+        "order": -3540.0,
+        "n": 24608,
+        "bad": 1936,
+        "bad_rate": 0.0787,
+        "woe": 0.0278,
+        "iv": 7.7e-05
+      },
+      {
+        "bin": "5",
+        "order": -2953.0,
+        "n": 24623,
+        "bad": 2079,
+        "bad_rate": 0.0844,
+        "woe": -0.0491,
+        "iv": 0.000245
+      },
+      {
+        "bin": "6",
+        "order": -2363.0,
+        "n": 24611,
+        "bad": 2192,
+        "bad_rate": 0.0891,
+        "woe": -0.1076,
+        "iv": 0.001209
+      },
+      {
+        "bin": "7",
+        "order": -1719.0,
+        "n": 24568,
+        "bad": 2258,
+        "bad_rate": 0.0919,
+        "woe": -0.1421,
+        "iv": 0.002138
+      },
+      {
+        "bin": "8",
+        "order": -1055.0,
+        "n": 24613,
+        "bad": 2406,
+        "bad_rate": 0.0978,
+        "woe": -0.2102,
+        "iv": 0.004825
+      },
+      {
+        "bin": "9",
+        "order": -376.0,
+        "n": 24579,
+        "bad": 2483,
+        "bad_rate": 0.101,
+        "woe": -0.2467,
+        "iv": 0.006741
+      }
+    ]
+  },
+  "OWN_CAR_AGE": {
+    "type": "continuous",
+    "iv": 0.0231,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 1.0,
+        "n": 10579,
+        "bad": 666,
+        "bad_rate": 0.063,
+        "woe": 0.2671,
+        "iv": 0.002751
+      },
+      {
+        "bin": "1.0",
+        "order": 3.0,
+        "n": 9566,
+        "bad": 500,
+        "bad_rate": 0.0523,
+        "woe": 0.4643,
+        "iv": 0.006923
+      },
+      {
+        "bin": "2.0",
+        "order": 6.0,
+        "n": 7922,
+        "bad": 417,
+        "bad_rate": 0.0526,
+        "woe": 0.4566,
+        "iv": 0.005566
+      },
+      {
+        "bin": "3.0",
+        "order": 7.0,
+        "n": 5940,
+        "bad": 357,
+        "bad_rate": 0.0601,
+        "woe": 0.316,
+        "iv": 0.002121
+      },
+      {
+        "bin": "4.0",
+        "order": 8.0,
+        "n": 8707,
+        "bad": 582,
+        "bad_rate": 0.0668,
+        "woe": 0.203,
+        "iv": 0.001344
+      },
+      {
+        "bin": "5.0",
+        "order": 11.0,
+        "n": 10585,
+        "bad": 808,
+        "bad_rate": 0.0763,
+        "woe": 0.0602,
+        "iv": 0.000153
+      },
+      {
+        "bin": "6.0",
+        "order": 14.0,
+        "n": 7345,
+        "bad": 647,
+        "bad_rate": 0.0881,
+        "woe": -0.096,
+        "iv": 0.000284
+      },
+      {
+        "bin": "7.0",
+        "order": 16.0,
+        "n": 7828,
+        "bad": 696,
+        "bad_rate": 0.0889,
+        "woe": -0.1061,
+        "iv": 0.000372
+      },
+      {
+        "bin": "8.0",
+        "order": 20.0,
+        "n": 6840,
+        "bad": 648,
+        "bad_rate": 0.0947,
+        "woe": -0.176,
+        "iv": 0.000924
+      },
+      {
+        "bin": "9.0",
+        "order": 30.0,
+        "n": 8278,
+        "bad": 760,
+        "bad_rate": 0.0918,
+        "woe": -0.1413,
+        "iv": 0.00071
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 162418,
+        "bad": 13779,
+        "bad_rate": 0.0848,
+        "woe": -0.0541,
+        "iv": 0.001978
+      }
+    ]
+  },
+  "FLAG_MOBIL": {
+    "type": "nominal",
+    "iv": -0.0,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Other",
+        "order": 0.0,
+        "n": 1,
+        "bad": 0,
+        "bad_rate": 0.0,
+        "woe": -1.3339,
+        "iv": -6e-06
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 246007,
+        "bad": 19860,
+        "bad_rate": 0.0807,
+        "woe": -0.0,
+        "iv": 0.0
+      }
+    ]
+  },
+  "FLAG_EMP_PHONE": {
+    "type": "nominal",
+    "iv": 0.0336,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 44154,
+        "bad": 2371,
+        "bad_rate": 0.0537,
+        "woe": 0.4365,
+        "iv": 0.028535
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 201854,
+        "bad": 17489,
+        "bad_rate": 0.0866,
+        "woe": -0.0772,
+        "iv": 0.005044
+      }
+    ]
+  },
+  "FLAG_WORK_PHONE": {
+    "type": "nominal",
+    "iv": 0.0102,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 196885,
+        "bad": 15136,
+        "bad_rate": 0.0769,
+        "woe": 0.053,
+        "iv": 0.002203
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 49123,
+        "bad": 4724,
+        "bad_rate": 0.0962,
+        "woe": -0.192,
+        "iv": 0.007976
+      }
+    ]
+  },
+  "FLAG_CONT_MOBILE": {
+    "type": "nominal",
+    "iv": 0.0,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Other",
+        "order": 0.0,
+        "n": 462,
+        "bad": 42,
+        "bad_rate": 0.0909,
+        "woe": -0.1405,
+        "iv": 3.6e-05
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 245546,
+        "bad": 19818,
+        "bad_rate": 0.0807,
+        "woe": 0.0002,
+        "iv": 0.0
+      }
+    ]
+  },
+  "FLAG_PHONE": {
+    "type": "nominal",
+    "iv": 0.0079,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 176894,
+        "bad": 14998,
+        "bad_rate": 0.0848,
+        "woe": -0.0535,
+        "iv": 0.002102
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 69114,
+        "bad": 4862,
+        "bad_rate": 0.0703,
+        "woe": 0.1488,
+        "iv": 0.005847
+      }
+    ]
+  },
+  "FLAG_EMAIL": {
+    "type": "nominal",
+    "iv": 0.0,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 232051,
+        "bad": 18742,
+        "bad_rate": 0.0808,
+        "woe": -0.0005,
+        "iv": 0.0
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 13957,
+        "bad": 1118,
+        "bad_rate": 0.0801,
+        "woe": 0.0081,
+        "iv": 4e-06
+      }
+    ]
+  },
+  "OCCUPATION_TYPE": {
+    "type": "nominal",
+    "iv": 0.0832,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Accountants",
+        "order": NaN,
+        "n": 7882,
+        "bad": 365,
+        "bad_rate": 0.0463,
+        "woe": 0.5912,
+        "iv": 0.008786
+      },
+      {
+        "bin": "Cleaning staff",
+        "order": NaN,
+        "n": 3741,
+        "bad": 357,
+        "bad_rate": 0.0954,
+        "woe": -0.1847,
+        "iv": 0.000556
+      },
+      {
+        "bin": "Cooking staff",
+        "order": NaN,
+        "n": 4767,
+        "bad": 501,
+        "bad_rate": 0.1051,
+        "woe": -0.2915,
+        "iv": 0.001855
+      },
+      {
+        "bin": "Core staff",
+        "order": NaN,
+        "n": 22093,
+        "bad": 1410,
+        "bad_rate": 0.0638,
+        "woe": 0.2529,
+        "iv": 0.005175
+      },
+      {
+        "bin": "Drivers",
+        "order": NaN,
+        "n": 14944,
+        "bad": 1683,
+        "bad_rate": 0.1126,
+        "woe": -0.3685,
+        "iv": 0.009619
+      },
+      {
+        "bin": "High skill tech staff",
+        "order": NaN,
+        "n": 9093,
+        "bad": 571,
+        "bad_rate": 0.0628,
+        "woe": 0.2697,
+        "iv": 0.002409
+      },
+      {
+        "bin": "Laborers",
+        "order": NaN,
+        "n": 44259,
+        "bad": 4657,
+        "bad_rate": 0.1052,
+        "woe": -0.2921,
+        "iv": 0.017342
+      },
+      {
+        "bin": "Low-skill Laborers",
+        "order": NaN,
+        "n": 1696,
+        "bad": 307,
+        "bad_rate": 0.181,
+        "woe": -0.9243,
+        "iv": 0.008611
+      },
+      {
+        "bin": "Managers",
+        "order": NaN,
+        "n": 17096,
+        "bad": 1064,
+        "bad_rate": 0.0622,
+        "woe": 0.2796,
+        "iv": 0.004842
+      },
+      {
+        "bin": "Medicine staff",
+        "order": NaN,
+        "n": 6871,
+        "bad": 480,
+        "bad_rate": 0.0699,
+        "woe": 0.1554,
+        "iv": 0.000636
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 76940,
+        "bad": 4995,
+        "bad_rate": 0.0649,
+        "woe": 0.2349,
+        "iv": 0.015649
+      },
+      {
+        "bin": "Other",
+        "order": NaN,
+        "n": 1461,
+        "bad": 105,
+        "bad_rate": 0.0719,
+        "woe": 0.1215,
+        "iv": 8.6e-05
+      },
+      {
+        "bin": "Private service staff",
+        "order": NaN,
+        "n": 2094,
+        "bad": 138,
+        "bad_rate": 0.0659,
+        "woe": 0.2156,
+        "iv": 0.000367
+      },
+      {
+        "bin": "Sales staff",
+        "order": NaN,
+        "n": 25606,
+        "bad": 2458,
+        "bad_rate": 0.096,
+        "woe": -0.1901,
+        "iv": 0.00407
+      },
+      {
+        "bin": "Secretaries",
+        "order": NaN,
+        "n": 1047,
+        "bad": 75,
+        "bad_rate": 0.0716,
+        "woe": 0.1233,
+        "iv": 6.4e-05
+      },
+      {
+        "bin": "Security staff",
+        "order": NaN,
+        "n": 5372,
+        "bad": 574,
+        "bad_rate": 0.1069,
+        "woe": -0.3099,
+        "iv": 0.002382
+      },
+      {
+        "bin": "Waiters/barmen staff",
+        "order": NaN,
+        "n": 1046,
+        "bad": 120,
+        "bad_rate": 0.1147,
+        "woe": -0.3927,
+        "iv": 0.000765
+      }
+    ]
+  },
+  "CNT_FAM_MEMBERS": {
+    "type": "ordinal",
+    "iv": 0.0066,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "1.0",
+        "order": 1.0,
+        "n": 54250,
+        "bad": 4559,
+        "bad_rate": 0.084,
+        "woe": -0.0439,
+        "iv": 0.000431
+      },
+      {
+        "bin": "2.0",
+        "order": 2.0,
+        "n": 126652,
+        "bad": 9541,
+        "bad_rate": 0.0753,
+        "woe": 0.075,
+        "iv": 0.002808
+      },
+      {
+        "bin": "3.0",
+        "order": 3.0,
+        "n": 42312,
+        "bad": 3743,
+        "bad_rate": 0.0885,
+        "woe": -0.1,
+        "iv": 0.001793
+      },
+      {
+        "bin": "4.0",
+        "order": 4.0,
+        "n": 19637,
+        "bad": 1709,
+        "bad_rate": 0.087,
+        "woe": -0.0823,
+        "iv": 0.000558
+      },
+      {
+        "bin": "5.0",
+        "order": 5.0,
+        "n": 2746,
+        "bad": 251,
+        "bad_rate": 0.0914,
+        "woe": -0.1377,
+        "iv": 0.000221
+      },
+      {
+        "bin": "Other",
+        "order": 6.0,
+        "n": 409,
+        "bad": 57,
+        "bad_rate": 0.1394,
+        "woe": -0.6192,
+        "iv": 0.000813
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 2,
+        "bad": 0,
+        "bad_rate": 0.0,
+        "woe": -0.823,
+        "iv": -7e-06
+      }
+    ]
+  },
+  "REGION_RATING_CLIENT": {
+    "type": "ordinal",
+    "iv": 0.0482,
+    "monotonic": true,
+    "direction": "increasing",
+    "bins": [
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 25755,
+        "bad": 1249,
+        "bad_rate": 0.0485,
+        "woe": 0.5437,
+        "iv": 0.024724
+      },
+      {
+        "bin": "2",
+        "order": 2.0,
+        "n": 181631,
+        "bad": 14313,
+        "bad_rate": 0.0788,
+        "woe": 0.0262,
+        "iv": 0.000502
+      },
+      {
+        "bin": "3",
+        "order": 3.0,
+        "n": 38622,
+        "bad": 4298,
+        "bad_rate": 0.1113,
+        "woe": -0.3549,
+        "iv": 0.022939
+      }
+    ]
+  },
+  "REGION_RATING_CLIENT_W_CITY": {
+    "type": "ordinal",
+    "iv": 0.0516,
+    "monotonic": true,
+    "direction": "increasing",
+    "bins": [
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 27323,
+        "bad": 1330,
+        "bad_rate": 0.0487,
+        "woe": 0.5398,
+        "iv": 0.025894
+      },
+      {
+        "bin": "2",
+        "order": 2.0,
+        "n": 183622,
+        "bad": 14511,
+        "bad_rate": 0.079,
+        "woe": 0.0231,
+        "iv": 0.000396
+      },
+      {
+        "bin": "3",
+        "order": 3.0,
+        "n": 35063,
+        "bad": 4019,
+        "bad_rate": 0.1146,
+        "woe": -0.3882,
+        "iv": 0.025271
+      }
+    ]
+  },
+  "WEEKDAY_APPR_PROCESS_START": {
+    "type": "nominal",
+    "iv": 0.0007,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "FRIDAY",
+        "order": NaN,
+        "n": 40241,
+        "bad": 3302,
+        "bad_rate": 0.0821,
+        "woe": -0.0179,
+        "iv": 5.2e-05
+      },
+      {
+        "bin": "MONDAY",
+        "order": NaN,
+        "n": 40590,
+        "bad": 3141,
+        "bad_rate": 0.0774,
+        "woe": 0.0458,
+        "iv": 0.000341
+      },
+      {
+        "bin": "SATURDAY",
+        "order": NaN,
+        "n": 27104,
+        "bad": 2129,
+        "bad_rate": 0.0785,
+        "woe": 0.0295,
+        "iv": 9.6e-05
+      },
+      {
+        "bin": "SUNDAY",
+        "order": NaN,
+        "n": 12961,
+        "bad": 1061,
+        "bad_rate": 0.0819,
+        "woe": -0.0156,
+        "iv": 1.3e-05
+      },
+      {
+        "bin": "THURSDAY",
+        "order": NaN,
+        "n": 40461,
+        "bad": 3242,
+        "bad_rate": 0.0801,
+        "woe": 0.008,
+        "iv": 1.1e-05
+      },
+      {
+        "bin": "TUESDAY",
+        "order": NaN,
+        "n": 43167,
+        "bad": 3582,
+        "bad_rate": 0.083,
+        "woe": -0.0301,
+        "iv": 0.00016
+      },
+      {
+        "bin": "WEDNESDAY",
+        "order": NaN,
+        "n": 41484,
+        "bad": 3403,
+        "bad_rate": 0.082,
+        "woe": -0.0176,
+        "iv": 5.2e-05
+      }
+    ]
+  },
+  "HOUR_APPR_PROCESS_START": {
+    "type": "continuous",
+    "iv": 0.0109,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 7.0,
+        "n": 30029,
+        "bad": 2951,
+        "bad_rate": 0.0983,
+        "woe": -0.2161,
+        "iv": 0.006234
+      },
+      {
+        "bin": "1",
+        "order": 9.0,
+        "n": 21887,
+        "bad": 1780,
+        "bad_rate": 0.0813,
+        "woe": -0.0083,
+        "iv": 6e-06
+      },
+      {
+        "bin": "2",
+        "order": 10.0,
+        "n": 30240,
+        "bad": 2437,
+        "bad_rate": 0.0806,
+        "woe": 0.0017,
+        "iv": 0.0
+      },
+      {
+        "bin": "3",
+        "order": 11.0,
+        "n": 29781,
+        "bad": 2437,
+        "bad_rate": 0.0818,
+        "woe": -0.0149,
+        "iv": 2.7e-05
+      },
+      {
+        "bin": "4",
+        "order": 12.0,
+        "n": 27318,
+        "bad": 2246,
+        "bad_rate": 0.0822,
+        "woe": -0.0201,
+        "iv": 4.5e-05
+      },
+      {
+        "bin": "5",
+        "order": 13.0,
+        "n": 24807,
+        "bad": 2000,
+        "bad_rate": 0.0806,
+        "woe": 0.0012,
+        "iv": 0.0
+      },
+      {
+        "bin": "6",
+        "order": 14.0,
+        "n": 22156,
+        "bad": 1731,
+        "bad_rate": 0.0781,
+        "woe": 0.0353,
+        "iv": 0.000111
+      },
+      {
+        "bin": "7",
+        "order": 15.0,
+        "n": 19897,
+        "bad": 1493,
+        "bad_rate": 0.075,
+        "woe": 0.079,
+        "iv": 0.00049
+      },
+      {
+        "bin": "8",
+        "order": 16.0,
+        "n": 16275,
+        "bad": 1188,
+        "bad_rate": 0.073,
+        "woe": 0.1087,
+        "iv": 0.000749
+      },
+      {
+        "bin": "9",
+        "order": 17.0,
+        "n": 23618,
+        "bad": 1597,
+        "bad_rate": 0.0676,
+        "woe": 0.1911,
+        "iv": 0.003241
+      }
+    ]
+  },
+  "REG_REGION_NOT_LIVE_REGION": {
+    "type": "nominal",
+    "iv": 0.0003,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 242313,
+        "bad": 19523,
+        "bad_rate": 0.0806,
+        "woe": 0.0021,
+        "iv": 5e-06
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 3695,
+        "bad": 337,
+        "bad_rate": 0.0912,
+        "woe": -0.1348,
+        "iv": 0.000286
+      }
+    ]
+  },
+  "REG_REGION_NOT_WORK_REGION": {
+    "type": "nominal",
+    "iv": 0.0006,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 233424,
+        "bad": 18745,
+        "bad_rate": 0.0803,
+        "woe": 0.0057,
+        "iv": 3.1e-05
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 12584,
+        "bad": 1115,
+        "bad_rate": 0.0886,
+        "woe": -0.1021,
+        "iv": 0.000554
+      }
+    ]
+  },
+  "LIVE_REGION_NOT_WORK_REGION": {
+    "type": "nominal",
+    "iv": 0.0001,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 235879,
+        "bad": 19007,
+        "bad_rate": 0.0806,
+        "woe": 0.002,
+        "iv": 4e-06
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 10129,
+        "bad": 853,
+        "bad_rate": 0.0842,
+        "woe": -0.0466,
+        "iv": 9e-05
+      }
+    ]
+  },
+  "REG_CITY_NOT_LIVE_CITY": {
+    "type": "nominal",
+    "iv": 0.0235,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 226845,
+        "bad": 17493,
+        "bad_rate": 0.0771,
+        "woe": 0.0497,
+        "iv": 0.002233
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 19163,
+        "bad": 2367,
+        "bad_rate": 0.1235,
+        "woe": -0.4731,
+        "iv": 0.021251
+      }
+    ]
+  },
+  "REG_CITY_NOT_WORK_CITY": {
+    "type": "nominal",
+    "iv": 0.033,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 189169,
+        "bad": 13812,
+        "bad_rate": 0.073,
+        "woe": 0.1088,
+        "iv": 0.008695
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 56839,
+        "bad": 6048,
+        "bad_rate": 0.1064,
+        "woe": -0.3046,
+        "iv": 0.024347
+      }
+    ]
+  },
+  "LIVE_CITY_NOT_WORK_CITY": {
+    "type": "nominal",
+    "iv": 0.0139,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 201638,
+        "bad": 15419,
+        "bad_rate": 0.0765,
+        "woe": 0.0588,
+        "iv": 0.002767
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 44370,
+        "bad": 4441,
+        "bad_rate": 0.1001,
+        "woe": -0.2364,
+        "iv": 0.011122
+      }
+    ]
+  },
+  "ORGANIZATION_TYPE": {
+    "type": "nominal",
+    "iv": 0.0682,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Agriculture",
+        "order": NaN,
+        "n": 1975,
+        "bad": 213,
+        "bad_rate": 0.1078,
+        "woe": -0.3216,
+        "iv": 0.000944
+      },
+      {
+        "bin": "Bank",
+        "order": NaN,
+        "n": 2000,
+        "bad": 110,
+        "bad_rate": 0.055,
+        "woe": 0.4071,
+        "iv": 0.001147
+      },
+      {
+        "bin": "Business Entity Type 1",
+        "order": NaN,
+        "n": 4820,
+        "bad": 388,
+        "bad_rate": 0.0805,
+        "woe": 0.0019,
+        "iv": 0.0
+      },
+      {
+        "bin": "Business Entity Type 2",
+        "order": NaN,
+        "n": 8431,
+        "bad": 728,
+        "bad_rate": 0.0863,
+        "woe": -0.074,
+        "iv": 0.000192
+      },
+      {
+        "bin": "Business Entity Type 3",
+        "order": NaN,
+        "n": 54436,
+        "bad": 5048,
+        "bad_rate": 0.0927,
+        "woe": -0.1519,
+        "iv": 0.005435
+      },
+      {
+        "bin": "Construction",
+        "order": NaN,
+        "n": 5399,
+        "bad": 645,
+        "bad_rate": 0.1195,
+        "woe": -0.4357,
+        "iv": 0.004991
+      },
+      {
+        "bin": "Government",
+        "order": NaN,
+        "n": 8341,
+        "bad": 573,
+        "bad_rate": 0.0687,
+        "woe": 0.1736,
+        "iv": 0.000954
+      },
+      {
+        "bin": "Housing",
+        "order": NaN,
+        "n": 2371,
+        "bad": 187,
+        "bad_rate": 0.0789,
+        "woe": 0.0229,
+        "iv": 6e-06
+      },
+      {
+        "bin": "Industry: type 11",
+        "order": NaN,
+        "n": 2169,
+        "bad": 181,
+        "bad_rate": 0.0834,
+        "woe": -0.0386,
+        "iv": 1.2e-05
+      },
+      {
+        "bin": "Industry: type 3",
+        "order": NaN,
+        "n": 2650,
+        "bad": 286,
+        "bad_rate": 0.1079,
+        "woe": -0.3219,
+        "iv": 0.001271
+      },
+      {
+        "bin": "Industry: type 7",
+        "order": NaN,
+        "n": 1045,
+        "bad": 81,
+        "bad_rate": 0.0775,
+        "woe": 0.0385,
+        "iv": 7e-06
+      },
+      {
+        "bin": "Industry: type 9",
+        "order": NaN,
+        "n": 2720,
+        "bad": 181,
+        "bad_rate": 0.0665,
+        "woe": 0.206,
+        "iv": 0.000435
+      },
+      {
+        "bin": "Kindergarten",
+        "order": NaN,
+        "n": 5552,
+        "bad": 396,
+        "bad_rate": 0.0713,
+        "woe": 0.1329,
+        "iv": 0.00038
+      },
+      {
+        "bin": "Medicine",
+        "order": NaN,
+        "n": 8985,
+        "bad": 606,
+        "bad_rate": 0.0674,
+        "woe": 0.1934,
+        "iv": 0.001264
+      },
+      {
+        "bin": "Military",
+        "order": NaN,
+        "n": 2113,
+        "bad": 104,
+        "bad_rate": 0.0492,
+        "woe": 0.524,
+        "iv": 0.001911
+      },
+      {
+        "bin": "Other",
+        "order": NaN,
+        "n": 22885,
+        "bad": 1820,
+        "bad_rate": 0.0795,
+        "woe": 0.016,
+        "iv": 2.4e-05
+      },
+      {
+        "bin": "Police",
+        "order": NaN,
+        "n": 1861,
+        "bad": 92,
+        "bad_rate": 0.0494,
+        "woe": 0.5188,
+        "iv": 0.001655
+      },
+      {
+        "bin": "Postal",
+        "order": NaN,
+        "n": 1738,
+        "bad": 140,
+        "bad_rate": 0.0806,
+        "woe": -0.0009,
+        "iv": -0.0
+      },
+      {
+        "bin": "Restaurant",
+        "order": NaN,
+        "n": 1442,
+        "bad": 168,
+        "bad_rate": 0.1165,
+        "woe": -0.4091,
+        "iv": 0.001156
+      },
+      {
+        "bin": "School",
+        "order": NaN,
+        "n": 7179,
+        "bad": 419,
+        "bad_rate": 0.0584,
+        "woe": 0.3473,
+        "iv": 0.003054
+      },
+      {
+        "bin": "Security",
+        "order": NaN,
+        "n": 2607,
+        "bad": 274,
+        "bad_rate": 0.1051,
+        "woe": -0.2923,
+        "iv": 0.001017
+      },
+      {
+        "bin": "Security Ministries",
+        "order": NaN,
+        "n": 1598,
+        "bad": 81,
+        "bad_rate": 0.0507,
+        "woe": 0.4917,
+        "iv": 0.001293
+      },
+      {
+        "bin": "Self-employed",
+        "order": NaN,
+        "n": 30572,
+        "bad": 3122,
+        "bad_rate": 0.1021,
+        "woe": -0.2587,
+        "iv": 0.009268
+      },
+      {
+        "bin": "Services",
+        "order": NaN,
+        "n": 1255,
+        "bad": 80,
+        "bad_rate": 0.0637,
+        "woe": 0.2487,
+        "iv": 0.00029
+      },
+      {
+        "bin": "Trade: type 2",
+        "order": NaN,
+        "n": 1523,
+        "bad": 104,
+        "bad_rate": 0.0683,
+        "woe": 0.1764,
+        "iv": 0.000183
+      },
+      {
+        "bin": "Trade: type 3",
+        "order": NaN,
+        "n": 2800,
+        "bad": 286,
+        "bad_rate": 0.1021,
+        "woe": -0.2604,
+        "iv": 0.000855
+      },
+      {
+        "bin": "Trade: type 7",
+        "order": NaN,
+        "n": 6264,
+        "bad": 591,
+        "bad_rate": 0.0943,
+        "woe": -0.1716,
+        "iv": 0.000802
+      },
+      {
+        "bin": "Transport: type 2",
+        "order": NaN,
+        "n": 1769,
+        "bad": 139,
+        "bad_rate": 0.0786,
+        "woe": 0.0261,
+        "iv": 5e-06
+      },
+      {
+        "bin": "Transport: type 4",
+        "order": NaN,
+        "n": 4311,
+        "bad": 392,
+        "bad_rate": 0.0909,
+        "woe": -0.1313,
+        "iv": 0.000316
+      },
+      {
+        "bin": "University",
+        "order": NaN,
+        "n": 1054,
+        "bad": 55,
+        "bad_rate": 0.0522,
+        "woe": 0.4584,
+        "iv": 0.000755
+      },
+      {
+        "bin": "XNA",
+        "order": NaN,
+        "n": 44143,
+        "bad": 2370,
+        "bad_rate": 0.0537,
+        "woe": 0.4367,
+        "iv": 0.02855
+      }
+    ]
+  },
+  "EXT_SOURCE_1": {
+    "type": "continuous",
+    "iv": 0.1512,
+    "monotonic": true,
+    "direction": "decreasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.15748214874744074,
+        "n": 10742,
+        "bad": 1870,
+        "bad_rate": 0.1741,
+        "woe": -0.8757,
+        "iv": 0.048102
+      },
+      {
+        "bin": "1.0",
+        "order": 0.2557826569331369,
+        "n": 10741,
+        "bad": 1250,
+        "bad_rate": 0.1164,
+        "woe": -0.4056,
+        "iv": 0.008507
+      },
+      {
+        "bin": "2.0",
+        "order": 0.3331053575230627,
+        "n": 10741,
+        "bad": 981,
+        "bad_rate": 0.0913,
+        "woe": -0.1355,
+        "iv": 0.000845
+      },
+      {
+        "bin": "3.0",
+        "order": 0.4027374764204217,
+        "n": 10741,
+        "bad": 907,
+        "bad_rate": 0.0844,
+        "woe": -0.0495,
+        "iv": 0.000108
+      },
+      {
+        "bin": "4.0",
+        "order": 0.4716033305134611,
+        "n": 10742,
+        "bad": 732,
+        "bad_rate": 0.0681,
+        "woe": 0.1824,
+        "iv": 0.001351
+      },
+      {
+        "bin": "5.0",
+        "order": 0.5394750980716091,
+        "n": 10741,
+        "bad": 640,
+        "bad_rate": 0.0596,
+        "woe": 0.3257,
+        "iv": 0.004052
+      },
+      {
+        "bin": "6.0",
+        "order": 0.6060785115117138,
+        "n": 10741,
+        "bad": 555,
+        "bad_rate": 0.0517,
+        "woe": 0.4765,
+        "iv": 0.008146
+      },
+      {
+        "bin": "7.0",
+        "order": 0.6747810787301181,
+        "n": 10741,
+        "bad": 466,
+        "bad_rate": 0.0434,
+        "woe": 0.6598,
+        "iv": 0.014496
+      },
+      {
+        "bin": "8.0",
+        "order": 0.7465635318043905,
+        "n": 10741,
+        "bad": 367,
+        "bad_rate": 0.0342,
+        "woe": 0.9079,
+        "iv": 0.02487
+      },
+      {
+        "bin": "9.0",
+        "order": 0.8322336131762711,
+        "n": 10742,
+        "bad": 277,
+        "bad_rate": 0.0258,
+        "woe": 1.1975,
+        "iv": 0.038713
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 138595,
+        "bad": 11815,
+        "bad_rate": 0.0852,
+        "woe": -0.0594,
+        "iv": 0.002039
+      }
+    ]
+  },
+  "EXT_SOURCE_2": {
+    "type": "continuous",
+    "iv": 0.3031,
+    "monotonic": true,
+    "direction": "decreasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.13230438600526426,
+        "n": 24548,
+        "bad": 4487,
+        "bad_rate": 0.1828,
+        "woe": -0.935,
+        "iv": 0.128301
+      },
+      {
+        "bin": "1.0",
+        "order": 0.27903061841589993,
+        "n": 24548,
+        "bad": 2970,
+        "bad_rate": 0.121,
+        "woe": -0.4495,
+        "iv": 0.024333
+      },
+      {
+        "bin": "2.0",
+        "order": 0.3921550461520014,
+        "n": 24547,
+        "bad": 2423,
+        "bad_rate": 0.0987,
+        "woe": -0.221,
+        "iv": 0.005343
+      },
+      {
+        "bin": "3.0",
+        "order": 0.4789885843493712,
+        "n": 24549,
+        "bad": 2065,
+        "bad_rate": 0.0841,
+        "woe": -0.045,
+        "iv": 0.000205
+      },
+      {
+        "bin": "4.0",
+        "order": 0.5409010676003011,
+        "n": 24551,
+        "bad": 1833,
+        "bad_rate": 0.0747,
+        "woe": 0.0845,
+        "iv": 0.000689
+      },
+      {
+        "bin": "5.0",
+        "order": 0.588127627256636,
+        "n": 24543,
+        "bad": 1611,
+        "bad_rate": 0.0656,
+        "woe": 0.2229,
+        "iv": 0.004522
+      },
+      {
+        "bin": "6.0",
+        "order": 0.6274409844037747,
+        "n": 24548,
+        "bad": 1437,
+        "bad_rate": 0.0585,
+        "woe": 0.3449,
+        "iv": 0.010292
+      },
+      {
+        "bin": "7.0",
+        "order": 0.6635975635165704,
+        "n": 24550,
+        "bad": 1234,
+        "bad_rate": 0.0503,
+        "woe": 0.506,
+        "iv": 0.020729
+      },
+      {
+        "bin": "8.0",
+        "order": 0.7007369389222671,
+        "n": 24547,
+        "bad": 1033,
+        "bad_rate": 0.0421,
+        "woe": 0.6922,
+        "iv": 0.035967
+      },
+      {
+        "bin": "9.0",
+        "order": 0.7478145679504539,
+        "n": 24546,
+        "bad": 726,
+        "bad_rate": 0.0296,
+        "woe": 1.0576,
+        "iv": 0.072733
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 531,
+        "bad": 41,
+        "bad_rate": 0.0772,
+        "woe": 0.0372,
+        "iv": 4e-06
+      }
+    ]
+  },
+  "EXT_SOURCE_3": {
+    "type": "continuous",
+    "iv": 0.3297,
+    "monotonic": true,
+    "direction": "decreasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.1547436312725944,
+        "n": 19723,
+        "bad": 3928,
+        "bad_rate": 0.1992,
+        "woe": -1.041,
+        "iv": 0.133188
+      },
+      {
+        "bin": "1.0",
+        "order": 0.2837118826350007,
+        "n": 19757,
+        "bad": 2523,
+        "bad_rate": 0.1277,
+        "woe": -0.5112,
+        "iv": 0.025986
+      },
+      {
+        "bin": "2.0",
+        "order": 0.3706496323299817,
+        "n": 20001,
+        "bad": 1956,
+        "bad_rate": 0.0978,
+        "woe": -0.2107,
+        "iv": 0.00394
+      },
+      {
+        "bin": "3.0",
+        "order": 0.4436153084085652,
+        "n": 19842,
+        "bad": 1576,
+        "bad_rate": 0.0794,
+        "woe": 0.0174,
+        "iv": 2.5e-05
+      },
+      {
+        "bin": "4.0",
+        "order": 0.5082869913916046,
+        "n": 19513,
+        "bad": 1206,
+        "bad_rate": 0.0618,
+        "woe": 0.2871,
+        "iv": 0.005807
+      },
+      {
+        "bin": "5.0",
+        "order": 0.5638350489514956,
+        "n": 19506,
+        "bad": 1042,
+        "bad_rate": 0.0534,
+        "woe": 0.4417,
+        "iv": 0.012889
+      },
+      {
+        "bin": "6.0",
+        "order": 0.6178261467332483,
+        "n": 20444,
+        "bad": 990,
+        "bad_rate": 0.0484,
+        "woe": 0.5451,
+        "iv": 0.01972
+      },
+      {
+        "bin": "7.0",
+        "order": 0.6706517530862718,
+        "n": 19808,
+        "bad": 812,
+        "bad_rate": 0.041,
+        "woe": 0.7194,
+        "iv": 0.031015
+      },
+      {
+        "bin": "8.0",
+        "order": 0.7209441499436497,
+        "n": 18902,
+        "bad": 657,
+        "bad_rate": 0.0348,
+        "woe": 0.8907,
+        "iv": 0.042396
+      },
+      {
+        "bin": "9.0",
+        "order": 0.7862666146611379,
+        "n": 19707,
+        "bad": 642,
+        "bad_rate": 0.0326,
+        "woe": 0.9578,
+        "iv": 0.049783
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 48805,
+        "bad": 4528,
+        "bad_rate": 0.0928,
+        "woe": -0.1524,
+        "iv": 0.004908
+      }
+    ]
+  },
+  "APARTMENTS_AVG": {
+    "type": "continuous",
+    "iv": 0.0321,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0093,
+        "n": 12402,
+        "bad": 1153,
+        "bad_rate": 0.093,
+        "woe": -0.155,
+        "iv": 0.001288
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0289,
+        "n": 11906,
+        "bad": 993,
+        "bad_rate": 0.0834,
+        "woe": -0.036,
+        "iv": 6.3e-05
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0588,
+        "n": 13198,
+        "bad": 894,
+        "bad_rate": 0.0677,
+        "woe": 0.189,
+        "iv": 0.001775
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0722,
+        "n": 11370,
+        "bad": 793,
+        "bad_rate": 0.0697,
+        "woe": 0.1575,
+        "iv": 0.001078
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0825,
+        "n": 12039,
+        "bad": 801,
+        "bad_rate": 0.0665,
+        "woe": 0.2081,
+        "iv": 0.001948
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0948,
+        "n": 11951,
+        "bad": 827,
+        "bad_rate": 0.0692,
+        "woe": 0.166,
+        "iv": 0.001253
+      },
+      {
+        "bin": "6.0",
+        "order": 0.1186,
+        "n": 12028,
+        "bad": 789,
+        "bad_rate": 0.0656,
+        "woe": 0.2233,
+        "iv": 0.002226
+      },
+      {
+        "bin": "7.0",
+        "order": 0.1485,
+        "n": 12207,
+        "bad": 788,
+        "bad_rate": 0.0646,
+        "woe": 0.2405,
+        "iv": 0.002601
+      },
+      {
+        "bin": "8.0",
+        "order": 0.2031,
+        "n": 12107,
+        "bad": 740,
+        "bad_rate": 0.0611,
+        "woe": 0.2987,
+        "iv": 0.003884
+      },
+      {
+        "bin": "9.0",
+        "order": 0.3278,
+        "n": 12068,
+        "bad": 683,
+        "bad_rate": 0.0566,
+        "woe": 0.3804,
+        "iv": 0.006068
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 124732,
+        "bad": 11399,
+        "bad_rate": 0.0914,
+        "woe": -0.1357,
+        "iv": 0.009883
+      }
+    ]
+  },
+  "BASEMENTAREA_AVG": {
+    "type": "continuous",
+    "iv": 0.0211,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 20441,
+        "bad": 1581,
+        "bad_rate": 0.0773,
+        "woe": 0.0462,
+        "iv": 0.000175
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0442,
+        "n": 10275,
+        "bad": 737,
+        "bad_rate": 0.0717,
+        "woe": 0.1273,
+        "iv": 0.000645
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0585,
+        "n": 10217,
+        "bad": 734,
+        "bad_rate": 0.0718,
+        "woe": 0.1256,
+        "iv": 0.000625
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0701,
+        "n": 10323,
+        "bad": 731,
+        "bad_rate": 0.0708,
+        "woe": 0.1412,
+        "iv": 0.000791
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0807,
+        "n": 10068,
+        "bad": 704,
+        "bad_rate": 0.0699,
+        "woe": 0.1547,
+        "iv": 0.000922
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0941,
+        "n": 10227,
+        "bad": 666,
+        "bad_rate": 0.0651,
+        "woe": 0.231,
+        "iv": 0.002019
+      },
+      {
+        "bin": "6.0",
+        "order": 0.1124,
+        "n": 10201,
+        "bad": 699,
+        "bad_rate": 0.0685,
+        "woe": 0.1765,
+        "iv": 0.001204
+      },
+      {
+        "bin": "7.0",
+        "order": 0.1428,
+        "n": 10212,
+        "bad": 629,
+        "bad_rate": 0.0616,
+        "woe": 0.2904,
+        "iv": 0.003108
+      },
+      {
+        "bin": "8.0",
+        "order": 0.2237,
+        "n": 10215,
+        "bad": 586,
+        "bad_rate": 0.0574,
+        "woe": 0.3659,
+        "iv": 0.004783
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 143829,
+        "bad": 12793,
+        "bad_rate": 0.0889,
+        "woe": -0.1059,
+        "iv": 0.006858
+      }
+    ]
+  },
+  "YEARS_BEGINEXPLUATATION_AVG": {
+    "type": "continuous",
+    "iv": 0.0284,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.9687,
+        "n": 12707,
+        "bad": 1038,
+        "bad_rate": 0.0817,
+        "woe": -0.0133,
+        "iv": 9e-06
+      },
+      {
+        "bin": "1.0",
+        "order": 0.9742,
+        "n": 12597,
+        "bad": 992,
+        "bad_rate": 0.0787,
+        "woe": 0.0265,
+        "iv": 3.6e-05
+      },
+      {
+        "bin": "2.0",
+        "order": 0.9767,
+        "n": 12652,
+        "bad": 902,
+        "bad_rate": 0.0713,
+        "woe": 0.134,
+        "iv": 0.000876
+      },
+      {
+        "bin": "3.0",
+        "order": 0.9791,
+        "n": 15478,
+        "bad": 1135,
+        "bad_rate": 0.0733,
+        "woe": 0.1037,
+        "iv": 0.000651
+      },
+      {
+        "bin": "4.0",
+        "order": 0.9811,
+        "n": 9611,
+        "bad": 679,
+        "bad_rate": 0.0706,
+        "woe": 0.1436,
+        "iv": 0.000762
+      },
+      {
+        "bin": "5.0",
+        "order": 0.9831,
+        "n": 15381,
+        "bad": 1075,
+        "bad_rate": 0.0699,
+        "woe": 0.1554,
+        "iv": 0.001419
+      },
+      {
+        "bin": "6.0",
+        "order": 0.9856,
+        "n": 13041,
+        "bad": 870,
+        "bad_rate": 0.0667,
+        "woe": 0.2053,
+        "iv": 0.002056
+      },
+      {
+        "bin": "7.0",
+        "order": 0.9871,
+        "n": 9943,
+        "bad": 690,
+        "bad_rate": 0.0694,
+        "woe": 0.1629,
+        "iv": 0.001005
+      },
+      {
+        "bin": "8.0",
+        "order": 0.9891,
+        "n": 12771,
+        "bad": 832,
+        "bad_rate": 0.0651,
+        "woe": 0.2307,
+        "iv": 0.002514
+      },
+      {
+        "bin": "9.0",
+        "order": 0.996,
+        "n": 11878,
+        "bad": 620,
+        "bad_rate": 0.0522,
+        "woe": 0.4659,
+        "iv": 0.008648
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 119949,
+        "bad": 11027,
+        "bad_rate": 0.0919,
+        "woe": -0.1422,
+        "iv": 0.010468
+      }
+    ]
+  },
+  "YEARS_BUILD_AVG": {
+    "type": "continuous",
+    "iv": 0.0169,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.5988,
+        "n": 9090,
+        "bad": 744,
+        "bad_rate": 0.0818,
+        "woe": -0.0156,
+        "iv": 9e-06
+      },
+      {
+        "bin": "1.0",
+        "order": 0.66,
+        "n": 8624,
+        "bad": 648,
+        "bad_rate": 0.0751,
+        "woe": 0.0771,
+        "iv": 0.000204
+      },
+      {
+        "bin": "2.0",
+        "order": 0.6940000000000001,
+        "n": 7211,
+        "bad": 488,
+        "bad_rate": 0.0677,
+        "woe": 0.1895,
+        "iv": 0.000977
+      },
+      {
+        "bin": "3.0",
+        "order": 0.7212,
+        "n": 8405,
+        "bad": 580,
+        "bad_rate": 0.069,
+        "woe": 0.1688,
+        "iv": 0.000911
+      },
+      {
+        "bin": "4.0",
+        "order": 0.7416,
+        "n": 8626,
+        "bad": 596,
+        "bad_rate": 0.0691,
+        "woe": 0.1674,
+        "iv": 0.000921
+      },
+      {
+        "bin": "5.0",
+        "order": 0.7756,
+        "n": 8306,
+        "bad": 593,
+        "bad_rate": 0.0714,
+        "woe": 0.1322,
+        "iv": 0.000561
+      },
+      {
+        "bin": "6.0",
+        "order": 0.8028,
+        "n": 8753,
+        "bad": 587,
+        "bad_rate": 0.0671,
+        "woe": 0.1994,
+        "iv": 0.001307
+      },
+      {
+        "bin": "7.0",
+        "order": 0.8232,
+        "n": 8783,
+        "bad": 601,
+        "bad_rate": 0.0684,
+        "woe": 0.1778,
+        "iv": 0.001052
+      },
+      {
+        "bin": "8.0",
+        "order": 0.8572,
+        "n": 6618,
+        "bad": 433,
+        "bad_rate": 0.0654,
+        "woe": 0.2256,
+        "iv": 0.001251
+      },
+      {
+        "bin": "9.0",
+        "order": 0.9524,
+        "n": 8049,
+        "bad": 424,
+        "bad_rate": 0.0527,
+        "woe": 0.4559,
+        "iv": 0.005638
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 163543,
+        "bad": 14166,
+        "bad_rate": 0.0866,
+        "woe": -0.0769,
+        "iv": 0.004057
+      }
+    ]
+  },
+  "COMMONAREA_AVG": {
+    "type": "continuous",
+    "iv": 0.0136,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 7433,
+        "bad": 499,
+        "bad_rate": 0.0671,
+        "woe": 0.1982,
+        "iv": 0.001097
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0029,
+        "n": 7491,
+        "bad": 637,
+        "bad_rate": 0.085,
+        "woe": -0.0574,
+        "iv": 0.000101
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0079,
+        "n": 7347,
+        "bad": 524,
+        "bad_rate": 0.0713,
+        "woe": 0.1332,
+        "iv": 0.000504
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0119,
+        "n": 7542,
+        "bad": 564,
+        "bad_rate": 0.0748,
+        "woe": 0.0822,
+        "iv": 0.000202
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0171,
+        "n": 7313,
+        "bad": 480,
+        "bad_rate": 0.0656,
+        "woe": 0.2223,
+        "iv": 0.001344
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0261,
+        "n": 7458,
+        "bad": 544,
+        "bad_rate": 0.0729,
+        "woe": 0.109,
+        "iv": 0.000347
+      },
+      {
+        "bin": "6.0",
+        "order": 0.0366,
+        "n": 7406,
+        "bad": 504,
+        "bad_rate": 0.0681,
+        "woe": 0.1836,
+        "iv": 0.000944
+      },
+      {
+        "bin": "7.0",
+        "order": 0.0518,
+        "n": 7375,
+        "bad": 515,
+        "bad_rate": 0.0698,
+        "woe": 0.1559,
+        "iv": 0.000686
+      },
+      {
+        "bin": "8.0",
+        "order": 0.0786,
+        "n": 7416,
+        "bad": 473,
+        "bad_rate": 0.0638,
+        "woe": 0.2529,
+        "iv": 0.001741
+      },
+      {
+        "bin": "9.0",
+        "order": 0.16055,
+        "n": 7416,
+        "bad": 420,
+        "bad_rate": 0.0566,
+        "woe": 0.3792,
+        "iv": 0.003712
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 171811,
+        "bad": 14700,
+        "bad_rate": 0.0856,
+        "woe": -0.0634,
+        "iv": 0.002882
+      }
+    ]
+  },
+  "ELEVATORS_AVG": {
+    "type": "continuous",
+    "iv": 0.0316,
+    "monotonic": true,
+    "direction": "decreasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 69159,
+        "bad": 5338,
+        "bad_rate": 0.0772,
+        "woe": 0.0487,
+        "iv": 0.000653
+      },
+      {
+        "bin": "1.0",
+        "order": 0.08,
+        "n": 12800,
+        "bad": 813,
+        "bad_rate": 0.0635,
+        "woe": 0.2578,
+        "iv": 0.003111
+      },
+      {
+        "bin": "2.0",
+        "order": 0.16,
+        "n": 13428,
+        "bad": 770,
+        "bad_rate": 0.0573,
+        "woe": 0.3666,
+        "iv": 0.006305
+      },
+      {
+        "bin": "3.0",
+        "order": 0.24,
+        "n": 9071,
+        "bad": 502,
+        "bad_rate": 0.0553,
+        "woe": 0.4039,
+        "iv": 0.005095
+      },
+      {
+        "bin": "4.0",
+        "order": 0.36,
+        "n": 10533,
+        "bad": 555,
+        "bad_rate": 0.0527,
+        "woe": 0.4558,
+        "iv": 0.007374
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 131017,
+        "bad": 11882,
+        "bad_rate": 0.0907,
+        "woe": -0.1273,
+        "iv": 0.009099
+      }
+    ]
+  },
+  "ENTRANCES_AVG": {
+    "type": "continuous",
+    "iv": 0.0271,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0345,
+        "n": 12538,
+        "bad": 982,
+        "bad_rate": 0.0783,
+        "woe": 0.0324,
+        "iv": 5.4e-05
+      },
+      {
+        "bin": "1.0",
+        "order": 0.069,
+        "n": 19378,
+        "bad": 1572,
+        "bad_rate": 0.0811,
+        "woe": -0.0056,
+        "iv": 2e-06
+      },
+      {
+        "bin": "2.0",
+        "order": 0.1034,
+        "n": 17703,
+        "bad": 1270,
+        "bad_rate": 0.0717,
+        "woe": 0.1274,
+        "iv": 0.001111
+      },
+      {
+        "bin": "3.0",
+        "order": 0.1379,
+        "n": 29324,
+        "bad": 1961,
+        "bad_rate": 0.0669,
+        "woe": 0.203,
+        "iv": 0.004518
+      },
+      {
+        "bin": "4.0",
+        "order": 0.1724,
+        "n": 9045,
+        "bad": 551,
+        "bad_rate": 0.0609,
+        "woe": 0.3021,
+        "iv": 0.002965
+      },
+      {
+        "bin": "5.0",
+        "order": 0.2069,
+        "n": 16289,
+        "bad": 1064,
+        "bad_rate": 0.0653,
+        "woe": 0.228,
+        "iv": 0.003134
+      },
+      {
+        "bin": "6.0",
+        "order": 0.2759,
+        "n": 10403,
+        "bad": 657,
+        "bad_rate": 0.0632,
+        "woe": 0.2637,
+        "iv": 0.002641
+      },
+      {
+        "bin": "7.0",
+        "order": 0.3793,
+        "n": 7553,
+        "bad": 461,
+        "bad_rate": 0.061,
+        "woe": 0.2998,
+        "iv": 0.002443
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 123775,
+        "bad": 11342,
+        "bad_rate": 0.0916,
+        "woe": -0.1387,
+        "iv": 0.010253
+      }
+    ]
+  },
+  "FLOORSMAX_AVG": {
+    "type": "continuous",
+    "iv": 0.0379,
+    "monotonic": true,
+    "direction": "decreasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0417,
+        "n": 14220,
+        "bad": 1326,
+        "bad_rate": 0.0932,
+        "woe": -0.1582,
+        "iv": 0.001543
+      },
+      {
+        "bin": "1.0",
+        "order": 0.1042,
+        "n": 11544,
+        "bad": 937,
+        "bad_rate": 0.0812,
+        "woe": -0.0064,
+        "iv": 2e-06
+      },
+      {
+        "bin": "2.0",
+        "order": 0.1667,
+        "n": 50118,
+        "bad": 3605,
+        "bad_rate": 0.0719,
+        "woe": 0.1248,
+        "iv": 0.003014
+      },
+      {
+        "bin": "3.0",
+        "order": 0.3333,
+        "n": 31000,
+        "bad": 1896,
+        "bad_rate": 0.0612,
+        "woe": 0.2984,
+        "iv": 0.009915
+      },
+      {
+        "bin": "4.0",
+        "order": 0.375,
+        "n": 7168,
+        "bad": 392,
+        "bad_rate": 0.0547,
+        "woe": 0.4162,
+        "iv": 0.004255
+      },
+      {
+        "bin": "5.0",
+        "order": 0.5417,
+        "n": 9661,
+        "bad": 476,
+        "bad_rate": 0.0493,
+        "woe": 0.5264,
+        "iv": 0.008764
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 122297,
+        "bad": 11228,
+        "bad_rate": 0.0918,
+        "woe": -0.1408,
+        "iv": 0.010449
+      }
+    ]
+  },
+  "FLOORSMIN_AVG": {
+    "type": "continuous",
+    "iv": 0.0188,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0417,
+        "n": 16216,
+        "bad": 1194,
+        "bad_rate": 0.0736,
+        "woe": 0.0993,
+        "iv": 0.000626
+      },
+      {
+        "bin": "1.0",
+        "order": 0.125,
+        "n": 10158,
+        "bad": 861,
+        "bad_rate": 0.0848,
+        "woe": -0.0537,
+        "iv": 0.00012
+      },
+      {
+        "bin": "2.0",
+        "order": 0.2083,
+        "n": 26613,
+        "bad": 1936,
+        "bad_rate": 0.0727,
+        "woe": 0.1125,
+        "iv": 0.001309
+      },
+      {
+        "bin": "3.0",
+        "order": 0.2812,
+        "n": 2609,
+        "bad": 143,
+        "bad_rate": 0.0548,
+        "woe": 0.4117,
+        "iv": 0.001525
+      },
+      {
+        "bin": "4.0",
+        "order": 0.375,
+        "n": 14448,
+        "bad": 882,
+        "bad_rate": 0.061,
+        "woe": 0.3001,
+        "iv": 0.004675
+      },
+      {
+        "bin": "5.0",
+        "order": 0.4167,
+        "n": 3520,
+        "bad": 194,
+        "bad_rate": 0.0551,
+        "woe": 0.4068,
+        "iv": 0.002009
+      },
+      {
+        "bin": "6.0",
+        "order": 0.5833,
+        "n": 5523,
+        "bad": 272,
+        "bad_rate": 0.0492,
+        "woe": 0.5261,
+        "iv": 0.005011
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 166921,
+        "bad": 14378,
+        "bad_rate": 0.0861,
+        "woe": -0.0708,
+        "iv": 0.003499
+      }
+    ]
+  },
+  "LANDAREA_AVG": {
+    "type": "continuous",
+    "iv": 0.0158,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 20127,
+        "bad": 1451,
+        "bad_rate": 0.0721,
+        "woe": 0.1222,
+        "iv": 0.001163
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0188,
+        "n": 9919,
+        "bad": 759,
+        "bad_rate": 0.0765,
+        "woe": 0.0575,
+        "iv": 0.000132
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0298,
+        "n": 10024,
+        "bad": 757,
+        "bad_rate": 0.0755,
+        "woe": 0.0718,
+        "iv": 0.000205
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0419,
+        "n": 9989,
+        "bad": 745,
+        "bad_rate": 0.0746,
+        "woe": 0.0852,
+        "iv": 0.000287
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0544,
+        "n": 9992,
+        "bad": 680,
+        "bad_rate": 0.0681,
+        "woe": 0.1838,
+        "iv": 0.001275
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0679,
+        "n": 9985,
+        "bad": 690,
+        "bad_rate": 0.0691,
+        "woe": 0.1674,
+        "iv": 0.001064
+      },
+      {
+        "bin": "6.0",
+        "order": 0.0858,
+        "n": 10014,
+        "bad": 659,
+        "bad_rate": 0.0658,
+        "woe": 0.2198,
+        "iv": 0.001799
+      },
+      {
+        "bin": "7.0",
+        "order": 0.1145,
+        "n": 9982,
+        "bad": 647,
+        "bad_rate": 0.0648,
+        "woe": 0.236,
+        "iv": 0.002053
+      },
+      {
+        "bin": "8.0",
+        "order": 0.1947,
+        "n": 9991,
+        "bad": 635,
+        "bad_rate": 0.0636,
+        "woe": 0.2569,
+        "iv": 0.002414
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 145985,
+        "bad": 12837,
+        "bad_rate": 0.0879,
+        "woe": -0.0934,
+        "iv": 0.00538
+      }
+    ]
+  },
+  "LIVINGAPARTMENTS_AVG": {
+    "type": "continuous",
+    "iv": 0.0163,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0101,
+        "n": 8408,
+        "bad": 738,
+        "bad_rate": 0.0878,
+        "woe": -0.092,
+        "iv": 0.000298
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0319,
+        "n": 7172,
+        "bad": 575,
+        "bad_rate": 0.0802,
+        "woe": 0.0067,
+        "iv": 1e-06
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0504,
+        "n": 8314,
+        "bad": 579,
+        "bad_rate": 0.0696,
+        "woe": 0.1589,
+        "iv": 0.000802
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0588,
+        "n": 7283,
+        "bad": 508,
+        "bad_rate": 0.0698,
+        "woe": 0.1571,
+        "iv": 0.000688
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0681,
+        "n": 9792,
+        "bad": 669,
+        "bad_rate": 0.0683,
+        "woe": 0.1796,
+        "iv": 0.001195
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0841,
+        "n": 5821,
+        "bad": 386,
+        "bad_rate": 0.0663,
+        "woe": 0.2111,
+        "iv": 0.00097
+      },
+      {
+        "bin": "6.0",
+        "order": 0.1,
+        "n": 7875,
+        "bad": 508,
+        "bad_rate": 0.0645,
+        "woe": 0.2409,
+        "iv": 0.001685
+      },
+      {
+        "bin": "7.0",
+        "order": 0.121,
+        "n": 7776,
+        "bad": 516,
+        "bad_rate": 0.0664,
+        "woe": 0.2106,
+        "iv": 0.001289
+      },
+      {
+        "bin": "8.0",
+        "order": 0.174,
+        "n": 7675,
+        "bad": 464,
+        "bad_rate": 0.0605,
+        "woe": 0.31,
+        "iv": 0.002642
+      },
+      {
+        "bin": "9.0",
+        "order": 0.2723,
+        "n": 7773,
+        "bad": 454,
+        "bad_rate": 0.0584,
+        "woe": 0.3466,
+        "iv": 0.003294
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 168119,
+        "bad": 14463,
+        "bad_rate": 0.086,
+        "woe": -0.0694,
+        "iv": 0.003386
+      }
+    ]
+  },
+  "LIVINGAREA_AVG": {
+    "type": "continuous",
+    "iv": 0.0328,
+    "monotonic": true,
+    "direction": "decreasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0082,
+        "n": 12303,
+        "bad": 1146,
+        "bad_rate": 0.0931,
+        "woe": -0.1571,
+        "iv": 0.001315
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0249,
+        "n": 12232,
+        "bad": 1015,
+        "bad_rate": 0.083,
+        "woe": -0.0304,
+        "iv": 4.6e-05
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0454,
+        "n": 12313,
+        "bad": 916,
+        "bad_rate": 0.0744,
+        "woe": 0.0881,
+        "iv": 0.000377
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0572,
+        "n": 12295,
+        "bad": 904,
+        "bad_rate": 0.0735,
+        "woe": 0.1008,
+        "iv": 0.000489
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0684,
+        "n": 12151,
+        "bad": 820,
+        "bad_rate": 0.0675,
+        "woe": 0.1929,
+        "iv": 0.001701
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0824,
+        "n": 12321,
+        "bad": 825,
+        "bad_rate": 0.067,
+        "woe": 0.2013,
+        "iv": 0.001871
+      },
+      {
+        "bin": "6.0",
+        "order": 0.1,
+        "n": 12185,
+        "bad": 795,
+        "bad_rate": 0.0652,
+        "woe": 0.2291,
+        "iv": 0.002368
+      },
+      {
+        "bin": "7.0",
+        "order": 0.1303,
+        "n": 12240,
+        "bad": 777,
+        "bad_rate": 0.0635,
+        "woe": 0.2584,
+        "iv": 0.002988
+      },
+      {
+        "bin": "8.0",
+        "order": 0.1905,
+        "n": 12267,
+        "bad": 713,
+        "bad_rate": 0.0581,
+        "woe": 0.3522,
+        "iv": 0.005349
+      },
+      {
+        "bin": "9.0",
+        "order": 0.3208,
+        "n": 12239,
+        "bad": 680,
+        "bad_rate": 0.0556,
+        "woe": 0.4,
+        "iv": 0.006748
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 123462,
+        "bad": 11269,
+        "bad_rate": 0.0913,
+        "woe": -0.1344,
+        "iv": 0.009582
+      }
+    ]
+  },
+  "NONLIVINGAPARTMENTS_AVG": {
+    "type": "continuous",
+    "iv": 0.011,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 45362,
+        "bad": 3140,
+        "bad_rate": 0.0692,
+        "woe": 0.1661,
+        "iv": 0.004749
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0039,
+        "n": 11267,
+        "bad": 820,
+        "bad_rate": 0.0728,
+        "woe": 0.1117,
+        "iv": 0.000548
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0077,
+        "n": 5907,
+        "bad": 424,
+        "bad_rate": 0.0718,
+        "woe": 0.1261,
+        "iv": 0.000365
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0116,
+        "n": 5599,
+        "bad": 383,
+        "bad_rate": 0.0684,
+        "woe": 0.1778,
+        "iv": 0.000672
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0309,
+        "n": 7144,
+        "bad": 457,
+        "bad_rate": 0.064,
+        "woe": 0.2497,
+        "iv": 0.001638
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 170729,
+        "bad": 14636,
+        "bad_rate": 0.0857,
+        "woe": -0.0655,
+        "iv": 0.003063
+      }
+    ]
+  },
+  "NONLIVINGAREA_AVG": {
+    "type": "continuous",
+    "iv": 0.0224,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 55388,
+        "bad": 3971,
+        "bad_rate": 0.0717,
+        "woe": 0.1284,
+        "iv": 0.003518
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0057,
+        "n": 10898,
+        "bad": 718,
+        "bad_rate": 0.0659,
+        "woe": 0.2186,
+        "iv": 0.001937
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0135,
+        "n": 11068,
+        "bad": 781,
+        "bad_rate": 0.0706,
+        "woe": 0.145,
+        "iv": 0.000894
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0281,
+        "n": 10979,
+        "bad": 782,
+        "bad_rate": 0.0712,
+        "woe": 0.1349,
+        "iv": 0.000771
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0559,
+        "n": 11020,
+        "bad": 721,
+        "bad_rate": 0.0654,
+        "woe": 0.226,
+        "iv": 0.002088
+      },
+      {
+        "bin": "5.0",
+        "order": 0.1286,
+        "n": 11031,
+        "bad": 647,
+        "bad_rate": 0.0587,
+        "woe": 0.3425,
+        "iv": 0.004568
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 135624,
+        "bad": 12240,
+        "bad_rate": 0.0902,
+        "woe": -0.1219,
+        "iv": 0.008623
+      }
+    ]
+  },
+  "APARTMENTS_MODE": {
+    "type": "continuous",
+    "iv": 0.0315,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0084,
+        "n": 13718,
+        "bad": 1264,
+        "bad_rate": 0.0921,
+        "woe": -0.1451,
+        "iv": 0.001244
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0284,
+        "n": 10893,
+        "bad": 885,
+        "bad_rate": 0.0812,
+        "woe": -0.0074,
+        "iv": 2e-06
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0588,
+        "n": 16255,
+        "bad": 1103,
+        "bad_rate": 0.0679,
+        "woe": 0.1872,
+        "iv": 0.002146
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0714,
+        "n": 8874,
+        "bad": 652,
+        "bad_rate": 0.0735,
+        "woe": 0.1013,
+        "iv": 0.000357
+      },
+      {
+        "bin": "4.0",
+        "order": 0.083,
+        "n": 12979,
+        "bad": 834,
+        "bad_rate": 0.0643,
+        "woe": 0.2454,
+        "iv": 0.002874
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0945,
+        "n": 10388,
+        "bad": 696,
+        "bad_rate": 0.067,
+        "woe": 0.2006,
+        "iv": 0.001567
+      },
+      {
+        "bin": "6.0",
+        "order": 0.1134,
+        "n": 13551,
+        "bad": 897,
+        "bad_rate": 0.0662,
+        "woe": 0.2137,
+        "iv": 0.002305
+      },
+      {
+        "bin": "7.0",
+        "order": 0.1481,
+        "n": 10396,
+        "bad": 656,
+        "bad_rate": 0.0631,
+        "woe": 0.2646,
+        "iv": 0.002656
+      },
+      {
+        "bin": "8.0",
+        "order": 0.1933,
+        "n": 12142,
+        "bad": 787,
+        "bad_rate": 0.0648,
+        "woe": 0.2361,
+        "iv": 0.002499
+      },
+      {
+        "bin": "9.0",
+        "order": 0.3193,
+        "n": 12080,
+        "bad": 687,
+        "bad_rate": 0.0569,
+        "woe": 0.3753,
+        "iv": 0.005924
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 124732,
+        "bad": 11399,
+        "bad_rate": 0.0914,
+        "woe": -0.1357,
+        "iv": 0.009883
+      }
+    ]
+  },
+  "BASEMENTAREA_MODE": {
+    "type": "continuous",
+    "iv": 0.0204,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 20463,
+        "bad": 1556,
+        "bad_rate": 0.076,
+        "woe": 0.0646,
+        "iv": 0.00034
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0407,
+        "n": 10251,
+        "bad": 745,
+        "bad_rate": 0.0727,
+        "woe": 0.1132,
+        "iv": 0.000512
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0566,
+        "n": 10201,
+        "bad": 664,
+        "bad_rate": 0.0651,
+        "woe": 0.2315,
+        "iv": 0.002022
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0678,
+        "n": 10200,
+        "bad": 726,
+        "bad_rate": 0.0712,
+        "woe": 0.1356,
+        "iv": 0.000724
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0813,
+        "n": 10248,
+        "bad": 735,
+        "bad_rate": 0.0717,
+        "woe": 0.1274,
+        "iv": 0.000644
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0928,
+        "n": 10208,
+        "bad": 676,
+        "bad_rate": 0.0662,
+        "woe": 0.213,
+        "iv": 0.001728
+      },
+      {
+        "bin": "6.0",
+        "order": 0.1125,
+        "n": 10172,
+        "bad": 699,
+        "bad_rate": 0.0687,
+        "woe": 0.1734,
+        "iv": 0.00116
+      },
+      {
+        "bin": "7.0",
+        "order": 0.1432,
+        "n": 10286,
+        "bad": 682,
+        "bad_rate": 0.0663,
+        "woe": 0.2117,
+        "iv": 0.001721
+      },
+      {
+        "bin": "8.0",
+        "order": 0.228,
+        "n": 10150,
+        "bad": 584,
+        "bad_rate": 0.0575,
+        "woe": 0.3628,
+        "iv": 0.004678
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 143829,
+        "bad": 12793,
+        "bad_rate": 0.0889,
+        "woe": -0.1059,
+        "iv": 0.006858
+      }
+    ]
+  },
+  "YEARS_BEGINEXPLUATATION_MODE": {
+    "type": "continuous",
+    "iv": 0.0283,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.9687,
+        "n": 13367,
+        "bad": 1099,
+        "bad_rate": 0.0822,
+        "woe": -0.0203,
+        "iv": 2.2e-05
+      },
+      {
+        "bin": "1.0",
+        "order": 0.9742,
+        "n": 13183,
+        "bad": 1028,
+        "bad_rate": 0.078,
+        "woe": 0.0372,
+        "iv": 7.4e-05
+      },
+      {
+        "bin": "2.0",
+        "order": 0.9767,
+        "n": 13002,
+        "bad": 923,
+        "bad_rate": 0.071,
+        "woe": 0.1386,
+        "iv": 0.000961
+      },
+      {
+        "bin": "3.0",
+        "order": 0.9791,
+        "n": 12352,
+        "bad": 878,
+        "bad_rate": 0.0711,
+        "woe": 0.1372,
+        "iv": 0.000895
+      },
+      {
+        "bin": "4.0",
+        "order": 0.9806,
+        "n": 12755,
+        "bad": 910,
+        "bad_rate": 0.0713,
+        "woe": 0.1332,
+        "iv": 0.000874
+      },
+      {
+        "bin": "5.0",
+        "order": 0.9831,
+        "n": 12012,
+        "bad": 837,
+        "bad_rate": 0.0697,
+        "woe": 0.1586,
+        "iv": 0.001153
+      },
+      {
+        "bin": "6.0",
+        "order": 0.9851,
+        "n": 12527,
+        "bad": 859,
+        "bad_rate": 0.0686,
+        "woe": 0.1758,
+        "iv": 0.001467
+      },
+      {
+        "bin": "7.0",
+        "order": 0.9866,
+        "n": 13289,
+        "bad": 933,
+        "bad_rate": 0.0702,
+        "woe": 0.1505,
+        "iv": 0.001153
+      },
+      {
+        "bin": "8.0",
+        "order": 0.9891,
+        "n": 11330,
+        "bad": 720,
+        "bad_rate": 0.0635,
+        "woe": 0.2572,
+        "iv": 0.002742
+      },
+      {
+        "bin": "9.0",
+        "order": 0.996,
+        "n": 12242,
+        "bad": 646,
+        "bad_rate": 0.0528,
+        "woe": 0.4544,
+        "iv": 0.008519
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 119949,
+        "bad": 11027,
+        "bad_rate": 0.0919,
+        "woe": -0.1422,
+        "iv": 0.010468
+      }
+    ]
+  },
+  "YEARS_BUILD_MODE": {
+    "type": "continuous",
+    "iv": 0.017,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.6145,
+        "n": 9466,
+        "bad": 772,
+        "bad_rate": 0.0816,
+        "woe": -0.0117,
+        "iv": 5e-06
+      },
+      {
+        "bin": "1.0",
+        "order": 0.6668,
+        "n": 7356,
+        "bad": 553,
+        "bad_rate": 0.0752,
+        "woe": 0.0764,
+        "iv": 0.000171
+      },
+      {
+        "bin": "2.0",
+        "order": 0.6994,
+        "n": 9074,
+        "bad": 621,
+        "bad_rate": 0.0684,
+        "woe": 0.1777,
+        "iv": 0.001086
+      },
+      {
+        "bin": "3.0",
+        "order": 0.7321,
+        "n": 8496,
+        "bad": 580,
+        "bad_rate": 0.0683,
+        "woe": 0.1803,
+        "iv": 0.001046
+      },
+      {
+        "bin": "4.0",
+        "order": 0.7517,
+        "n": 8431,
+        "bad": 588,
+        "bad_rate": 0.0697,
+        "woe": 0.1574,
+        "iv": 0.000798
+      },
+      {
+        "bin": "5.0",
+        "order": 0.7844,
+        "n": 8197,
+        "bad": 580,
+        "bad_rate": 0.0708,
+        "woe": 0.1418,
+        "iv": 0.000635
+      },
+      {
+        "bin": "6.0",
+        "order": 0.8105,
+        "n": 8629,
+        "bad": 593,
+        "bad_rate": 0.0687,
+        "woe": 0.1732,
+        "iv": 0.000983
+      },
+      {
+        "bin": "7.0",
+        "order": 0.8301,
+        "n": 6901,
+        "bad": 484,
+        "bad_rate": 0.0701,
+        "woe": 0.1512,
+        "iv": 0.000605
+      },
+      {
+        "bin": "8.0",
+        "order": 0.8563,
+        "n": 8116,
+        "bad": 517,
+        "bad_rate": 0.0637,
+        "woe": 0.2543,
+        "iv": 0.001925
+      },
+      {
+        "bin": "9.0",
+        "order": 0.9543,
+        "n": 7799,
+        "bad": 406,
+        "bad_rate": 0.0521,
+        "woe": 0.4683,
+        "iv": 0.005736
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 163543,
+        "bad": 14166,
+        "bad_rate": 0.0866,
+        "woe": -0.0769,
+        "iv": 0.004057
+      }
+    ]
+  },
+  "COMMONAREA_MODE": {
+    "type": "continuous",
+    "iv": 0.0118,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 14943,
+        "bad": 1117,
+        "bad_rate": 0.0748,
+        "woe": 0.083,
+        "iv": 0.000406
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0073,
+        "n": 7513,
+        "bad": 530,
+        "bad_rate": 0.0705,
+        "woe": 0.145,
+        "iv": 0.000608
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0109,
+        "n": 7379,
+        "bad": 553,
+        "bad_rate": 0.0749,
+        "woe": 0.0798,
+        "iv": 0.000187
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0157,
+        "n": 7357,
+        "bad": 500,
+        "bad_rate": 0.068,
+        "woe": 0.185,
+        "iv": 0.000952
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0241,
+        "n": 7333,
+        "bad": 525,
+        "bad_rate": 0.0716,
+        "woe": 0.1291,
+        "iv": 0.000474
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0343,
+        "n": 7413,
+        "bad": 518,
+        "bad_rate": 0.0699,
+        "woe": 0.1552,
+        "iv": 0.000684
+      },
+      {
+        "bin": "6.0",
+        "order": 0.0491,
+        "n": 7439,
+        "bad": 498,
+        "bad_rate": 0.0669,
+        "woe": 0.2012,
+        "iv": 0.00113
+      },
+      {
+        "bin": "7.0",
+        "order": 0.075,
+        "n": 7404,
+        "bad": 484,
+        "bad_rate": 0.0654,
+        "woe": 0.2266,
+        "iv": 0.001412
+      },
+      {
+        "bin": "8.0",
+        "order": 0.15405,
+        "n": 7416,
+        "bad": 435,
+        "bad_rate": 0.0587,
+        "woe": 0.342,
+        "iv": 0.003067
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 171811,
+        "bad": 14700,
+        "bad_rate": 0.0856,
+        "woe": -0.0634,
+        "iv": 0.002882
+      }
+    ]
+  },
+  "ELEVATORS_MODE": {
+    "type": "continuous",
+    "iv": 0.0286,
+    "monotonic": true,
+    "direction": "decreasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 84862,
+        "bad": 6306,
+        "bad_rate": 0.0743,
+        "woe": 0.0898,
+        "iv": 0.002679
+      },
+      {
+        "bin": "1.0",
+        "order": 0.1611,
+        "n": 12330,
+        "bad": 710,
+        "bad_rate": 0.0576,
+        "woe": 0.3621,
+        "iv": 0.00566
+      },
+      {
+        "bin": "2.0",
+        "order": 0.2417,
+        "n": 8310,
+        "bad": 451,
+        "bad_rate": 0.0543,
+        "woe": 0.4244,
+        "iv": 0.005111
+      },
+      {
+        "bin": "3.0",
+        "order": 0.3625,
+        "n": 9489,
+        "bad": 511,
+        "bad_rate": 0.0539,
+        "woe": 0.4328,
+        "iv": 0.006045
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 131017,
+        "bad": 11882,
+        "bad_rate": 0.0907,
+        "woe": -0.1273,
+        "iv": 0.009099
+      }
+    ]
+  },
+  "ENTRANCES_MODE": {
+    "type": "continuous",
+    "iv": 0.026,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0345,
+        "n": 15832,
+        "bad": 1208,
+        "bad_rate": 0.0763,
+        "woe": 0.0608,
+        "iv": 0.000234
+      },
+      {
+        "bin": "1.0",
+        "order": 0.069,
+        "n": 21420,
+        "bad": 1685,
+        "bad_rate": 0.0787,
+        "woe": 0.0279,
+        "iv": 6.8e-05
+      },
+      {
+        "bin": "2.0",
+        "order": 0.1034,
+        "n": 16386,
+        "bad": 1160,
+        "bad_rate": 0.0708,
+        "woe": 0.1417,
+        "iv": 0.001264
+      },
+      {
+        "bin": "3.0",
+        "order": 0.1379,
+        "n": 28834,
+        "bad": 1943,
+        "bad_rate": 0.0674,
+        "woe": 0.1948,
+        "iv": 0.004106
+      },
+      {
+        "bin": "4.0",
+        "order": 0.1724,
+        "n": 7188,
+        "bad": 425,
+        "bad_rate": 0.0591,
+        "woe": 0.3335,
+        "iv": 0.002837
+      },
+      {
+        "bin": "5.0",
+        "order": 0.2069,
+        "n": 15772,
+        "bad": 1045,
+        "bad_rate": 0.0663,
+        "woe": 0.2127,
+        "iv": 0.00266
+      },
+      {
+        "bin": "6.0",
+        "order": 0.2759,
+        "n": 9644,
+        "bad": 612,
+        "bad_rate": 0.0635,
+        "woe": 0.2586,
+        "iv": 0.002359
+      },
+      {
+        "bin": "7.0",
+        "order": 0.3793,
+        "n": 7157,
+        "bad": 440,
+        "bad_rate": 0.0615,
+        "woe": 0.2921,
+        "iv": 0.002204
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 123775,
+        "bad": 11342,
+        "bad_rate": 0.0916,
+        "woe": -0.1387,
+        "iv": 0.010253
+      }
+    ]
+  },
+  "FLOORSMAX_MODE": {
+    "type": "continuous",
+    "iv": 0.0374,
+    "monotonic": true,
+    "direction": "decreasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0417,
+        "n": 15252,
+        "bad": 1408,
+        "bad_rate": 0.0923,
+        "woe": -0.1471,
+        "iv": 0.001424
+      },
+      {
+        "bin": "1.0",
+        "order": 0.125,
+        "n": 11202,
+        "bad": 910,
+        "bad_rate": 0.0812,
+        "woe": -0.0073,
+        "iv": 2e-06
+      },
+      {
+        "bin": "2.0",
+        "order": 0.1667,
+        "n": 52530,
+        "bad": 3733,
+        "bad_rate": 0.0711,
+        "woe": 0.1379,
+        "iv": 0.003833
+      },
+      {
+        "bin": "3.0",
+        "order": 0.3333,
+        "n": 29611,
+        "bad": 1809,
+        "bad_rate": 0.0611,
+        "woe": 0.2996,
+        "iv": 0.009542
+      },
+      {
+        "bin": "4.0",
+        "order": 0.375,
+        "n": 6698,
+        "bad": 359,
+        "bad_rate": 0.0536,
+        "woe": 0.4374,
+        "iv": 0.004353
+      },
+      {
+        "bin": "5.0",
+        "order": 0.5417,
+        "n": 8418,
+        "bad": 413,
+        "bad_rate": 0.0491,
+        "woe": 0.5307,
+        "iv": 0.00775
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 122297,
+        "bad": 11228,
+        "bad_rate": 0.0918,
+        "woe": -0.1408,
+        "iv": 0.010449
+      }
+    ]
+  },
+  "FLOORSMIN_MODE": {
+    "type": "continuous",
+    "iv": 0.0189,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0417,
+        "n": 17192,
+        "bad": 1257,
+        "bad_rate": 0.0731,
+        "woe": 0.1069,
+        "iv": 0.000767
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0833,
+        "n": 6819,
+        "bad": 613,
+        "bad_rate": 0.0899,
+        "woe": -0.1183,
+        "iv": 0.000405
+      },
+      {
+        "bin": "2.0",
+        "order": 0.2083,
+        "n": 30441,
+        "bad": 2202,
+        "bad_rate": 0.0723,
+        "woe": 0.1186,
+        "iv": 0.00166
+      },
+      {
+        "bin": "3.0",
+        "order": 0.25,
+        "n": 1154,
+        "bad": 56,
+        "bad_rate": 0.0485,
+        "woe": 0.535,
+        "iv": 0.001089
+      },
+      {
+        "bin": "4.0",
+        "order": 0.375,
+        "n": 15222,
+        "bad": 928,
+        "bad_rate": 0.061,
+        "woe": 0.3016,
+        "iv": 0.00497
+      },
+      {
+        "bin": "5.0",
+        "order": 0.4167,
+        "n": 3295,
+        "bad": 186,
+        "bad_rate": 0.0564,
+        "woe": 0.3813,
+        "iv": 0.001671
+      },
+      {
+        "bin": "6.0",
+        "order": 0.5833,
+        "n": 4964,
+        "bad": 240,
+        "bad_rate": 0.0483,
+        "woe": 0.5453,
+        "iv": 0.004801
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 166921,
+        "bad": 14378,
+        "bad_rate": 0.0861,
+        "woe": -0.0708,
+        "iv": 0.003499
+      }
+    ]
+  },
+  "LANDAREA_MODE": {
+    "type": "continuous",
+    "iv": 0.0158,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 20037,
+        "bad": 1405,
+        "bad_rate": 0.0701,
+        "woe": 0.152,
+        "iv": 0.00177
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0166,
+        "n": 10047,
+        "bad": 772,
+        "bad_rate": 0.0768,
+        "woe": 0.053,
+        "iv": 0.000114
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0273,
+        "n": 9986,
+        "bad": 764,
+        "bad_rate": 0.0765,
+        "woe": 0.0577,
+        "iv": 0.000133
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0395,
+        "n": 9997,
+        "bad": 759,
+        "bad_rate": 0.0759,
+        "woe": 0.066,
+        "iv": 0.000174
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0525,
+        "n": 9953,
+        "bad": 678,
+        "bad_rate": 0.0681,
+        "woe": 0.1828,
+        "iv": 0.001256
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0661,
+        "n": 10012,
+        "bad": 684,
+        "bad_rate": 0.0683,
+        "woe": 0.1797,
+        "iv": 0.001223
+      },
+      {
+        "bin": "6.0",
+        "order": 0.0843,
+        "n": 10056,
+        "bad": 663,
+        "bad_rate": 0.0659,
+        "woe": 0.2178,
+        "iv": 0.001775
+      },
+      {
+        "bin": "7.0",
+        "order": 0.114,
+        "n": 9932,
+        "bad": 667,
+        "bad_rate": 0.0672,
+        "woe": 0.198,
+        "iv": 0.001462
+      },
+      {
+        "bin": "8.0",
+        "order": 0.1958,
+        "n": 10003,
+        "bad": 631,
+        "bad_rate": 0.0631,
+        "woe": 0.265,
+        "iv": 0.002562
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 145985,
+        "bad": 12837,
+        "bad_rate": 0.0879,
+        "woe": -0.0934,
+        "iv": 0.00538
+      }
+    ]
+  },
+  "LIVINGAPARTMENTS_MODE": {
+    "type": "continuous",
+    "iv": 0.0161,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.011,
+        "n": 8000,
+        "bad": 707,
+        "bad_rate": 0.0884,
+        "woe": -0.0995,
+        "iv": 0.000333
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0331,
+        "n": 8381,
+        "bad": 658,
+        "bad_rate": 0.0785,
+        "woe": 0.0296,
+        "iv": 3e-05
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0551,
+        "n": 7536,
+        "bad": 506,
+        "bad_rate": 0.0671,
+        "woe": 0.198,
+        "iv": 0.00111
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0643,
+        "n": 7860,
+        "bad": 554,
+        "bad_rate": 0.0705,
+        "woe": 0.146,
+        "iv": 0.000644
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0735,
+        "n": 7517,
+        "bad": 493,
+        "bad_rate": 0.0656,
+        "woe": 0.2232,
+        "iv": 0.001391
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0845,
+        "n": 7971,
+        "bad": 568,
+        "bad_rate": 0.0713,
+        "woe": 0.1342,
+        "iv": 0.000555
+      },
+      {
+        "bin": "6.0",
+        "order": 0.1047,
+        "n": 7344,
+        "bad": 473,
+        "bad_rate": 0.0644,
+        "woe": 0.2425,
+        "iv": 0.001592
+      },
+      {
+        "bin": "7.0",
+        "order": 0.1313,
+        "n": 7898,
+        "bad": 499,
+        "bad_rate": 0.0632,
+        "woe": 0.2631,
+        "iv": 0.001997
+      },
+      {
+        "bin": "8.0",
+        "order": 0.1809,
+        "n": 7601,
+        "bad": 478,
+        "bad_rate": 0.0629,
+        "woe": 0.268,
+        "iv": 0.001991
+      },
+      {
+        "bin": "9.0",
+        "order": 0.2938,
+        "n": 7781,
+        "bad": 461,
+        "bad_rate": 0.0592,
+        "woe": 0.3315,
+        "iv": 0.003035
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 168119,
+        "bad": 14463,
+        "bad_rate": 0.086,
+        "woe": -0.0694,
+        "iv": 0.003386
+      }
+    ]
+  },
+  "LIVINGAREA_MODE": {
+    "type": "continuous",
+    "iv": 0.032,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0079,
+        "n": 12285,
+        "bad": 1137,
+        "bad_rate": 0.0926,
+        "woe": -0.15,
+        "iv": 0.001193
+      },
+      {
+        "bin": "1.0",
+        "order": 0.022,
+        "n": 12249,
+        "bad": 1024,
+        "bad_rate": 0.0836,
+        "woe": -0.0385,
+        "iv": 7.4e-05
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0428,
+        "n": 12270,
+        "bad": 888,
+        "bad_rate": 0.0724,
+        "woe": 0.1178,
+        "iv": 0.000662
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0556,
+        "n": 12223,
+        "bad": 893,
+        "bad_rate": 0.0731,
+        "woe": 0.1076,
+        "iv": 0.000553
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0676,
+        "n": 12390,
+        "bad": 840,
+        "bad_rate": 0.0678,
+        "woe": 0.188,
+        "iv": 0.00165
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0801,
+        "n": 12118,
+        "bad": 797,
+        "bad_rate": 0.0658,
+        "woe": 0.2205,
+        "iv": 0.002189
+      },
+      {
+        "bin": "6.0",
+        "order": 0.0954,
+        "n": 12269,
+        "bad": 824,
+        "bad_rate": 0.0672,
+        "woe": 0.1981,
+        "iv": 0.001806
+      },
+      {
+        "bin": "7.0",
+        "order": 0.1254,
+        "n": 12255,
+        "bad": 779,
+        "bad_rate": 0.0636,
+        "woe": 0.2569,
+        "iv": 0.00296
+      },
+      {
+        "bin": "8.0",
+        "order": 0.1855,
+        "n": 12244,
+        "bad": 711,
+        "bad_rate": 0.0581,
+        "woe": 0.3532,
+        "iv": 0.005367
+      },
+      {
+        "bin": "9.0",
+        "order": 0.3236,
+        "n": 12243,
+        "bad": 698,
+        "bad_rate": 0.057,
+        "woe": 0.3726,
+        "iv": 0.005927
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 123462,
+        "bad": 11269,
+        "bad_rate": 0.0913,
+        "woe": -0.1344,
+        "iv": 0.009582
+      }
+    ]
+  },
+  "NONLIVINGAPARTMENTS_MODE": {
+    "type": "continuous",
+    "iv": 0.0109,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 58805,
+        "bad": 4096,
+        "bad_rate": 0.0697,
+        "woe": 0.1594,
+        "iv": 0.005687
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0078,
+        "n": 5132,
+        "bad": 375,
+        "bad_rate": 0.0731,
+        "woe": 0.1067,
+        "iv": 0.00023
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0117,
+        "n": 4912,
+        "bad": 343,
+        "bad_rate": 0.0698,
+        "woe": 0.1555,
+        "iv": 0.000456
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0311,
+        "n": 6430,
+        "bad": 410,
+        "bad_rate": 0.0638,
+        "woe": 0.2531,
+        "iv": 0.001512
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 170729,
+        "bad": 14636,
+        "bad_rate": 0.0857,
+        "woe": -0.0655,
+        "iv": 0.003063
+      }
+    ]
+  },
+  "NONLIVINGAREA_MODE": {
+    "type": "continuous",
+    "iv": 0.0219,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 55359,
+        "bad": 3972,
+        "bad_rate": 0.0717,
+        "woe": 0.1275,
+        "iv": 0.003472
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0037,
+        "n": 10987,
+        "bad": 737,
+        "bad_rate": 0.0671,
+        "woe": 0.1993,
+        "iv": 0.001637
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0096,
+        "n": 11006,
+        "bad": 747,
+        "bad_rate": 0.0679,
+        "woe": 0.1867,
+        "iv": 0.001447
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0233,
+        "n": 10964,
+        "bad": 771,
+        "bad_rate": 0.0703,
+        "woe": 0.1487,
+        "iv": 0.000929
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0527,
+        "n": 11038,
+        "bad": 724,
+        "bad_rate": 0.0656,
+        "woe": 0.2233,
+        "iv": 0.002044
+      },
+      {
+        "bin": "5.0",
+        "order": 0.1298,
+        "n": 11030,
+        "bad": 669,
+        "bad_rate": 0.0607,
+        "woe": 0.3068,
+        "iv": 0.003722
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 135624,
+        "bad": 12240,
+        "bad_rate": 0.0902,
+        "woe": -0.1219,
+        "iv": 0.008623
+      }
+    ]
+  },
+  "APARTMENTS_MEDI": {
+    "type": "continuous",
+    "iv": 0.0317,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0094,
+        "n": 12558,
+        "bad": 1164,
+        "bad_rate": 0.0927,
+        "woe": -0.1516,
+        "iv": 0.001248
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0291,
+        "n": 12020,
+        "bad": 997,
+        "bad_rate": 0.0829,
+        "woe": -0.0299,
+        "iv": 4.4e-05
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0593,
+        "n": 13372,
+        "bad": 915,
+        "bad_rate": 0.0684,
+        "woe": 0.1781,
+        "iv": 0.001605
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0729,
+        "n": 11553,
+        "bad": 793,
+        "bad_rate": 0.0686,
+        "woe": 0.1747,
+        "iv": 0.001336
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0833,
+        "n": 11676,
+        "bad": 777,
+        "bad_rate": 0.0665,
+        "woe": 0.2079,
+        "iv": 0.001886
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0947,
+        "n": 12017,
+        "bad": 826,
+        "bad_rate": 0.0687,
+        "woe": 0.1732,
+        "iv": 0.001367
+      },
+      {
+        "bin": "6.0",
+        "order": 0.1176,
+        "n": 11720,
+        "bad": 771,
+        "bad_rate": 0.0658,
+        "woe": 0.2202,
+        "iv": 0.002113
+      },
+      {
+        "bin": "7.0",
+        "order": 0.1494,
+        "n": 12382,
+        "bad": 802,
+        "bad_rate": 0.0648,
+        "woe": 0.2369,
+        "iv": 0.002564
+      },
+      {
+        "bin": "8.0",
+        "order": 0.204,
+        "n": 11857,
+        "bad": 720,
+        "bad_rate": 0.0607,
+        "woe": 0.3056,
+        "iv": 0.003971
+      },
+      {
+        "bin": "9.0",
+        "order": 0.33,
+        "n": 12121,
+        "bad": 696,
+        "bad_rate": 0.0574,
+        "woe": 0.3651,
+        "iv": 0.005649
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 124732,
+        "bad": 11399,
+        "bad_rate": 0.0914,
+        "woe": -0.1357,
+        "iv": 0.009883
+      }
+    ]
+  },
+  "BASEMENTAREA_MEDI": {
+    "type": "continuous",
+    "iv": 0.0211,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 20471,
+        "bad": 1577,
+        "bad_rate": 0.077,
+        "woe": 0.0505,
+        "iv": 0.000209
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0438,
+        "n": 10250,
+        "bad": 731,
+        "bad_rate": 0.0713,
+        "woe": 0.1335,
+        "iv": 0.000706
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0582,
+        "n": 10202,
+        "bad": 726,
+        "bad_rate": 0.0712,
+        "woe": 0.1358,
+        "iv": 0.000726
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0695,
+        "n": 10211,
+        "bad": 728,
+        "bad_rate": 0.0713,
+        "woe": 0.1338,
+        "iv": 0.000706
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0805,
+        "n": 10263,
+        "bad": 717,
+        "bad_rate": 0.0699,
+        "woe": 0.1557,
+        "iv": 0.000951
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0936,
+        "n": 10142,
+        "bad": 650,
+        "bad_rate": 0.0641,
+        "woe": 0.248,
+        "iv": 0.002293
+      },
+      {
+        "bin": "6.0",
+        "order": 0.1118,
+        "n": 10215,
+        "bad": 722,
+        "bad_rate": 0.0707,
+        "woe": 0.1432,
+        "iv": 0.000805
+      },
+      {
+        "bin": "7.0",
+        "order": 0.142,
+        "n": 10213,
+        "bad": 629,
+        "bad_rate": 0.0616,
+        "woe": 0.2905,
+        "iv": 0.003111
+      },
+      {
+        "bin": "8.0",
+        "order": 0.2232,
+        "n": 10212,
+        "bad": 587,
+        "bad_rate": 0.0575,
+        "woe": 0.3638,
+        "iv": 0.004731
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 143829,
+        "bad": 12793,
+        "bad_rate": 0.0889,
+        "woe": -0.1059,
+        "iv": 0.006858
+      }
+    ]
+  },
+  "YEARS_BEGINEXPLUATATION_MEDI": {
+    "type": "continuous",
+    "iv": 0.0285,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.9687,
+        "n": 12686,
+        "bad": 1041,
+        "bad_rate": 0.0821,
+        "woe": -0.0182,
+        "iv": 1.7e-05
+      },
+      {
+        "bin": "1.0",
+        "order": 0.9742,
+        "n": 12688,
+        "bad": 1000,
+        "bad_rate": 0.0788,
+        "woe": 0.0256,
+        "iv": 3.4e-05
+      },
+      {
+        "bin": "2.0",
+        "order": 0.9767,
+        "n": 12726,
+        "bad": 899,
+        "bad_rate": 0.0706,
+        "woe": 0.1439,
+        "iv": 0.001011
+      },
+      {
+        "bin": "3.0",
+        "order": 0.9791,
+        "n": 15559,
+        "bad": 1142,
+        "bad_rate": 0.0734,
+        "woe": 0.1027,
+        "iv": 0.000642
+      },
+      {
+        "bin": "4.0",
+        "order": 0.9811,
+        "n": 9488,
+        "bad": 669,
+        "bad_rate": 0.0705,
+        "woe": 0.1457,
+        "iv": 0.000774
+      },
+      {
+        "bin": "5.0",
+        "order": 0.9831,
+        "n": 15259,
+        "bad": 1065,
+        "bad_rate": 0.0698,
+        "woe": 0.1569,
+        "iv": 0.001434
+      },
+      {
+        "bin": "6.0",
+        "order": 0.9856,
+        "n": 13048,
+        "bad": 872,
+        "bad_rate": 0.0668,
+        "woe": 0.2034,
+        "iv": 0.002021
+      },
+      {
+        "bin": "7.0",
+        "order": 0.9871,
+        "n": 9964,
+        "bad": 699,
+        "bad_rate": 0.0702,
+        "woe": 0.1512,
+        "iv": 0.000873
+      },
+      {
+        "bin": "8.0",
+        "order": 0.9891,
+        "n": 12619,
+        "bad": 816,
+        "bad_rate": 0.0647,
+        "woe": 0.2386,
+        "iv": 0.00265
+      },
+      {
+        "bin": "9.0",
+        "order": 0.996,
+        "n": 12022,
+        "bad": 630,
+        "bad_rate": 0.0524,
+        "woe": 0.4617,
+        "iv": 0.008612
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 119949,
+        "bad": 11027,
+        "bad_rate": 0.0919,
+        "woe": -0.1422,
+        "iv": 0.010468
+      }
+    ]
+  },
+  "YEARS_BUILD_MEDI": {
+    "type": "continuous",
+    "iv": 0.017,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.6042,
+        "n": 9096,
+        "bad": 745,
+        "bad_rate": 0.0819,
+        "woe": -0.0163,
+        "iv": 1e-05
+      },
+      {
+        "bin": "1.0",
+        "order": 0.6645,
+        "n": 8699,
+        "bad": 655,
+        "bad_rate": 0.0753,
+        "woe": 0.0749,
+        "iv": 0.000194
+      },
+      {
+        "bin": "2.0",
+        "order": 0.6981,
+        "n": 7257,
+        "bad": 491,
+        "bad_rate": 0.0677,
+        "woe": 0.1898,
+        "iv": 0.000986
+      },
+      {
+        "bin": "3.0",
+        "order": 0.7249,
+        "n": 8420,
+        "bad": 581,
+        "bad_rate": 0.069,
+        "woe": 0.1688,
+        "iv": 0.000913
+      },
+      {
+        "bin": "4.0",
+        "order": 0.7451,
+        "n": 8512,
+        "bad": 584,
+        "bad_rate": 0.0686,
+        "woe": 0.175,
+        "iv": 0.000989
+      },
+      {
+        "bin": "5.0",
+        "order": 0.7786,
+        "n": 8298,
+        "bad": 592,
+        "bad_rate": 0.0713,
+        "woe": 0.133,
+        "iv": 0.000567
+      },
+      {
+        "bin": "6.0",
+        "order": 0.8054,
+        "n": 8709,
+        "bad": 589,
+        "bad_rate": 0.0676,
+        "woe": 0.1904,
+        "iv": 0.00119
+      },
+      {
+        "bin": "7.0",
+        "order": 0.8256,
+        "n": 8794,
+        "bad": 603,
+        "bad_rate": 0.0686,
+        "woe": 0.1756,
+        "iv": 0.001029
+      },
+      {
+        "bin": "8.0",
+        "order": 0.8591,
+        "n": 6566,
+        "bad": 427,
+        "bad_rate": 0.065,
+        "woe": 0.2321,
+        "iv": 0.00131
+      },
+      {
+        "bin": "9.0",
+        "order": 0.953,
+        "n": 8114,
+        "bad": 427,
+        "bad_rate": 0.0526,
+        "woe": 0.4569,
+        "iv": 0.005707
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 163543,
+        "bad": 14166,
+        "bad_rate": 0.0866,
+        "woe": -0.0769,
+        "iv": 0.004057
+      }
+    ]
+  },
+  "COMMONAREA_MEDI": {
+    "type": "continuous",
+    "iv": 0.0133,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 7470,
+        "bad": 501,
+        "bad_rate": 0.0671,
+        "woe": 0.1992,
+        "iv": 0.001114
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0028,
+        "n": 7435,
+        "bad": 627,
+        "bad_rate": 0.0843,
+        "woe": -0.0483,
+        "iv": 7.1e-05
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0079,
+        "n": 7498,
+        "bad": 529,
+        "bad_rate": 0.0706,
+        "woe": 0.1449,
+        "iv": 0.000606
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0118,
+        "n": 7313,
+        "bad": 550,
+        "bad_rate": 0.0752,
+        "woe": 0.076,
+        "iv": 0.000168
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0169,
+        "n": 7450,
+        "bad": 506,
+        "bad_rate": 0.0679,
+        "woe": 0.1857,
+        "iv": 0.000971
+      },
+      {
+        "bin": "5.0",
+        "order": 0.026,
+        "n": 7410,
+        "bad": 531,
+        "bad_rate": 0.0717,
+        "woe": 0.1281,
+        "iv": 0.000472
+      },
+      {
+        "bin": "6.0",
+        "order": 0.0364,
+        "n": 7369,
+        "bad": 501,
+        "bad_rate": 0.068,
+        "woe": 0.1846,
+        "iv": 0.000949
+      },
+      {
+        "bin": "7.0",
+        "order": 0.0515,
+        "n": 7417,
+        "bad": 521,
+        "bad_rate": 0.0702,
+        "woe": 0.1496,
+        "iv": 0.000637
+      },
+      {
+        "bin": "8.0",
+        "order": 0.0786,
+        "n": 7415,
+        "bad": 473,
+        "bad_rate": 0.0638,
+        "woe": 0.2528,
+        "iv": 0.001739
+      },
+      {
+        "bin": "9.0",
+        "order": 0.1612,
+        "n": 7420,
+        "bad": 421,
+        "bad_rate": 0.0567,
+        "woe": 0.3773,
+        "iv": 0.003679
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 171811,
+        "bad": 14700,
+        "bad_rate": 0.0856,
+        "woe": -0.0634,
+        "iv": 0.002882
+      }
+    ]
+  },
+  "ELEVATORS_MEDI": {
+    "type": "continuous",
+    "iv": 0.0293,
+    "monotonic": true,
+    "direction": "decreasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 82808,
+        "bad": 6191,
+        "bad_rate": 0.0748,
+        "woe": 0.0832,
+        "iv": 0.00225
+      },
+      {
+        "bin": "1.0",
+        "order": 0.16,
+        "n": 12950,
+        "bad": 749,
+        "bad_rate": 0.0578,
+        "woe": 0.3574,
+        "iv": 0.005804
+      },
+      {
+        "bin": "2.0",
+        "order": 0.24,
+        "n": 8881,
+        "bad": 491,
+        "bad_rate": 0.0553,
+        "woe": 0.4049,
+        "iv": 0.005011
+      },
+      {
+        "bin": "3.0",
+        "order": 0.36,
+        "n": 10352,
+        "bad": 547,
+        "bad_rate": 0.0528,
+        "woe": 0.4529,
+        "iv": 0.007161
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 131017,
+        "bad": 11882,
+        "bad_rate": 0.0907,
+        "woe": -0.1273,
+        "iv": 0.009099
+      }
+    ]
+  },
+  "ENTRANCES_MEDI": {
+    "type": "continuous",
+    "iv": 0.0268,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0345,
+        "n": 13151,
+        "bad": 1022,
+        "bad_rate": 0.0777,
+        "woe": 0.0409,
+        "iv": 8.9e-05
+      },
+      {
+        "bin": "1.0",
+        "order": 0.069,
+        "n": 19914,
+        "bad": 1606,
+        "bad_rate": 0.0806,
+        "woe": 0.0008,
+        "iv": 0.0
+      },
+      {
+        "bin": "2.0",
+        "order": 0.1034,
+        "n": 17444,
+        "bad": 1240,
+        "bad_rate": 0.0711,
+        "woe": 0.1373,
+        "iv": 0.001265
+      },
+      {
+        "bin": "3.0",
+        "order": 0.1379,
+        "n": 29410,
+        "bad": 1975,
+        "bad_rate": 0.0672,
+        "woe": 0.1985,
+        "iv": 0.004342
+      },
+      {
+        "bin": "4.0",
+        "order": 0.1724,
+        "n": 8296,
+        "bad": 501,
+        "bad_rate": 0.0604,
+        "woe": 0.3112,
+        "iv": 0.002876
+      },
+      {
+        "bin": "5.0",
+        "order": 0.2069,
+        "n": 16266,
+        "bad": 1068,
+        "bad_rate": 0.0657,
+        "woe": 0.2225,
+        "iv": 0.002987
+      },
+      {
+        "bin": "6.0",
+        "order": 0.2759,
+        "n": 10244,
+        "bad": 648,
+        "bad_rate": 0.0633,
+        "woe": 0.262,
+        "iv": 0.002569
+      },
+      {
+        "bin": "7.0",
+        "order": 0.3793,
+        "n": 7508,
+        "bad": 458,
+        "bad_rate": 0.061,
+        "woe": 0.3004,
+        "iv": 0.002437
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 123775,
+        "bad": 11342,
+        "bad_rate": 0.0916,
+        "woe": -0.1387,
+        "iv": 0.010253
+      }
+    ]
+  },
+  "FLOORSMAX_MEDI": {
+    "type": "continuous",
+    "iv": 0.0379,
+    "monotonic": true,
+    "direction": "decreasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0417,
+        "n": 14385,
+        "bad": 1338,
+        "bad_rate": 0.093,
+        "woe": -0.1554,
+        "iv": 0.001505
+      },
+      {
+        "bin": "1.0",
+        "order": 0.1042,
+        "n": 11423,
+        "bad": 922,
+        "bad_rate": 0.0807,
+        "woe": -0.0003,
+        "iv": -0.0
+      },
+      {
+        "bin": "2.0",
+        "order": 0.1667,
+        "n": 51220,
+        "bad": 3683,
+        "bad_rate": 0.0719,
+        "woe": 0.1252,
+        "iv": 0.003099
+      },
+      {
+        "bin": "3.0",
+        "order": 0.3333,
+        "n": 30369,
+        "bad": 1858,
+        "bad_rate": 0.0612,
+        "woe": 0.2981,
+        "iv": 0.009692
+      },
+      {
+        "bin": "4.0",
+        "order": 0.375,
+        "n": 6953,
+        "bad": 370,
+        "bad_rate": 0.0532,
+        "woe": 0.445,
+        "iv": 0.004663
+      },
+      {
+        "bin": "5.0",
+        "order": 0.5417,
+        "n": 9361,
+        "bad": 461,
+        "bad_rate": 0.0492,
+        "woe": 0.5269,
+        "iv": 0.008505
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 122297,
+        "bad": 11228,
+        "bad_rate": 0.0918,
+        "woe": -0.1408,
+        "iv": 0.010449
+      }
+    ]
+  },
+  "FLOORSMIN_MEDI": {
+    "type": "continuous",
+    "iv": 0.0194,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0417,
+        "n": 16458,
+        "bad": 1201,
+        "bad_rate": 0.073,
+        "woe": 0.109,
+        "iv": 0.000762
+      },
+      {
+        "bin": "1.0",
+        "order": 0.125,
+        "n": 9906,
+        "bad": 856,
+        "bad_rate": 0.0864,
+        "woe": -0.0748,
+        "iv": 0.000231
+      },
+      {
+        "bin": "2.0",
+        "order": 0.2083,
+        "n": 27147,
+        "bad": 1969,
+        "bad_rate": 0.0725,
+        "woe": 0.1157,
+        "iv": 0.001411
+      },
+      {
+        "bin": "3.0",
+        "order": 0.2917,
+        "n": 1853,
+        "bad": 90,
+        "bad_rate": 0.0486,
+        "woe": 0.5372,
+        "iv": 0.001754
+      },
+      {
+        "bin": "4.0",
+        "order": 0.375,
+        "n": 14882,
+        "bad": 916,
+        "bad_rate": 0.0616,
+        "woe": 0.2914,
+        "iv": 0.004555
+      },
+      {
+        "bin": "5.0",
+        "order": 0.4167,
+        "n": 3435,
+        "bad": 188,
+        "bad_rate": 0.0547,
+        "woe": 0.4141,
+        "iv": 0.002025
+      },
+      {
+        "bin": "6.0",
+        "order": 0.5833,
+        "n": 5406,
+        "bad": 262,
+        "bad_rate": 0.0485,
+        "woe": 0.543,
+        "iv": 0.005187
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 166921,
+        "bad": 14378,
+        "bad_rate": 0.0861,
+        "woe": -0.0708,
+        "iv": 0.003499
+      }
+    ]
+  },
+  "LANDAREA_MEDI": {
+    "type": "continuous",
+    "iv": 0.0157,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 20082,
+        "bad": 1446,
+        "bad_rate": 0.072,
+        "woe": 0.1235,
+        "iv": 0.001185
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0188,
+        "n": 9995,
+        "bad": 764,
+        "bad_rate": 0.0764,
+        "woe": 0.0587,
+        "iv": 0.000138
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0299,
+        "n": 9984,
+        "bad": 741,
+        "bad_rate": 0.0742,
+        "woe": 0.0905,
+        "iv": 0.000322
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0423,
+        "n": 10009,
+        "bad": 753,
+        "bad_rate": 0.0752,
+        "woe": 0.0759,
+        "iv": 0.000229
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0551,
+        "n": 10024,
+        "bad": 688,
+        "bad_rate": 0.0686,
+        "woe": 0.1747,
+        "iv": 0.00116
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0689,
+        "n": 9930,
+        "bad": 697,
+        "bad_rate": 0.0702,
+        "woe": 0.1506,
+        "iv": 0.000863
+      },
+      {
+        "bin": "6.0",
+        "order": 0.087,
+        "n": 10003,
+        "bad": 647,
+        "bad_rate": 0.0647,
+        "woe": 0.2382,
+        "iv": 0.002095
+      },
+      {
+        "bin": "7.0",
+        "order": 0.1161,
+        "n": 9997,
+        "bad": 651,
+        "bad_rate": 0.0651,
+        "woe": 0.231,
+        "iv": 0.001974
+      },
+      {
+        "bin": "8.0",
+        "order": 0.1977,
+        "n": 9999,
+        "bad": 636,
+        "bad_rate": 0.0636,
+        "woe": 0.2561,
+        "iv": 0.002402
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 145985,
+        "bad": 12837,
+        "bad_rate": 0.0879,
+        "woe": -0.0934,
+        "iv": 0.00538
+      }
+    ]
+  },
+  "LIVINGAPARTMENTS_MEDI": {
+    "type": "continuous",
+    "iv": 0.0163,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0103,
+        "n": 8479,
+        "bad": 747,
+        "bad_rate": 0.0881,
+        "woe": -0.096,
+        "iv": 0.000329
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0325,
+        "n": 7209,
+        "bad": 575,
+        "bad_rate": 0.0798,
+        "woe": 0.0123,
+        "iv": 5e-06
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0513,
+        "n": 8411,
+        "bad": 579,
+        "bad_rate": 0.0688,
+        "woe": 0.1714,
+        "iv": 0.000939
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0599,
+        "n": 7367,
+        "bad": 508,
+        "bad_rate": 0.069,
+        "woe": 0.1694,
+        "iv": 0.000805
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0684,
+        "n": 7506,
+        "bad": 517,
+        "bad_rate": 0.0689,
+        "woe": 0.1707,
+        "iv": 0.000832
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0829,
+        "n": 7841,
+        "bad": 537,
+        "bad_rate": 0.0685,
+        "woe": 0.1768,
+        "iv": 0.00093
+      },
+      {
+        "bin": "6.0",
+        "order": 0.1018,
+        "n": 7989,
+        "bad": 509,
+        "bad_rate": 0.0637,
+        "woe": 0.2541,
+        "iv": 0.001892
+      },
+      {
+        "bin": "7.0",
+        "order": 0.1231,
+        "n": 7516,
+        "bad": 495,
+        "bad_rate": 0.0659,
+        "woe": 0.2187,
+        "iv": 0.001339
+      },
+      {
+        "bin": "8.0",
+        "order": 0.1753,
+        "n": 7828,
+        "bad": 476,
+        "bad_rate": 0.0608,
+        "woe": 0.3038,
+        "iv": 0.002595
+      },
+      {
+        "bin": "9.0",
+        "order": 0.277,
+        "n": 7743,
+        "bad": 454,
+        "bad_rate": 0.0586,
+        "woe": 0.3425,
+        "iv": 0.00321
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 168119,
+        "bad": 14463,
+        "bad_rate": 0.086,
+        "woe": -0.0694,
+        "iv": 0.003386
+      }
+    ]
+  },
+  "LIVINGAREA_MEDI": {
+    "type": "continuous",
+    "iv": 0.0325,
+    "monotonic": true,
+    "direction": "decreasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0083,
+        "n": 12354,
+        "bad": 1145,
+        "bad_rate": 0.0927,
+        "woe": -0.1516,
+        "iv": 0.001226
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0251,
+        "n": 12202,
+        "bad": 1021,
+        "bad_rate": 0.0837,
+        "woe": -0.0395,
+        "iv": 7.8e-05
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0459,
+        "n": 12255,
+        "bad": 907,
+        "bad_rate": 0.074,
+        "woe": 0.0937,
+        "iv": 0.000422
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0577,
+        "n": 12269,
+        "bad": 891,
+        "bad_rate": 0.0726,
+        "woe": 0.1141,
+        "iv": 0.000622
+      },
+      {
+        "bin": "4.0",
+        "order": 0.069,
+        "n": 12217,
+        "bad": 839,
+        "bad_rate": 0.0687,
+        "woe": 0.1742,
+        "iv": 0.001405
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0829,
+        "n": 12309,
+        "bad": 814,
+        "bad_rate": 0.0661,
+        "woe": 0.2147,
+        "iv": 0.002113
+      },
+      {
+        "bin": "6.0",
+        "order": 0.0997,
+        "n": 12209,
+        "bad": 795,
+        "bad_rate": 0.0651,
+        "woe": 0.2312,
+        "iv": 0.002414
+      },
+      {
+        "bin": "7.0",
+        "order": 0.13075,
+        "n": 12226,
+        "bad": 778,
+        "bad_rate": 0.0636,
+        "woe": 0.2558,
+        "iv": 0.002928
+      },
+      {
+        "bin": "8.0",
+        "order": 0.1933,
+        "n": 12261,
+        "bad": 713,
+        "bad_rate": 0.0582,
+        "woe": 0.3516,
+        "iv": 0.005332
+      },
+      {
+        "bin": "9.0",
+        "order": 0.3257,
+        "n": 12244,
+        "bad": 688,
+        "bad_rate": 0.0562,
+        "woe": 0.388,
+        "iv": 0.006385
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 123462,
+        "bad": 11269,
+        "bad_rate": 0.0913,
+        "woe": -0.1344,
+        "iv": 0.009582
+      }
+    ]
+  },
+  "NONLIVINGAPARTMENTS_MEDI": {
+    "type": "continuous",
+    "iv": 0.0111,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 46026,
+        "bad": 3182,
+        "bad_rate": 0.0691,
+        "woe": 0.1674,
+        "iv": 0.004894
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0039,
+        "n": 11281,
+        "bad": 808,
+        "bad_rate": 0.0716,
+        "woe": 0.1289,
+        "iv": 0.000725
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0078,
+        "n": 5615,
+        "bad": 415,
+        "bad_rate": 0.0739,
+        "woe": 0.0945,
+        "iv": 0.000198
+      },
+      {
+        "bin": "3.0",
+        "order": 0.0116,
+        "n": 5393,
+        "bad": 376,
+        "bad_rate": 0.0697,
+        "woe": 0.1573,
+        "iv": 0.000512
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0311,
+        "n": 6964,
+        "bad": 443,
+        "bad_rate": 0.0636,
+        "woe": 0.2557,
+        "iv": 0.001669
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 170729,
+        "bad": 14636,
+        "bad_rate": 0.0857,
+        "woe": -0.0655,
+        "iv": 0.003063
+      }
+    ]
+  },
+  "NONLIVINGAREA_MEDI": {
+    "type": "continuous",
+    "iv": 0.0221,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 55410,
+        "bad": 3960,
+        "bad_rate": 0.0715,
+        "woe": 0.1318,
+        "iv": 0.003704
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0052,
+        "n": 10967,
+        "bad": 729,
+        "bad_rate": 0.0665,
+        "woe": 0.2091,
+        "iv": 0.001791
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0125,
+        "n": 10899,
+        "bad": 776,
+        "bad_rate": 0.0712,
+        "woe": 0.1353,
+        "iv": 0.00077
+      },
+      {
+        "bin": "3.0",
+        "order": 0.027,
+        "n": 11036,
+        "bad": 769,
+        "bad_rate": 0.0697,
+        "woe": 0.1585,
+        "iv": 0.001059
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0557,
+        "n": 11052,
+        "bad": 736,
+        "bad_rate": 0.0666,
+        "woe": 0.2071,
+        "iv": 0.001772
+      },
+      {
+        "bin": "5.0",
+        "order": 0.1301,
+        "n": 11020,
+        "bad": 650,
+        "bad_rate": 0.059,
+        "woe": 0.3365,
+        "iv": 0.004417
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 135624,
+        "bad": 12240,
+        "bad_rate": 0.0902,
+        "woe": -0.1219,
+        "iv": 0.008623
+      }
+    ]
+  },
+  "FONDKAPREMONT_MODE": {
+    "type": "nominal",
+    "iv": 0.0118,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 168215,
+        "bad": 14464,
+        "bad_rate": 0.086,
+        "woe": -0.0688,
+        "iv": 0.003334
+      },
+      {
+        "bin": "not specified",
+        "order": NaN,
+        "n": 4574,
+        "bad": 346,
+        "bad_rate": 0.0756,
+        "woe": 0.0692,
+        "iv": 8.8e-05
+      },
+      {
+        "bin": "org spec account",
+        "order": NaN,
+        "n": 4495,
+        "bad": 277,
+        "bad_rate": 0.0616,
+        "woe": 0.2889,
+        "iv": 0.001359
+      },
+      {
+        "bin": "reg oper account",
+        "order": NaN,
+        "n": 59046,
+        "bad": 4133,
+        "bad_rate": 0.07,
+        "woe": 0.1542,
+        "iv": 0.005351
+      },
+      {
+        "bin": "reg oper spec account",
+        "order": NaN,
+        "n": 9678,
+        "bad": 640,
+        "bad_rate": 0.0661,
+        "woe": 0.2145,
+        "iv": 0.00166
+      }
+    ]
+  },
+  "HOUSETYPE_MODE": {
+    "type": "nominal",
+    "iv": 0.0216,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 123328,
+        "bad": 11269,
+        "bad_rate": 0.0914,
+        "woe": -0.1356,
+        "iv": 0.009748
+      },
+      {
+        "bin": "Other",
+        "order": NaN,
+        "n": 993,
+        "bad": 81,
+        "bad_rate": 0.0816,
+        "woe": -0.0169,
+        "iv": 1e-06
+      },
+      {
+        "bin": "block of flats",
+        "order": NaN,
+        "n": 120478,
+        "bad": 8392,
+        "bad_rate": 0.0697,
+        "woe": 0.1595,
+        "iv": 0.011652
+      },
+      {
+        "bin": "specific housing",
+        "order": NaN,
+        "n": 1209,
+        "bad": 118,
+        "bad_rate": 0.0976,
+        "woe": -0.2121,
+        "iv": 0.000237
+      }
+    ]
+  },
+  "TOTALAREA_MODE": {
+    "type": "continuous",
+    "iv": 0.0352,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0067,
+        "n": 12737,
+        "bad": 1180,
+        "bad_rate": 0.0926,
+        "woe": -0.1511,
+        "iv": 0.001256
+      },
+      {
+        "bin": "1.0",
+        "order": 0.0213,
+        "n": 12785,
+        "bad": 1076,
+        "bad_rate": 0.0842,
+        "woe": -0.0458,
+        "iv": 0.00011
+      },
+      {
+        "bin": "2.0",
+        "order": 0.0413,
+        "n": 12700,
+        "bad": 893,
+        "bad_rate": 0.0703,
+        "woe": 0.1489,
+        "iv": 0.001078
+      },
+      {
+        "bin": "3.0",
+        "order": 0.053,
+        "n": 12706,
+        "bad": 885,
+        "bad_rate": 0.0697,
+        "woe": 0.159,
+        "iv": 0.001226
+      },
+      {
+        "bin": "4.0",
+        "order": 0.0626,
+        "n": 12799,
+        "bad": 891,
+        "bad_rate": 0.0696,
+        "woe": 0.1596,
+        "iv": 0.001244
+      },
+      {
+        "bin": "5.0",
+        "order": 0.0748,
+        "n": 12672,
+        "bad": 912,
+        "bad_rate": 0.072,
+        "woe": 0.1238,
+        "iv": 0.000753
+      },
+      {
+        "bin": "6.0",
+        "order": 0.0938,
+        "n": 12736,
+        "bad": 829,
+        "bad_rate": 0.0651,
+        "woe": 0.2316,
+        "iv": 0.002527
+      },
+      {
+        "bin": "7.0",
+        "order": 0.128,
+        "n": 12721,
+        "bad": 806,
+        "bad_rate": 0.0634,
+        "woe": 0.2604,
+        "iv": 0.003152
+      },
+      {
+        "bin": "8.0",
+        "order": 0.1858,
+        "n": 12720,
+        "bad": 739,
+        "bad_rate": 0.0581,
+        "woe": 0.3527,
+        "iv": 0.005561
+      },
+      {
+        "bin": "9.0",
+        "order": 0.3091,
+        "n": 12725,
+        "bad": 699,
+        "bad_rate": 0.0549,
+        "woe": 0.412,
+        "iv": 0.007409
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 118707,
+        "bad": 10950,
+        "bad_rate": 0.0922,
+        "woe": -0.146,
+        "iv": 0.01093
+      }
+    ]
+  },
+  "WALLSMATERIAL_MODE": {
+    "type": "nominal",
+    "iv": 0.0271,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Block",
+        "order": NaN,
+        "n": 7473,
+        "bad": 526,
+        "bad_rate": 0.0704,
+        "woe": 0.1474,
+        "iv": 0.000624
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 124975,
+        "bad": 11394,
+        "bad_rate": 0.0912,
+        "woe": -0.1331,
+        "iv": 0.009513
+      },
+      {
+        "bin": "Mixed",
+        "order": NaN,
+        "n": 1799,
+        "bad": 132,
+        "bad_rate": 0.0734,
+        "woe": 0.1,
+        "iv": 7.2e-05
+      },
+      {
+        "bin": "Monolithic",
+        "order": NaN,
+        "n": 1445,
+        "bad": 69,
+        "bad_rate": 0.0478,
+        "woe": 0.5535,
+        "iv": 0.001445
+      },
+      {
+        "bin": "Others",
+        "order": NaN,
+        "n": 1308,
+        "bad": 105,
+        "bad_rate": 0.0803,
+        "woe": 0.0018,
+        "iv": 0.0
+      },
+      {
+        "bin": "Panel",
+        "order": NaN,
+        "n": 52854,
+        "bad": 3367,
+        "bad_rate": 0.0637,
+        "woe": 0.2551,
+        "iv": 0.012572
+      },
+      {
+        "bin": "Stone, brick",
+        "order": NaN,
+        "n": 51862,
+        "bad": 3839,
+        "bad_rate": 0.074,
+        "woe": 0.0939,
+        "iv": 0.001788
+      },
+      {
+        "bin": "Wooden",
+        "order": NaN,
+        "n": 4292,
+        "bad": 428,
+        "bad_rate": 0.0997,
+        "woe": -0.2332,
+        "iv": 0.001041
+      }
+    ]
+  },
+  "EMERGENCYSTATE_MODE": {
+    "type": "nominal",
+    "iv": 0.0236,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 116581,
+        "bad": 10786,
+        "bad_rate": 0.0925,
+        "woe": -0.1493,
+        "iv": 0.011238
+      },
+      {
+        "bin": "No",
+        "order": NaN,
+        "n": 127570,
+        "bad": 8899,
+        "bad_rate": 0.0698,
+        "woe": 0.1579,
+        "iv": 0.012104
+      },
+      {
+        "bin": "Yes",
+        "order": NaN,
+        "n": 1857,
+        "bad": 175,
+        "bad_rate": 0.0942,
+        "woe": -0.1721,
+        "iv": 0.000236
+      }
+    ]
+  },
+  "OBS_30_CNT_SOCIAL_CIRCLE": {
+    "type": "continuous",
+    "iv": 0.0032,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 170165,
+        "bad": 13440,
+        "bad_rate": 0.079,
+        "woe": 0.0237,
+        "iv": 0.000387
+      },
+      {
+        "bin": "1.0",
+        "order": 2.0,
+        "n": 23832,
+        "bad": 1983,
+        "bad_rate": 0.0832,
+        "woe": -0.0332,
+        "iv": 0.000107
+      },
+      {
+        "bin": "2.0",
+        "order": 3.0,
+        "n": 16269,
+        "bad": 1336,
+        "bad_rate": 0.0821,
+        "woe": -0.0189,
+        "iv": 2.3e-05
+      },
+      {
+        "bin": "3.0",
+        "order": 4.0,
+        "n": 11352,
+        "bad": 1019,
+        "bad_rate": 0.0898,
+        "woe": -0.1164,
+        "iv": 0.000654
+      },
+      {
+        "bin": "4.0",
+        "order": 6.0,
+        "n": 23579,
+        "bad": 2050,
+        "bad_rate": 0.0869,
+        "woe": -0.0811,
+        "iv": 0.000651
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 811,
+        "bad": 32,
+        "bad_rate": 0.0395,
+        "woe": 0.7449,
+        "iv": 0.001366
+      }
+    ]
+  },
+  "DEF_30_CNT_SOCIAL_CIRCLE": {
+    "type": "ordinal",
+    "iv": 0.0142,
+    "monotonic": true,
+    "direction": "increasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 217088,
+        "bad": 16882,
+        "bad_rate": 0.0778,
+        "woe": 0.0406,
+        "iv": 0.00143
+      },
+      {
+        "bin": "1.0",
+        "order": 1.0,
+        "n": 22600,
+        "bad": 2295,
+        "bad_rate": 0.1015,
+        "woe": -0.2525,
+        "iv": 0.006509
+      },
+      {
+        "bin": "2.0",
+        "order": 2.0,
+        "n": 4299,
+        "bad": 490,
+        "bad_rate": 0.114,
+        "woe": -0.3827,
+        "iv": 0.002996
+      },
+      {
+        "bin": "Other",
+        "order": 3.0,
+        "n": 1210,
+        "bad": 161,
+        "bad_rate": 0.1331,
+        "woe": -0.5609,
+        "iv": 0.001945
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 811,
+        "bad": 32,
+        "bad_rate": 0.0395,
+        "woe": 0.7449,
+        "iv": 0.001366
+      }
+    ]
+  },
+  "OBS_60_CNT_SOCIAL_CIRCLE": {
+    "type": "continuous",
+    "iv": 0.0031,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 170839,
+        "bad": 13500,
+        "bad_rate": 0.079,
+        "woe": 0.0232,
+        "iv": 0.000371
+      },
+      {
+        "bin": "1.0",
+        "order": 2.0,
+        "n": 23810,
+        "bad": 1971,
+        "bad_rate": 0.0828,
+        "woe": -0.0276,
+        "iv": 7.4e-05
+      },
+      {
+        "bin": "2.0",
+        "order": 3.0,
+        "n": 16166,
+        "bad": 1335,
+        "bad_rate": 0.0826,
+        "woe": -0.025,
+        "iv": 4.1e-05
+      },
+      {
+        "bin": "3.0",
+        "order": 4.0,
+        "n": 11202,
+        "bad": 1003,
+        "bad_rate": 0.0895,
+        "woe": -0.1136,
+        "iv": 0.000614
+      },
+      {
+        "bin": "4.0",
+        "order": 6.0,
+        "n": 23180,
+        "bad": 2019,
+        "bad_rate": 0.0871,
+        "woe": -0.0831,
+        "iv": 0.000673
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 811,
+        "bad": 32,
+        "bad_rate": 0.0395,
+        "woe": 0.7449,
+        "iv": 0.001366
+      }
+    ]
+  },
+  "DEF_60_CNT_SOCIAL_CIRCLE": {
+    "type": "ordinal",
+    "iv": 0.0138,
+    "monotonic": true,
+    "direction": "increasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 224667,
+        "bad": 17588,
+        "bad_rate": 0.0783,
+        "woe": 0.0334,
+        "iv": 0.001004
+      },
+      {
+        "bin": "1.0",
+        "order": 1.0,
+        "n": 17404,
+        "bad": 1842,
+        "bad_rate": 0.1058,
+        "woe": -0.2987,
+        "iv": 0.007151
+      },
+      {
+        "bin": "2.0",
+        "order": 2.0,
+        "n": 2531,
+        "bad": 305,
+        "bad_rate": 0.1205,
+        "woe": -0.4462,
+        "iv": 0.002461
+      },
+      {
+        "bin": "Other",
+        "order": 3.0,
+        "n": 595,
+        "bad": 93,
+        "bad_rate": 0.1563,
+        "woe": -0.7508,
+        "iv": 0.001849
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 811,
+        "bad": 32,
+        "bad_rate": 0.0395,
+        "woe": 0.7449,
+        "iv": 0.001366
+      }
+    ]
+  },
+  "DAYS_LAST_PHONE_CHANGE": {
+    "type": "continuous",
+    "iv": 0.0446,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": -2523.0,
+        "n": 24613,
+        "bad": 1317,
+        "bad_rate": 0.0535,
+        "woe": 0.4401,
+        "iv": 0.01615
+      },
+      {
+        "bin": "1.0",
+        "order": -1886.0,
+        "n": 24668,
+        "bad": 1527,
+        "bad_rate": 0.0619,
+        "woe": 0.2855,
+        "iv": 0.007263
+      },
+      {
+        "bin": "2.0",
+        "order": -1568.0,
+        "n": 24576,
+        "bad": 1621,
+        "bad_rate": 0.066,
+        "woe": 0.2177,
+        "iv": 0.004329
+      },
+      {
+        "bin": "3.0",
+        "order": -1227.0,
+        "n": 24615,
+        "bad": 1790,
+        "bad_rate": 0.0727,
+        "woe": 0.1129,
+        "iv": 0.001219
+      },
+      {
+        "bin": "4.0",
+        "order": -889.0,
+        "n": 24609,
+        "bad": 2045,
+        "bad_rate": 0.0831,
+        "woe": -0.0317,
+        "iv": 0.000101
+      },
+      {
+        "bin": "5.0",
+        "order": -648.0,
+        "n": 24628,
+        "bad": 2290,
+        "bad_rate": 0.093,
+        "woe": -0.1549,
+        "iv": 0.002561
+      },
+      {
+        "bin": "6.0",
+        "order": -455.0,
+        "n": 24626,
+        "bad": 2261,
+        "bad_rate": 0.0918,
+        "woe": -0.141,
+        "iv": 0.002108
+      },
+      {
+        "bin": "7.0",
+        "order": -273.0,
+        "n": 24484,
+        "bad": 2429,
+        "bad_rate": 0.0992,
+        "woe": -0.2266,
+        "iv": 0.005616
+      },
+      {
+        "bin": "8.0",
+        "order": 0.0,
+        "n": 49188,
+        "bad": 4580,
+        "bad_rate": 0.0931,
+        "woe": -0.1564,
+        "iv": 0.005217
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 1,
+        "bad": 0,
+        "bad_rate": 0.0,
+        "woe": -1.3339,
+        "iv": -6e-06
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_2": {
+    "type": "nominal",
+    "iv": 0.0002,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 245997,
+        "bad": 19857,
+        "bad_rate": 0.0807,
+        "woe": 0.0001,
+        "iv": 0.0
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 11,
+        "bad": 3,
+        "bad_rate": 0.2727,
+        "woe": -1.5452,
+        "iv": 0.000179
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_3": {
+    "type": "nominal",
+    "iv": 0.0285,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 71232,
+        "bad": 4404,
+        "bad_rate": 0.0618,
+        "woe": 0.287,
+        "iv": 0.021169
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 174776,
+        "bad": 15456,
+        "bad_rate": 0.0884,
+        "woe": -0.0996,
+        "iv": 0.007345
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_4": {
+    "type": "nominal",
+    "iv": 0.0001,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 245986,
+        "bad": 19860,
+        "bad_rate": 0.0807,
+        "woe": -0.0001,
+        "iv": 0.0
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 22,
+        "bad": 0,
+        "bad_rate": 0.0,
+        "woe": 1.3742,
+        "iv": 0.000134
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_5": {
+    "type": "nominal",
+    "iv": 0.0,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 242290,
+        "bad": 19563,
+        "bad_rate": 0.0807,
+        "woe": -0.0002,
+        "iv": 0.0
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 3718,
+        "bad": 297,
+        "bad_rate": 0.0799,
+        "woe": 0.0099,
+        "iv": 2e-06
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_6": {
+    "type": "nominal",
+    "iv": 0.0121,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 224429,
+        "bad": 18646,
+        "bad_rate": 0.0831,
+        "woe": -0.0313,
+        "iv": 0.000906
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 21579,
+        "bad": 1214,
+        "bad_rate": 0.0563,
+        "woe": 0.387,
+        "iv": 0.011194
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_7": {
+    "type": "nominal",
+    "iv": 0.0,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 245962,
+        "bad": 19857,
+        "bad_rate": 0.0807,
+        "woe": -0.0001,
+        "iv": 0.0
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 46,
+        "bad": 3,
+        "bad_rate": 0.0652,
+        "woe": 0.0875,
+        "iv": 3e-06
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_8": {
+    "type": "nominal",
+    "iv": 0.001,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 225985,
+        "bad": 18401,
+        "bad_rate": 0.0814,
+        "woe": -0.0094,
+        "iv": 8.1e-05
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 20023,
+        "bad": 1459,
+        "bad_rate": 0.0729,
+        "woe": 0.1107,
+        "iv": 0.000954
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_9": {
+    "type": "nominal",
+    "iv": 0.0003,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 245061,
+        "bad": 19803,
+        "bad_rate": 0.0808,
+        "woe": -0.0011,
+        "iv": 1e-06
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 947,
+        "bad": 57,
+        "bad_rate": 0.0602,
+        "woe": 0.3075,
+        "iv": 0.000328
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_10": {
+    "type": "nominal",
+    "iv": -0.0,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 246004,
+        "bad": 19860,
+        "bad_rate": 0.0807,
+        "woe": -0.0,
+        "iv": 0.0
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 4,
+        "bad": 0,
+        "bad_rate": 0.0,
+        "woe": -0.2353,
+        "iv": -4e-06
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_11": {
+    "type": "nominal",
+    "iv": 0.0002,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 245057,
+        "bad": 19800,
+        "bad_rate": 0.0808,
+        "woe": -0.0009,
+        "iv": 1e-06
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 951,
+        "bad": 60,
+        "bad_rate": 0.0631,
+        "woe": 0.2578,
+        "iv": 0.000237
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_12": {
+    "type": "nominal",
+    "iv": -0.0,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 246007,
+        "bad": 19860,
+        "bad_rate": 0.0807,
+        "woe": -0.0,
+        "iv": 0.0
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 1,
+        "bad": 0,
+        "bad_rate": 0.0,
+        "woe": -1.3339,
+        "iv": -6e-06
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_13": {
+    "type": "nominal",
+    "iv": 0.0027,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 245176,
+        "bad": 19837,
+        "bad_rate": 0.0809,
+        "woe": -0.0024,
+        "iv": 6e-06
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 832,
+        "bad": 23,
+        "bad_rate": 0.0276,
+        "woe": 1.1069,
+        "iv": 0.002678
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_14": {
+    "type": "nominal",
+    "iv": 0.0014,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 245282,
+        "bad": 19833,
+        "bad_rate": 0.0809,
+        "woe": -0.0018,
+        "iv": 3e-06
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 726,
+        "bad": 27,
+        "bad_rate": 0.0372,
+        "woe": 0.8037,
+        "iv": 0.001392
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_15": {
+    "type": "nominal",
+    "iv": 0.0009,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 245713,
+        "bad": 19852,
+        "bad_rate": 0.0808,
+        "woe": -0.0009,
+        "iv": 1e-06
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 295,
+        "bad": 8,
+        "bad_rate": 0.0271,
+        "woe": 1.0887,
+        "iv": 0.000943
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_16": {
+    "type": "nominal",
+    "iv": 0.0021,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 243543,
+        "bad": 19736,
+        "bad_rate": 0.081,
+        "woe": -0.0042,
+        "iv": 1.7e-05
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 2465,
+        "bad": 124,
+        "bad_rate": 0.0503,
+        "woe": 0.5018,
+        "iv": 0.002061
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_17": {
+    "type": "nominal",
+    "iv": 0.0003,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 245947,
+        "bad": 19859,
+        "bad_rate": 0.0807,
+        "woe": -0.0002,
+        "iv": 0.0
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 61,
+        "bad": 1,
+        "bad_rate": 0.0164,
+        "woe": 1.2647,
+        "iv": 0.000272
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_18": {
+    "type": "nominal",
+    "iv": 0.0008,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 244006,
+        "bad": 19742,
+        "bad_rate": 0.0809,
+        "woe": -0.0024,
+        "iv": 6e-06
+      },
+      {
+        "bin": "1",
+        "order": 1.0,
+        "n": 2002,
+        "bad": 118,
+        "bad_rate": 0.0589,
+        "woe": 0.334,
+        "iv": 0.000798
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_19": {
+    "type": "nominal",
+    "iv": 0.0,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 245858,
+        "bad": 19850,
+        "bad_rate": 0.0807,
+        "woe": -0.0001,
+        "iv": 0.0
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 150,
+        "bad": 10,
+        "bad_rate": 0.0667,
+        "woe": 0.1614,
+        "iv": 1.9e-05
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_20": {
+    "type": "nominal",
+    "iv": 0.0,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 245884,
+        "bad": 19848,
+        "bad_rate": 0.0807,
+        "woe": 0.0001,
+        "iv": 0.0
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 124,
+        "bad": 12,
+        "bad_rate": 0.0968,
+        "woe": -0.2353,
+        "iv": 2.6e-05
+      }
+    ]
+  },
+  "FLAG_DOCUMENT_21": {
+    "type": "nominal",
+    "iv": 0.0002,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0",
+        "order": 0.0,
+        "n": 245929,
+        "bad": 19848,
+        "bad_rate": 0.0807,
+        "woe": 0.0003,
+        "iv": 0.0
+      },
+      {
+        "bin": "Other",
+        "order": 1.0,
+        "n": 79,
+        "bad": 12,
+        "bad_rate": 0.1519,
+        "woe": -0.7461,
+        "iv": 0.00023
+      }
+    ]
+  },
+  "AMT_REQ_CREDIT_BUREAU_HOUR": {
+    "type": "ordinal",
+    "iv": 0.0133,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 211484,
+        "bad": 16319,
+        "bad_rate": 0.0772,
+        "woe": 0.049,
+        "iv": 0.002024
+      },
+      {
+        "bin": "1.0",
+        "order": 1.0,
+        "n": 1230,
+        "bad": 99,
+        "bad_rate": 0.0805,
+        "woe": -0.0013,
+        "iv": -0.0
+      },
+      {
+        "bin": "Other",
+        "order": 2.0,
+        "n": 50,
+        "bad": 5,
+        "bad_rate": 0.1,
+        "woe": -0.3195,
+        "iv": 1.7e-05
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 33244,
+        "bad": 3437,
+        "bad_rate": 0.1034,
+        "woe": -0.2725,
+        "iv": 0.011242
+      }
+    ]
+  },
+  "AMT_REQ_CREDIT_BUREAU_DAY": {
+    "type": "ordinal",
+    "iv": 0.0136,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 211591,
+        "bad": 16309,
+        "bad_rate": 0.0771,
+        "woe": 0.0502,
+        "iv": 0.002125
+      },
+      {
+        "bin": "1.0",
+        "order": 1.0,
+        "n": 1020,
+        "bad": 102,
+        "bad_rate": 0.1,
+        "woe": -0.2396,
+        "iv": 0.000258
+      },
+      {
+        "bin": "Other",
+        "order": 2.0,
+        "n": 153,
+        "bad": 12,
+        "bad_rate": 0.0784,
+        "woe": -0.0059,
+        "iv": -0.0
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 33244,
+        "bad": 3437,
+        "bad_rate": 0.1034,
+        "woe": -0.2725,
+        "iv": 0.011242
+      }
+    ]
+  },
+  "AMT_REQ_CREDIT_BUREAU_WEEK": {
+    "type": "ordinal",
+    "iv": 0.0134,
+    "monotonic": null,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 205968,
+        "bad": 15889,
+        "bad_rate": 0.0771,
+        "woe": 0.0493,
+        "iv": 0.001995
+      },
+      {
+        "bin": "1.0",
+        "order": 1.0,
+        "n": 6536,
+        "bad": 506,
+        "bad_rate": 0.0774,
+        "woe": 0.0446,
+        "iv": 5.3e-05
+      },
+      {
+        "bin": "Other",
+        "order": 2.0,
+        "n": 260,
+        "bad": 28,
+        "bad_rate": 0.1077,
+        "woe": -0.3335,
+        "iv": 0.000128
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 33244,
+        "bad": 3437,
+        "bad_rate": 0.1034,
+        "woe": -0.2725,
+        "iv": 0.011242
+      }
+    ]
+  },
+  "AMT_REQ_CREDIT_BUREAU_MON": {
+    "type": "continuous",
+    "iv": 0.0155,
+    "monotonic": true,
+    "direction": "decreasing",
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 177851,
+        "bad": 13845,
+        "bad_rate": 0.0778,
+        "woe": 0.0395,
+        "iv": 0.001108
+      },
+      {
+        "bin": "1.0",
+        "order": 1.0,
+        "n": 26438,
+        "bad": 2048,
+        "bad_rate": 0.0775,
+        "woe": 0.0446,
+        "iv": 0.000211
+      },
+      {
+        "bin": "2.0",
+        "order": 2.0,
+        "n": 4287,
+        "bad": 303,
+        "bad_rate": 0.0707,
+        "woe": 0.1423,
+        "iv": 0.000336
+      },
+      {
+        "bin": "3.0",
+        "order": 3.0,
+        "n": 1596,
+        "bad": 91,
+        "bad_rate": 0.057,
+        "woe": 0.3681,
+        "iv": 0.000763
+      },
+      {
+        "bin": "Other",
+        "order": 5.0,
+        "n": 2592,
+        "bad": 136,
+        "bad_rate": 0.0525,
+        "woe": 0.4577,
+        "iv": 0.001836
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 33244,
+        "bad": 3437,
+        "bad_rate": 0.1034,
+        "woe": -0.2725,
+        "iv": 0.011242
+      }
+    ]
+  },
+  "AMT_REQ_CREDIT_BUREAU_QRT": {
+    "type": "ordinal",
+    "iv": 0.0172,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 172364,
+        "bad": 13541,
+        "bad_rate": 0.0786,
+        "woe": 0.0296,
+        "iv": 0.000605
+      },
+      {
+        "bin": "1.0",
+        "order": 1.0,
+        "n": 27052,
+        "bad": 1783,
+        "bad_rate": 0.0659,
+        "woe": 0.2185,
+        "iv": 0.004799
+      },
+      {
+        "bin": "2.0",
+        "order": 2.0,
+        "n": 11526,
+        "bad": 946,
+        "bad_rate": 0.0821,
+        "woe": -0.0185,
+        "iv": 1.6e-05
+      },
+      {
+        "bin": "3.0",
+        "order": 3.0,
+        "n": 1340,
+        "bad": 96,
+        "bad_rate": 0.0716,
+        "woe": 0.1245,
+        "iv": 8.3e-05
+      },
+      {
+        "bin": "Other",
+        "order": 4.0,
+        "n": 482,
+        "bad": 57,
+        "bad_rate": 0.1183,
+        "woe": -0.431,
+        "iv": 0.000427
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 33244,
+        "bad": 3437,
+        "bad_rate": 0.1034,
+        "woe": -0.2725,
+        "iv": 0.011242
+      }
+    ]
+  },
+  "AMT_REQ_CREDIT_BUREAU_YEAR": {
+    "type": "continuous",
+    "iv": 0.0176,
+    "monotonic": false,
+    "direction": null,
+    "bins": [
+      {
+        "bin": "0.0",
+        "order": 0.0,
+        "n": 108279,
+        "bad": 7852,
+        "bad_rate": 0.0725,
+        "woe": 0.1161,
+        "iv": 0.005656
+      },
+      {
+        "bin": "1.0",
+        "order": 2.0,
+        "n": 40021,
+        "bad": 3225,
+        "bad_rate": 0.0806,
+        "woe": 0.0018,
+        "iv": 1e-06
+      },
+      {
+        "bin": "2.0",
+        "order": 3.0,
+        "n": 26950,
+        "bad": 2152,
+        "bad_rate": 0.0799,
+        "woe": 0.0117,
+        "iv": 1.5e-05
+      },
+      {
+        "bin": "3.0",
+        "order": 4.0,
+        "n": 16542,
+        "bad": 1366,
+        "bad_rate": 0.0826,
+        "woe": -0.025,
+        "iv": 4.2e-05
+      },
+      {
+        "bin": "4.0",
+        "order": 6.0,
+        "n": 20972,
+        "bad": 1828,
+        "bad_rate": 0.0872,
+        "woe": -0.084,
+        "iv": 0.000621
+      },
+      {
+        "bin": "Missing",
+        "order": NaN,
+        "n": 33244,
+        "bad": 3437,
+        "bad_rate": 0.1034,
+        "woe": -0.2725,
+        "iv": 0.011242
+      }
+    ]
+  }
+}
