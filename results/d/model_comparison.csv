@@ -1,0 +1,8 @@
+experiment,validation,roc_auc,source,caveat
+V0 Logistic Regression,Fixed 80/20,0.751239,C supplied summary; only final prediction AUC recomputed by D,Development result; feature selection fixed before inner CV
+V0 LightGBM,Fixed 80/20,0.759364,C supplied summary; only final prediction AUC recomputed by D,Development result; feature selection fixed before inner CV
+V1 LightGBM baseline,Fixed 80/20,0.769522,C supplied summary; only final prediction AUC recomputed by D,Development result; feature selection fixed before inner CV
+V1 LightGBM baseline,5-fold CV mean,0.763755,C supplied summary; only final prediction AUC recomputed by D,Development result; feature selection fixed before inner CV
+V1 Regularized LightGBM,5-fold CV mean,0.766092,C supplied summary; only final prediction AUC recomputed by D,Development result; feature selection fixed before inner CV
+V1 Regularized + class weight,5-fold CV mean,0.76555,C supplied summary; only final prediction AUC recomputed by D,Development result; feature selection fixed before inner CV
+Final V1 Regularized LightGBM,Fixed 80/20,0.772396,C supplied summary; only final prediction AUC recomputed by D,Validation-selected early stopping: 892 rounds; not the full-data 705-round model

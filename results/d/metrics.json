@@ -1,0 +1,22 @@
+{
+  "n": 61503,
+  "positives": 4965,
+  "negatives": 56538,
+  "prevalence": 0.08072776937710356,
+  "roc_auc": 0.7723956442488554,
+  "average_precision": 0.2625231156520088,
+  "brier_score": 0.06691922203568766,
+  "log_loss": 0.24182104461714854,
+  "mean_probability": 0.0797508023254691,
+  "minimum_probability": 0.0019600936040122,
+  "maximum_probability": 0.7589246418031917,
+  "all_negative_accuracy": 0.9192722306228964,
+  "prevalence_brier": 0.07421079662850075,
+  "auc_bootstrap_95_ci": [
+    0.7654998148987089,
+    0.7795159785590291
+  ],
+  "bootstrap_replicates": 500,
+  "bootstrap_seed": 42,
+  "context": "C fixed-validation predictions; early stopping selected 892 rounds on this validation set. Descriptive development evaluation, not an untouched test. The separate 705-round full-data model is not evaluated here."
+}

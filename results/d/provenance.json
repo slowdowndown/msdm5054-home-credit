@@ -1,0 +1,22 @@
+{
+  "source_repository": "https://github.com/slowdowndown/msdm5054-home-credit",
+  "source_commit": "7dd0957906a3a67b8f8a77f2b0a8188c80944675",
+  "sha256": {
+    "results/c/validation_predictions_v1.csv": "897893daaf9c865f79afcc33d9df234fe94d6e52dd319511278d3c3b0a69c137",
+    "results/c/model_summary.csv": "55e86315ef07ce284808392fbf9d0b3ae9e9b5659d3ac053f4c8a889151a6d0a",
+    "results/c/cv_results.csv": "f4da6a8891a5d68192b1afd9fe11bdbe956bdaa784c06bce6befea6e0170577d",
+    "results/c/feature_importance.csv": "1004c55a9fe46e3c7505db63cabef1774dd337b9056264b41e3c90a47b2409b5",
+    "results/c/final_model_config.json": "72c6a4b3c99addd2025fa5bff38bb7c3d2e34984b36859a26495666bdb2f885f"
+  },
+  "python": "3.14.0",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "id_alignment": "Unique IDs verified; canonical split membership and true-label alignment need raw data, absent from archive.",
+  "evaluation_context": "C fixed-validation predictions; early stopping selected 892 rounds on this validation set. Descriptive development evaluation, not an untouched test. The separate 705-round full-data model is not evaluated here.",
+  "raw_feature_error_analysis": "Not performed: raw application table unavailable.",
+  "shap": "Not performed: optional; serialized model lacks fitted preprocessing and matching input matrix."
+}

@@ -1,0 +1,8 @@
+{
+  "notebook": "all 5 code cells executed successfully",
+  "input_integrity": "source copies unchanged; hashes verified",
+  "counts": "all thresholds preserve total and class counts",
+  "plots": "9 PNG figures visually inspected",
+  "unit_tests": "3 tests passed (counts, boundary, malformed inputs)",
+  "report": "static report built from actual metrics; 9 images embedded"
+}
