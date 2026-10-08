@@ -1,0 +1,8 @@
+experiment,validation,roc_auc
+V0 Logistic Regression,Fixed 80/20,0.751239
+V0 LightGBM,Fixed 80/20,0.759364
+V1 LightGBM baseline,Fixed 80/20,0.769522
+V1 LightGBM baseline,5-fold CV mean,0.763755
+V1 Regularized LightGBM,5-fold CV mean,0.766092
+V1 Regularized + class weight,5-fold CV mean,0.76555
+Final V1 Regularized LightGBM,Fixed 80/20,0.772396

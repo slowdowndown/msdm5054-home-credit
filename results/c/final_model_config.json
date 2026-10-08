@@ -1,0 +1,29 @@
+{
+  "model": "LightGBM",
+  "feature_version": "V1",
+  "feature_count": 83,
+  "parameters": {
+    "objective": "binary",
+    "n_estimators": 705,
+    "learning_rate": 0.03,
+    "num_leaves": 32,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.1,
+    "reg_lambda": 0.1,
+    "random_state": 42
+  },
+  "fixed_validation_auc": 0.7723956442488558,
+  "regularized_cv_mean_auc": 0.7660919569696322,
+  "regularized_cv_std_auc": 0.0021893511168113093,
+  "cv_best_iterations": [
+    659,
+    738,
+    660,
+    875,
+    593
+  ],
+  "final_n_estimators": 705,
+  "class_weight_used": false
+}
