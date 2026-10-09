@@ -2,37 +2,37 @@
 ## Model evaluation and integrated project report
 **MSDM5054 · SHU Yi, CAO Yixin, ZHANG Yajing, SU Zhiyu**
 
-Updated 9 October 2026 · C source snapshot `8d44b49` · D evaluation and integration: SU Zhiyu
+Updated 9 October 2026 · Modeling source snapshot `8d44b49`
 
 ## Abstract
-This project predicts repayment difficulty from the Home Credit application main table. A stratified split assigns 246,008 applications to training and 61,503 to development validation. The workflow compares logistic regression, LightGBM and newly added XGBoost using V1 features. C selects **XGBoost** based on a slightly higher five-fold mean ROC-AUC: **0.767210**, compared with **0.766092** for regularized LightGBM. Using the same sample-standard-deviation convention, fold variability is **0.001586** versus **0.002189**. On the fixed validation set, the models are effectively tied: XGBoost AUC **0.772394**, LightGBM **0.772396**. D independently evaluates both prediction files and updates the main error and calibration analyses to XGBoost. Neither the tiny fixed-set difference nor the five-fold comparison establishes significant superiority. Both models used validation early stopping; these remain development results, not untouched test estimates or Kaggle scores.
+This project predicts repayment difficulty from the Home Credit application main table. A stratified split assigns 246,008 applications to training and 61,503 to development validation. The workflow compares logistic regression, LightGBM and newly added XGBoost using V1 features. We select **XGBoost** based on a slightly higher five-fold mean ROC-AUC: **0.767210**, compared with **0.766092** for regularized LightGBM. Using the same sample-standard-deviation convention, fold variability is **0.001586** versus **0.002189**. On the fixed validation set, the models are effectively tied: XGBoost AUC **0.772394**, LightGBM **0.772396**. We independently recompute metrics from both prediction files and focus the error and calibration analyses on XGBoost. Neither the tiny fixed-set difference nor the five-fold comparison establishes significant superiority. Both models used validation early stopping; these remain development results, not untouched test estimates or Kaggle scores.
 
 ## 1. Research questions and data
 The project asks whether application information can rank repayment risk; whether the V1 feature and preprocessing package improves on the V0 baseline; and how ranking performance translates into errors at different classification thresholds. TARGET=1 denotes the competition's repayment-difficulty class, referred to here as the positive class. Results do not establish causal effects or prescribe lending decisions.
 
-The official labelled application table contains 307,511 rows and the official test table contains 48,744 rows. The implemented experiments use the application main table only; multi-table aggregation has not been implemented. ID `SK_ID_CURR` and TARGET are excluded from predictor inputs. The fixed split uses seed 42 and stratification by TARGET. D's input contains 61,503 distinct IDs, 4,965 positives and 56,538 negatives. Raw data are not in this source archive. D verified the supplied prediction schema, uniqueness, labels and probability range; independent comparison against canonical raw labels and split membership remains unavailable.
+The official labelled application table contains 307,511 rows and the official test table contains 48,744 rows. The implemented experiments use the application main table only; multi-table aggregation has not been implemented. ID `SK_ID_CURR` and TARGET are excluded from predictor inputs. The fixed split uses seed 42 and stratification by TARGET. The evaluation dataset contains 61,503 distinct IDs, 4,965 positives and 56,538 negatives. Raw data are not in this source archive. We verified the exported prediction schema, ID uniqueness, label validity and probability range; independent comparison against canonical raw labels and split membership remains unavailable.
 
 ## 2. Data preparation and feature engineering
-A implements input-file fingerprints, fixed split reproduction and training-only preprocessing. V0 replaces the DAYS_EMPLOYED sentinel 365243 with missing values, applies log1p to four monetary variables, drops features with over 80% training missingness, and uses numeric imputation/scaling plus categorical one-hot encoding. The logistic classifier is part of a single fitted pipeline.
+The data pipeline implements input-file fingerprints, fixed split reproduction and training-only preprocessing. V0 replaces the DAYS_EMPLOYED sentinel 365243 with missing values, applies log1p to four monetary variables, drops features with over 80% training missingness, and uses numeric imputation/scaling plus categorical one-hot encoding. The logistic classifier is part of a single fitted pipeline.
 
-B's training-partition EDA identifies missingness patterns, extreme values, near-constant fields and correlated feature groups. The V1 decision list retains 65 original features, removes 55 and adds ANNUITY_TO_CREDIT. Thus 66 raw features become 83 numeric model inputs after additional indicators. V1 changes the preprocessing package as well as feature selection: training-fitted caps and bins, rare-category merging, cross-fitted target encoding for two high-cardinality fields, and ordinal encoding for other categories. Therefore the V0-to-V1 improvement cannot be attributed solely to the single ratio feature. B's univariate screening and permutation analysis emphasize the external-source scores, but such associations are not causal and do not prove the absence of all leakage.
+Our training-partition exploratory data analysis identifies missingness patterns, extreme values, near-constant fields and correlated feature groups. The V1 decision list retains 65 original features, removes 55 and adds ANNUITY_TO_CREDIT. Thus 66 raw features become 83 numeric model inputs after additional indicators. V1 changes the preprocessing package as well as feature selection: training-fitted caps and bins, rare-category merging, cross-fitted target encoding for two high-cardinality fields, and ordinal encoding for other categories. Therefore the V0-to-V1 improvement cannot be attributed solely to the single ratio feature. Our univariate screening and permutation analysis emphasize the external-source scores, but such associations are not causal and do not prove the absence of all leakage.
 
 
 ## 3. Model development and current selection
-C first fits logistic regression and LightGBM, then applies the V1 feature/preprocessing package and regularization. XGBoost uses the same 83-column representation, fixed 80/20 split and five-fold partitioning within the 80% training portion. Learned preprocessing is fitted within each CV fold. Feature selection itself was already performed on the larger training portion, so the procedure is not nested validation of feature selection.
+We first fit logistic regression and LightGBM, then apply the V1 feature/preprocessing package and regularization. XGBoost uses the same 83-column representation, fixed 80/20 split and five-fold partitioning within the 80% training portion. Learned preprocessing is fitted within each CV fold. Feature selection itself was already performed on the larger training portion, so the procedure is not nested validation of feature selection.
 
-XGBoost uses binary logistic loss, learning rate 0.03, max depth 6, row and column subsampling 0.8, alpha 0.1, lambda 1.0 and histogram-based trees. Early stopping monitors AUC. Its best CV round counts are 694, 477, 582, 793 and 805; their rounded mean is **670**. C's `selected_model.json` selects V1 XGBoost because its CV mean is slightly higher and its observed fold variability is lower. This selection is an empirical preference in the tested configurations, not evidence of universal superiority.
+XGBoost uses binary logistic loss, learning rate 0.03, max depth 6, row and column subsampling 0.8, alpha 0.1, lambda 1.0 and histogram-based trees. Early stopping monitors AUC. Its best CV round counts are 694, 477, 582, 793 and 805; their rounded mean is **670**. The model-selection record, `selected_model.json`, identifies V1 XGBoost as the selected model because its CV mean is slightly higher and its observed fold variability is lower. This selection is an empirical preference in the tested configurations, not evidence of universal superiority.
 
-### Keep the evaluated and full-data models distinct
+### Validation models and full-data models
 | Model | Fixed-validation fitted model | Separate full-data fitted model |
 |---|---|---|
 | Regularized LightGBM | Validation early stopping selected 892 rounds | 705 rounds selected from CV; 307,511 training rows |
 | XGBoost | `best_iteration=777` (zero-based), i.e. 778 rounds | 670 rounds selected from CV; 307,511 training rows |
 
-The record-level validation files come from the first column. Full-data estimators in the second column have no independent validation score. The official test set has 48,744 rows; C records validated submission candidates for both models, without any Kaggle leaderboard score. The filename `submission_v2_xgboost.csv` identifies a submission version; XGBoost still uses the **V1 feature pipeline**, not a new multi-table V2 feature set.
+The record-level validation files come from the first column. Full-data estimators in the second column have no independent validation score. The official test set has 48,744 rows; we retain validated submission candidates for both models, without any Kaggle leaderboard score. The filename `submission_v2_xgboost.csv` identifies a submission version; XGBoost still uses the **V1 feature pipeline**, not a new multi-table V2 feature set.
 
 ## 4. Evaluation and input checks
-D reads both C prediction files, requires 61,503 rows, checks unique nonmissing customer IDs, binary labels and finite probabilities in [0,1], and recomputes AUC against each configuration. Before comparing models, D joins by **SK_ID_CURR**, verifies equal ID sets and checks that labels agree. Row ordering is not assumed. This confirms consistency between the two prediction exports, not independent correctness against the unavailable canonical raw data.
+Our evaluation pipeline reads both models’ prediction files, requires 61,503 rows, checks unique nonmissing customer IDs, binary labels and finite probabilities in [0,1], and recomputes AUC against each configuration. Before comparing models, we join by **SK_ID_CURR**, verify equal ID sets and check that labels agree. Row ordering is not assumed. This confirms consistency between the two prediction exports, not independent correctness against the unavailable canonical raw data.
 
 ROC-AUC measures ranking; Average Precision (AP) summarizes precision-recall performance using `average_precision_score`, not trapezoidal PR-AUC. Brier score and log loss measure probability quality. The positive rate is **8.07%**: predicting all applications negative gives **91.93% accuracy** and zero recall. Thus accuracy alone is misleading.
 
@@ -46,17 +46,17 @@ For XGBoost, a 500-replicate stratified percentile bootstrap (seed 42) yields AU
 | V1 LightGBM baseline | 0.769522 | 0.763755 |
 | V1 Regularized LightGBM | 0.772396 | 0.766092 |
 | V1 Regularized + class weight (corrected) | — | 0.765550 |
-| **V1 XGBoost — selected by C** | **0.772394** | **0.767210** |
+| **V1 XGBoost — selected model** | **0.772394** | **0.767210** |
 
-Historical values are supplied by C; both regularized LightGBM and XGBoost fixed-validation AUCs are independently recomputed by D. The CV mean difference is **+0.001118** in favor of XGBoost. Fixed-validation AUC difference (XGBoost minus LightGBM) is **-0.000001528**, effectively a tie. Do not describe XGBoost as having improved fixed-validation AUC.
+Historical results are taken from the modeling experiments; we independently recompute both regularized LightGBM and XGBoost fixed-validation AUCs from the exported predictions. The CV mean difference is **+0.001118** in favor of XGBoost. Fixed-validation AUC difference (XGBoost minus LightGBM) is **-0.000001528**, effectively a tie. There is no observed improvement in fixed-validation AUC for XGBoost.
 
-### Standardize the standard-deviation convention
+### Consistent reporting of fold variability
 | Model | CV mean | Sample SD (`ddof=1`, comparison standard) | Population SD (`ddof=0`) |
 |---|---:|---:|---:|
 | Regularized LightGBM | 0.766092 | 0.002189 | 0.001958 |
 | XGBoost | 0.767210 | 0.001586 | 0.001418 |
 
-C's XGBoost notebook uses `np.std` with its default `ddof=0`; its LightGBM calculation uses `ddof=1`. D preserves C's files and recalculates both consistently. XGBoost still has lower observed fold variability after harmonization. These SDs are not standard errors or confidence intervals, and no significance claim is made from five folds. Baseline/regularized LightGBM CV does not explicitly restrict early stopping to AUC alone, while XGBoost and corrected weighted LightGBM do; this limits how strictly controlled the comparison is.
+The XGBoost experiment in the modeling notebook uses `np.std` with its default `ddof=0`; its LightGBM calculation uses `ddof=1`. We retain the original experiment records and recalculate both standard deviations using a common convention. XGBoost still has lower observed fold variability after harmonization. These SDs are not standard errors or confidence intervals, and no significance claim is made from five folds. Baseline/regularized LightGBM CV does not explicitly restrict early stopping to AUC alone, while XGBoost and corrected weighted LightGBM do; this limits how strictly controlled the comparison is.
 
 ![CV comparison](../../results/d/figures/07_cv_comparison.png)
 
@@ -68,7 +68,7 @@ C's XGBoost notebook uses `np.std` with its default `ddof=0`; its LightGBM calcu
 | Brier score ↓ | 0.066919 | 0.066902 |
 | Log loss ↓ | 0.241821 | 0.241746 |
 
-The models are very similar. XGBoost has slightly lower probability losses, while LightGBM has slightly higher AP and essentially identical AUC. The data do not support a claim that one model dominates all metrics. C's model-selection preference is driven primarily by CV. The ROC and PR curves below use aligned predictions from the same 61,503 applications.
+The models are very similar. XGBoost has slightly lower probability losses, while LightGBM has slightly higher AP and essentially identical AUC. The data do not support a claim that one model dominates all metrics. Our model-selection preference is driven primarily by CV. The ROC and PR curves below use aligned predictions from the same 61,503 applications.
 
 ![Aligned model comparison](../../results/d/figures/10_model_comparison.png)
 
@@ -105,7 +105,7 @@ The highest-risk decile contains **6,151** applications and **1,772** positives.
 
 ![XGBoost risk deciles](../../results/d/figures/06_risk_deciles.png)
 
-The XGBoost importance export comes from the **670-round full-data model**, not the 778-round validation model. Its normalized gain ranking is led by EXT_SOURCE_2, EXT_SOURCE_3 and EXT_SOURCE_1, followed by NAME_EDUCATION_TYPE and FLAG_OWN_CAR. It does not provide the direction of effects and is not SHAP or causal evidence. LightGBM's exported importance is split count, so the two importance columns should not be compared numerically. B's permutation importance also uses a different model and method.
+The XGBoost importance export comes from the **670-round full-data model**, not the 778-round validation model. Its normalized gain ranking is led by EXT_SOURCE_2, EXT_SOURCE_3 and EXT_SOURCE_1, followed by NAME_EDUCATION_TYPE and FLAG_OWN_CAR. It does not provide the direction of effects and is not SHAP or causal evidence. LightGBM's exported importance is split count, so the two importance columns should not be compared numerically. The exploratory permutation-importance analysis also uses a different model and method.
 
 ![XGBoost full-data feature importance](../../results/d/figures/08_feature_importance.png)
 
@@ -118,7 +118,7 @@ The XGBoost importance export comes from the **670-round full-data model**, not 
 6. No Kaggle score is recorded. Multitable aggregation is not implemented; the additional XGBoost submission retains V1 features.
 
 ## 10. Conclusions
-C now selects XGBoost for the current V1 pipeline because it has a modestly higher mean five-fold AUC and lower observed fold variability under a common SD convention. Fixed-validation ranking is practically unchanged relative to regularized LightGBM, and probability/precision-recall differences are small and mixed. D's updated metrics, aligned comparison curves and XGBoost-focused error analysis support that nuanced conclusion. A default threshold of 0.50 remains ineffective for positive detection. Stronger generalization or deployment claims require fresh evaluation and explicit operating objectives.
+We select XGBoost for the current V1 pipeline because it has a modestly higher mean five-fold AUC and lower observed fold variability under a common SD convention. Fixed-validation ranking is practically unchanged relative to regularized LightGBM, and probability/precision-recall differences are small and mixed. The recomputed metrics, aligned comparison curves and XGBoost-focused error analysis support that nuanced conclusion. A default threshold of 0.50 remains ineffective for positive detection. Stronger generalization or deployment claims require fresh evaluation and explicit operating objectives.
 
 ## 11. Contributions and evidence
 | Member | Contribution |
@@ -128,4 +128,4 @@ C now selects XGBoost for the current V1 pipeline because it has a modestly high
 | ZHANG Yajing | LightGBM and XGBoost, CV/tuning, selected-model record, full-data fitting and prediction handoff |
 | SU Zhiyu | Recomputed metrics, ID-aligned comparison, harmonized CV variability, error analysis, figures and integrated report |
 
-Evidence: [source snapshot](https://github.com/slowdowndown/msdm5054-home-credit/tree/8d44b49ad4f06d17bfc89fc77f9918a487b666f8), `README.md`, `docs/division-of-labor.md`, `src/data_pipeline.py`, `src/baseline.py`, B's EDA/feature documents, `notebooks/C_modeling.ipynb` sections 15–20, and `results/c/` artifacts. D changes do not alter C's original records. Course formatting, page limits and final team sign-off remain to be confirmed.
+Evidence: [source snapshot](https://github.com/slowdowndown/msdm5054-home-credit/tree/8d44b49ad4f06d17bfc89fc77f9918a487b666f8), `README.md`, `docs/division-of-labor.md`, `src/data_pipeline.py`, `src/baseline.py`, the exploratory-analysis and feature-engineering documents, `notebooks/C_modeling.ipynb` sections 15–20, and `results/c/` artifacts. The evaluation results preserve the original modeling records. Course formatting, page limits and final team sign-off remain to be confirmed.
