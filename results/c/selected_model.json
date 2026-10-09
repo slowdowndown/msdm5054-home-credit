@@ -1,0 +1,10 @@
+{
+  "selected_model": "V1 XGBoost",
+  "selection_basis": "Higher five-fold mean ROC-AUC and lower cross-validation standard deviation than regularized LightGBM.",
+  "xgboost_cv_mean_auc": 0.7672103309888355,
+  "xgboost_cv_std_auc": 0.001418328738242812,
+  "lightgbm_cv_mean_auc": 0.766092,
+  "lightgbm_cv_std_auc": 0.002189,
+  "xgboost_fixed_auc": 0.7723941159876182,
+  "lightgbm_fixed_auc": 0.772396
+}

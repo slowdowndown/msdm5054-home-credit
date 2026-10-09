@@ -1,0 +1,31 @@
+{
+  "model": "XGBoost",
+  "feature_version": "V1",
+  "feature_count": 83,
+  "parameters": {
+    "objective": "binary:logistic",
+    "n_estimators": 670,
+    "learning_rate": 0.03,
+    "max_depth": 6,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "tree_method": "hist",
+    "eval_metric": "auc",
+    "random_state": 42
+  },
+  "fixed_validation_auc": 0.7723941159876182,
+  "cv_mean_auc": 0.7672103309888355,
+  "cv_std_auc": 0.001418328738242812,
+  "oof_auc": 0.7671907941748206,
+  "cv_best_boosting_rounds": [
+    694,
+    477,
+    582,
+    793,
+    805
+  ],
+  "final_n_estimators": 670,
+  "selected_as_final_model": true
+}
