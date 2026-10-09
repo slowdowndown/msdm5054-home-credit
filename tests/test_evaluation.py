@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
-from evaluation import load_predictions, threshold_metrics
+from evaluation import load_predictions, threshold_metrics, align_predictions, normalize_summary
 
 class EvaluationTests(unittest.TestCase):
     def test_known_counts(self):
@@ -29,5 +29,18 @@ class EvaluationTests(unittest.TestCase):
             valid.to_csv(f,index=False)
             self.assertEqual(len(load_predictions(f,2)),2)
             with self.assertRaises(ValueError):load_predictions(f,3)
+
+    def test_alignment_uses_ids_not_order(self):
+        a=pd.DataFrame({'SK_ID_CURR':[1,2], 'TARGET':[0,1], 'PRED_PROB':[.1,.8]})
+        b=a.iloc[::-1].copy()
+        self.assertEqual(align_predictions(a,b).SK_ID_CURR.tolist(),[1,2])
+        b.loc[b.SK_ID_CURR==1,'TARGET']=1
+        with self.assertRaises(ValueError):align_predictions(a,b)
+        b=a.copy();b.loc[0,'SK_ID_CURR']=3
+        with self.assertRaises(ValueError):align_predictions(a,b)
+    def test_new_summary_schema(self):
+        s=normalize_summary(pd.DataFrame({'model':['XGBoost'],'evaluation':['Fixed 80/20'],'roc_auc':[.77]}))
+        self.assertEqual(s.experiment.tolist(),['XGBoost'])
+        self.assertIn('validation',s.columns)
 
 if __name__=='__main__':unittest.main()

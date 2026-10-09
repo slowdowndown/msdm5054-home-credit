@@ -1,0 +1,8 @@
+{
+  "rows": 61503,
+  "same_customer_ids": true,
+  "same_labels": true,
+  "alignment_key": "SK_ID_CURR",
+  "xgboost_minus_lightgbm_auc": -1.5282612372269355e-06,
+  "note": "Agreement between prediction files, not an independent check against canonical raw data."
+}

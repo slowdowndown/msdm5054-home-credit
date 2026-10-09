@@ -1,8 +1,10 @@
 {
-  "notebook": "all 5 code cells executed successfully",
-  "input_integrity": "source copies unchanged; hashes verified",
-  "counts": "all thresholds preserve total and class counts",
-  "plots": "9 PNG figures visually inspected",
-  "unit_tests": "3 tests passed (counts, boundary, malformed inputs)",
-  "report": "static report built from actual metrics; 9 images embedded"
+  "source_commit": "8d44b49ad4f06d17bfc89fc77f9918a487b666f8",
+  "notebook": "6 code cells executed successfully",
+  "unit_tests": "5 passed, including shuffled-ID alignment and label mismatch rejection",
+  "inputs": "source hashes verified; both prediction files have matching customer IDs and labels",
+  "counts": "class and total counts preserved at all thresholds for both models",
+  "cv_standard_deviation": "ddof=1 for all models; ddof=0 retained separately",
+  "figures": "10 selected-model/comparison plots, 9 retained LightGBM plots",
+  "raw_data_verification": "not available; no canonical raw label/split verification"
 }

@@ -1,0 +1,24 @@
+{
+  "source_repository": "https://github.com/slowdowndown/msdm5054-home-credit",
+  "source_commit": "8d44b49ad4f06d17bfc89fc77f9918a487b666f8",
+  "sha256": {
+    "results/c/validation_predictions_v1.csv": "897893daaf9c865f79afcc33d9df234fe94d6e52dd319511278d3c3b0a69c137",
+    "results/c/model_summary.csv": "8a8dfb4074256aeefa2d0d1a9ebae474eee189ba129065df17628fecc2bbfd64",
+    "results/c/cv_results.csv": "f4da6a8891a5d68192b1afd9fe11bdbe956bdaa784c06bce6befea6e0170577d",
+    "results/c/xgboost_cv_results.csv": "9200ff0dc1d69894ef5095b89fa75a6baba5fdb8fef582cd94e55777e0a27c6b",
+    "results/c/feature_importance.csv": "1004c55a9fe46e3c7505db63cabef1774dd337b9056264b41e3c90a47b2409b5",
+    "results/c/final_model_config.json": "72c6a4b3c99addd2025fa5bff38bb7c3d2e34984b36859a26495666bdb2f885f",
+    "results/c/selected_model.json": "0a7e32069479713d424ca4802424051cd6656615f7635948027c358af3ae8f6c"
+  },
+  "python": "3.14.0",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "id_alignment": "Unique IDs verified; canonical split membership and true-label alignment need raw data, absent from archive.",
+  "evaluation_context": "LightGBM development validation; 892 rounds selected by validation early stopping. Separate full-data model: 705 rounds; no independent test score. Not an untouched validation estimate.",
+  "raw_feature_error_analysis": "Not performed: raw application table unavailable.",
+  "shap": "Not performed: optional; serialized model lacks fitted preprocessing and matching input matrix."
+}
