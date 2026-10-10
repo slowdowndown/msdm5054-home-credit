@@ -1,3 +1,5 @@
+> Historical draft. The final submission and reported Kaggle scores are in [report.pdf](../report.pdf).
+
 # Home Credit Default Risk
 ## Model evaluation and integrated project report
 **MSDM5054 · SHU Yi, CAO Yixin, ZHANG Yajing, SU Zhiyu**
@@ -36,7 +38,7 @@ Our evaluation pipeline reads both models’ prediction files, requires 61,503 r
 
 ROC-AUC measures ranking; Average Precision (AP) summarizes precision-recall performance using `average_precision_score`, not trapezoidal PR-AUC. Brier score and log loss measure probability quality. The positive rate is **8.07%**: predicting all applications negative gives **91.93% accuracy** and zero recall. Thus accuracy alone is misleading.
 
-For XGBoost, a 500-replicate stratified percentile bootstrap (seed 42) yields AUC interval **[0.7656, 0.7796]**. It conditions on fixed predictions and does not account for model selection, early stopping or training variability. Wilson intervals in calibration plots describe within-bin positive-rate uncertainty only. Input hashes and package versions are in `results/d/provenance.json`; LightGBM details are retained under `results/d/lightgbm/`.
+For XGBoost, a 500-replicate stratified percentile bootstrap (seed 42) yields AUC interval **[0.7656, 0.7796]**. It conditions on fixed predictions and does not account for model selection, early stopping or training variability. Wilson intervals in calibration plots describe within-bin positive-rate uncertainty only. Input hashes and package versions are in `results/evaluation/provenance.json`; LightGBM details are retained under `results/evaluation/lightgbm/`.
 
 ## 5. Updated model comparison
 | Experiment | Fixed validation AUC | CV mean AUC |
@@ -58,7 +60,7 @@ Historical results are taken from the modeling experiments; we independently rec
 
 The XGBoost experiment in the modeling notebook uses `np.std` with its default `ddof=0`; its LightGBM calculation uses `ddof=1`. We retain the original experiment records and recalculate both standard deviations using a common convention. XGBoost still has lower observed fold variability after harmonization. These SDs are not standard errors or confidence intervals, and no significance claim is made from five folds. Baseline/regularized LightGBM CV does not explicitly restrict early stopping to AUC alone, while XGBoost and corrected weighted LightGBM do; this limits how strictly controlled the comparison is.
 
-![CV comparison](../../results/d/figures/07_cv_comparison.png)
+![CV comparison](../../../results/evaluation/figures/07_cv_comparison.png)
 
 ## 6. Independently recomputed fixed-validation metrics
 | Metric | Regularized LightGBM | XGBoost |
@@ -70,13 +72,13 @@ The XGBoost experiment in the modeling notebook uses `np.std` with its default `
 
 The models are very similar. XGBoost has slightly lower probability losses, while LightGBM has slightly higher AP and essentially identical AUC. The data do not support a claim that one model dominates all metrics. Our model-selection preference is driven primarily by CV. The ROC and PR curves below use aligned predictions from the same 61,503 applications.
 
-![Aligned model comparison](../../results/d/figures/10_model_comparison.png)
+![Aligned model comparison](../../../results/evaluation/figures/10_model_comparison.png)
 
 The following plots and sections focus on selected **XGBoost**, with complete LightGBM results retained in the comparison subfolder.
 
-![XGBoost ROC](../../results/d/figures/01_roc.png)
-![XGBoost PR](../../results/d/figures/02_precision_recall.png)
-![XGBoost calibration](../../results/d/figures/05_calibration.png)
+![XGBoost ROC](../../../results/evaluation/figures/01_roc.png)
+![XGBoost PR](../../../results/evaluation/figures/02_precision_recall.png)
+![XGBoost calibration](../../../results/evaluation/figures/05_calibration.png)
 
 XGBoost mean predicted risk is 8.0070%, versus observed prevalence 8.0728%. Its Brier score 0.066902 is below the descriptive constant-validation-prevalence reference 0.074211. That reference is not a separately trained model. Similar average predicted and observed risk does not establish calibration for every score range or subgroup.
 
@@ -94,20 +96,20 @@ Thresholds are prespecified illustrative comparisons, not optimized business dec
 
 At 0.50, XGBoost flags **248** applications and detects only **143 / 4,965** positives (recall **2.88%**); it misses **4,822** positives despite accuracy **91.99%**. At 0.10, recall rises to **61.25%**, with **12,474** false positives and precision **19.60%**. Compared with LightGBM at 0.10, XGBoost catches 40 additional positives but also produces 217 additional false positives. This is a trade-off, not an unconditional improvement.
 
-![XGBoost confusion matrices](../../results/d/figures/03_confusion_matrices.png)
-![XGBoost threshold trade-offs](../../results/d/figures/04_threshold_tradeoffs.png)
-![XGBoost score distributions](../../results/d/figures/09_score_distributions.png)
+![XGBoost confusion matrices](../../../results/evaluation/figures/03_confusion_matrices.png)
+![XGBoost threshold trade-offs](../../../results/evaluation/figures/04_threshold_tradeoffs.png)
+![XGBoost score distributions](../../../results/evaluation/figures/09_score_distributions.png)
 
 At threshold 0.10, XGBoost false negatives have median predicted probability 0.0583 and false positives 0.1539. Overlapping score distributions explain why lowering the threshold increases detection and false alarms together. Available inputs support score-based error analysis, but not claims about age-, income- or occupation-specific mistakes. A future operational threshold requires explicit costs or capacity, selected using training-side out-of-fold predictions and assessed on fresh data.
 
 ## 8. XGBoost risk concentration and feature interpretation
 The highest-risk decile contains **6,151** applications and **1,772** positives. Its positive rate is **28.81%**, about **3.57 times** the overall rate; it contains **35.69%** of all positives. The lowest-risk decile's positive rate is **1.11%**. Quantile bins are descriptive groupings of these validation predictions, not frozen production cutoffs.
 
-![XGBoost risk deciles](../../results/d/figures/06_risk_deciles.png)
+![XGBoost risk deciles](../../../results/evaluation/figures/06_risk_deciles.png)
 
 The XGBoost importance export comes from the **670-round full-data model**, not the 778-round validation model. Its normalized gain ranking is led by EXT_SOURCE_2, EXT_SOURCE_3 and EXT_SOURCE_1, followed by NAME_EDUCATION_TYPE and FLAG_OWN_CAR. It does not provide the direction of effects and is not SHAP or causal evidence. LightGBM's exported importance is split count, so the two importance columns should not be compared numerically. The exploratory permutation-importance analysis also uses a different model and method.
 
-![XGBoost full-data feature importance](../../results/d/figures/08_feature_importance.png)
+![XGBoost full-data feature importance](../../../results/evaluation/figures/08_feature_importance.png)
 
 ## 9. Limitations and next steps
 1. Both fixed-validation models used the same evaluation set for early stopping and it was examined during development. Neither result is an unbiased untouched-test estimate. Freezing a CV-derived iteration count does not undo prior validation reuse.
@@ -128,4 +130,4 @@ We select XGBoost for the current V1 pipeline because it has a modestly higher m
 | ZHANG Yajing | LightGBM and XGBoost, CV/tuning, selected-model record, full-data fitting and prediction handoff |
 | SU Zhiyu | Recomputed metrics, ID-aligned comparison, harmonized CV variability, error analysis, figures and integrated report |
 
-Evidence: [source snapshot](https://github.com/slowdowndown/msdm5054-home-credit/tree/8d44b49ad4f06d17bfc89fc77f9918a487b666f8), `README.md`, `docs/division-of-labor.md`, `src/data_pipeline.py`, `src/baseline.py`, the exploratory-analysis and feature-engineering documents, `notebooks/C_modeling.ipynb` sections 15–20, and `results/c/` artifacts. The evaluation results preserve the original modeling records. Course formatting, page limits and final team sign-off remain to be confirmed.
+Evidence: [source snapshot](https://github.com/slowdowndown/msdm5054-home-credit/tree/8d44b49ad4f06d17bfc89fc77f9918a487b666f8), `README.md`, `docs/division-of-labor.md`, `src/data_pipeline.py`, `src/baseline.py`, the exploratory-analysis and feature-engineering documents, `notebooks/02_modeling.ipynb` sections 15–20, and `results/modeling/` artifacts. The evaluation results preserve the original modeling records. Course formatting, page limits and final team sign-off remain to be confirmed.

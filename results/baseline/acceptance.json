@@ -30,7 +30,7 @@
     "src/baseline.py": "349f6edca2509a2f49ce85fbc4e95cd0ecc5bf4925cf67a63520838739f3bcf4",
     "src/validate_submission.py": "1c219b848722001ea5215d5e2b4eb586d8a40a63808d1eb73b92ddda5f8c4e2a",
     "src/reproduce_split.py": "168ed6c0db309be261c33b0a6329b475980db634300ef5cd81fb5971531f39f2",
-    "notebooks/A_data_and_baseline.ipynb": "6b3939b7d8401234aa173fdc02dbdffd2103c2b1ffadc86a3545fbd28b908df7"
+    "notebooks/01_data_and_baseline.ipynb": "6b3939b7d8401234aa173fdc02dbdffd2103c2b1ffadc86a3545fbd28b908df7"
   },
   "additional_checks": [
     "train-only preprocessing statistics",

@@ -37,9 +37,9 @@ EDA 结束时应具备四类交付物：
 
 | 步骤 | 做什么 | application_train 落点 |
 |---|---|---|
-| 1 数据规模 | 行列数、来源、时间范围 | train 307,511×122；test 48,744×121（已记录于 `results/a/quality.json`） |
+| 1 数据规模 | 行列数、来源、时间范围 | train 307,511×122；test 48,744×121（已记录于 `results/baseline/quality.json`） |
 | 2 类型检查 | dtype、解析错误、类别层级 | `DAYS_*` 为负整数（距申请日天数）；`FLAG_*` 为 0/1；`NAME_*`/`ORGANIZATION_TYPE` 为字符串类别；`AMT_*` 为浮点 |
-| 3 缺失分析 | 每列/每行缺失率、缺失模式 | 已有 `results/a/field_profile.csv`；重点识别 `DAYS_EMPLOYED=365243` 伪缺失（哨兵值），并检验缺失本身是否预测违约 |
+| 3 缺失分析 | 每列/每行缺失率、缺失模式 | 已有 `results/baseline/field_profile.csv`；重点识别 `DAYS_EMPLOYED=365243` 伪缺失（哨兵值），并检验缺失本身是否预测违约 |
 | 4 主键/重复 | 主键唯一性 | `SK_ID_CURR` 应为 307,511 个唯一值，无重复贷款 |
 | 5 目标检查 | 类别平衡、目标定义 | `TARGET` 正样本率 8.07%（24,825/307,511），高度不平衡，指标须用 ROC AUC |
 | 6 单变量分布 | 直方图/箱线图、范围检查 | `AMT_INCOME_TOTAL` 约 1.17 亿极端值；`DAYS_EMPLOYED=365243` 尖峰；`CNT_FAM_MEMBERS`、`OBS_30_CNT_SOCIAL_CIRCLE` 长尾；`EXT_SOURCE_*` 为 0–1 归一化分数 |

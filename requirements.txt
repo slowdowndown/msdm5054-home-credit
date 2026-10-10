@@ -1,17 +1,3 @@
-# Core data handling
-pandas
-numpy
-
-# Modeling
-scikit-learn
-lightgbm
-xgboost
-
-# Evaluation and interpretation
-matplotlib
-seaborn
-shap
-
-# Interactive environment
-jupyter
-ipykernel
+# Full workflow; recorded baseline environment uses Python 3.12.
+-r requirements/base.txt
+-r requirements/modeling.txt

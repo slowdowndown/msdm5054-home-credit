@@ -1,3 +1,5 @@
+> 历史分工与开发协议。最终贡献和项目状态以 `docs/report/report.pdf` 为准。
+
 # Home Credit Default Risk — Team Discussion Draft
 
 Team: SHU Yi (data pipeline and Kaggle), CAO Yixin (EDA and features), ZHANG Yajing (modeling), SU Zhiyu (evaluation and report).

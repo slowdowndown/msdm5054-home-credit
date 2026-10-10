@@ -99,8 +99,8 @@ def run(root, n_bootstrap=500, model="xgboost"):
                f"by validation early stopping. Separate full-data model: {spec['full_rounds']} rounds; "
                "no independent test score. Not an untouched validation estimate.")
     root = Path(root).resolve()
-    inp = root/'results/c'
-    out = root/'results/d'
+    inp = root/'results/modeling'
+    out = root/'results/evaluation'
     if model == 'lightgbm': out = out/'lightgbm'
     (out/'figures').mkdir(parents=True, exist_ok=True)
     source = inp/spec['predictions']
@@ -217,7 +217,7 @@ def run(root, n_bootstrap=500, model="xgboost"):
 
 def compare_models(root):
     root=Path(root)
-    inp=root/'results/c'; out=root/'results/d'
+    inp=root/'results/modeling'; out=root/'results/evaluation'
     left=load_predictions(inp/'validation_predictions_v1.csv')
     right=align_predictions(left,load_predictions(inp/'validation_predictions_xgboost.csv'))
     y=left.TARGET.to_numpy()

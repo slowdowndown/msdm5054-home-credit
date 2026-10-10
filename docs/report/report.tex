@@ -148,7 +148,7 @@ The XGBoost calculation uses \texttt{np.std} with its default \texttt{ddof=0}, w
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.7\columnwidth]{../../results/d/figures/07_cv_comparison.png}
+  \includegraphics[width=0.7\columnwidth]{../../results/evaluation/figures/07_cv_comparison.png}
   \caption{Cross-validation AUC comparison across folds.}
   \label{fig:cv}
 \end{figure}
@@ -175,7 +175,7 @@ The models are very similar (Table~\ref{tab:metrics}). XGBoost has slightly lowe
 
 \begin{figure*}[!t]
   \centering
-  \includegraphics[width=0.8\textwidth]{../../results/d/figures/10_model_comparison.png}
+  \includegraphics[width=0.8\textwidth]{../../results/evaluation/figures/10_model_comparison.png}
   \caption{Aligned ROC and precision-recall comparison of the two models.}
   \label{fig:comparison}
 \end{figure*}
@@ -185,11 +185,11 @@ The following plots (Figure~\ref{fig:rocpr} and Figure~\ref{fig:calibration}) an
 \begin{figure}[ht]
   \centering
   \begin{subfigure}[b]{0.48\columnwidth}
-    \includegraphics[width=\columnwidth]{../../results/d/figures/01_roc.png}
+    \includegraphics[width=\columnwidth]{../../results/evaluation/figures/01_roc.png}
     \caption{ROC curve}
   \end{subfigure}\hfill
   \begin{subfigure}[b]{0.48\columnwidth}
-    \includegraphics[width=\columnwidth]{../../results/d/figures/02_precision_recall.png}
+    \includegraphics[width=\columnwidth]{../../results/evaluation/figures/02_precision_recall.png}
     \caption{Precision-recall curve}
   \end{subfigure}
   \caption{XGBoost ROC and precision-recall curves.}
@@ -198,7 +198,7 @@ The following plots (Figure~\ref{fig:rocpr} and Figure~\ref{fig:calibration}) an
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.6\columnwidth]{../../results/d/figures/05_calibration.png}
+  \includegraphics[width=0.6\columnwidth]{../../results/evaluation/figures/05_calibration.png}
   \caption{XGBoost calibration plot.}
   \label{fig:calibration}
 \end{figure}
@@ -231,21 +231,21 @@ Table~\ref{tab:thresholds} reports the confusion metrics at all six thresholds. 
 
 \begin{figure*}[!t]
   \centering
-  \includegraphics[width=0.8\textwidth]{../../results/d/figures/03_confusion_matrices.png}
+  \includegraphics[width=0.8\textwidth]{../../results/evaluation/figures/03_confusion_matrices.png}
   \caption{XGBoost confusion matrices at illustrative thresholds.}
   \label{fig:confusion}
 \end{figure*}
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.6\columnwidth]{../../results/d/figures/04_threshold_tradeoffs.png}
+  \includegraphics[width=0.6\columnwidth]{../../results/evaluation/figures/04_threshold_tradeoffs.png}
   \caption{Threshold trade-off curves.}
   \label{fig:tradeoffs}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.6\columnwidth]{../../results/d/figures/09_score_distributions.png}
+  \includegraphics[width=0.6\columnwidth]{../../results/evaluation/figures/09_score_distributions.png}
   \caption{Predicted-score distributions for errors at threshold 0.10.}
   \label{fig:scores}
 \end{figure}
@@ -260,11 +260,11 @@ The XGBoost normalized gain importance (from the full-data model) is led by the 
 \begin{figure}[ht]
   \centering
   \begin{subfigure}[b]{0.48\columnwidth}
-    \includegraphics[width=\columnwidth]{../../results/d/figures/06_risk_deciles.png}
+    \includegraphics[width=\columnwidth]{../../results/evaluation/figures/06_risk_deciles.png}
     \caption{Risk deciles}
   \end{subfigure}\hfill
   \begin{subfigure}[b]{0.48\columnwidth}
-    \includegraphics[width=\columnwidth]{../../results/d/figures/08_feature_importance.png}
+    \includegraphics[width=\columnwidth]{../../results/evaluation/figures/08_feature_importance.png}
     \caption{Feature importance}
   \end{subfigure}
   \caption{XGBoost risk deciles and full-data feature importance.}

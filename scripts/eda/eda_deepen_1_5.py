@@ -1,6 +1,6 @@
 """Deepen EDA steps 1-5 for application_train.
 
-Completes the gaps left by the baseline profile (results/a/*):
+Completes the gaps left by the baseline profile (results/baseline/*):
   step 2 -- semantic types (binary flags vs low-cardinality ints vs continuous)
   step 3 -- missing patterns (row-level, co-missing block, missing vs target)
   step 5 -- target integrity (leakage guard)

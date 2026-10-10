@@ -17,3 +17,17 @@ kaggle.json
 Thumbs.db
 .idea/
 .vscode/
+
+# LaTeX caches; retain the final PDF and source
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Local verification artifacts
+/tmp/

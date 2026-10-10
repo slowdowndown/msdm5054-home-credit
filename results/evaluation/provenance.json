@@ -2,13 +2,13 @@
   "source_repository": "https://github.com/slowdowndown/msdm5054-home-credit",
   "source_commit": "8d44b49ad4f06d17bfc89fc77f9918a487b666f8",
   "sha256": {
-    "results/c/validation_predictions_xgboost.csv": "c5c55966e57120459b6fd6940c1104fbed46dabad657780b6840765ca0206722",
-    "results/c/model_summary.csv": "8a8dfb4074256aeefa2d0d1a9ebae474eee189ba129065df17628fecc2bbfd64",
-    "results/c/cv_results.csv": "f4da6a8891a5d68192b1afd9fe11bdbe956bdaa784c06bce6befea6e0170577d",
-    "results/c/xgboost_cv_results.csv": "9200ff0dc1d69894ef5095b89fa75a6baba5fdb8fef582cd94e55777e0a27c6b",
-    "results/c/xgboost_feature_importance.csv": "06d067131897480e3bd738e1182f4f20ef14e106bddb1511098c33678b8aea48",
-    "results/c/final_xgboost_config.json": "638135d683bdd09270a15839f30abdf16660dadbe0992fb0b6dfa5f10b35552e",
-    "results/c/selected_model.json": "0a7e32069479713d424ca4802424051cd6656615f7635948027c358af3ae8f6c"
+    "results/modeling/validation_predictions_xgboost.csv": "c5c55966e57120459b6fd6940c1104fbed46dabad657780b6840765ca0206722",
+    "results/modeling/model_summary.csv": "8a8dfb4074256aeefa2d0d1a9ebae474eee189ba129065df17628fecc2bbfd64",
+    "results/modeling/cv_results.csv": "f4da6a8891a5d68192b1afd9fe11bdbe956bdaa784c06bce6befea6e0170577d",
+    "results/modeling/xgboost_cv_results.csv": "9200ff0dc1d69894ef5095b89fa75a6baba5fdb8fef582cd94e55777e0a27c6b",
+    "results/modeling/xgboost_feature_importance.csv": "06d067131897480e3bd738e1182f4f20ef14e106bddb1511098c33678b8aea48",
+    "results/modeling/final_xgboost_config.json": "638135d683bdd09270a15839f30abdf16660dadbe0992fb0b6dfa5f10b35552e",
+    "results/modeling/selected_model.json": "0a7e32069479713d424ca4802424051cd6656615f7635948027c358af3ae8f6c"
   },
   "python": "3.14.0",
   "packages": {

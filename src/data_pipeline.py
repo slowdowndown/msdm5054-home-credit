@@ -27,7 +27,7 @@ def verify_file(path, expected):
 
 def load_main_tables(root):
     root = Path(root)
-    manifest = json.loads((root/'docs/a/data_manifest_v0.json').read_text())
+    manifest = json.loads((root/'docs/data/data_manifest_v0.json').read_text())
     for name in ['application_train.csv', 'application_test.csv',
                  'HomeCredit_columns_description.csv', 'sample_submission.csv']:
         verify_file(root/'data/raw'/name, manifest[name]['sha256'])
@@ -47,7 +47,7 @@ def load_main_tables(root):
 
 def fixed_split(root, train=None):
     root = Path(root)
-    cfg = json.loads((root/'docs/a/split_protocol.json').read_text())
+    cfg = json.loads((root/'docs/data/split_protocol.json').read_text())
     path = root/cfg['input']
     verify_file(path, cfg['input_sha256'])
     labels = pd.read_csv(path, usecols=['SK_ID_CURR', 'TARGET'])

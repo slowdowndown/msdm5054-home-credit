@@ -2,7 +2,7 @@
 
 来源：`HomeCredit_columns_description.csv`（官方描述）+ `application_train.csv`（类型、缺失率、示例）。主表共 122 列。
 
-缺失率与唯一值取自 results/a/field_profile.csv（完整训练集）；示例为样本前 2000 行中该字段的第一个非空值。
+缺失率与唯一值取自 results/baseline/field_profile.csv（完整训练集）；示例为样本前 2000 行中该字段的第一个非空值。
 
 ## 0. 主键与目标
 

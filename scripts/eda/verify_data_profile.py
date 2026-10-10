@@ -1,4 +1,4 @@
-"""Verify SHU's V0 data profile (results/a/*) against the raw data.
+"""Verify SHU's V0 data profile (results/baseline/*) against the raw data.
 
 Recomputes the key facts in quality.json and field_profile.csv from
 data/raw/application_train.csv (and application_test.csv), reports any
@@ -21,8 +21,8 @@ ROOT = Path(__file__).resolve().parents[2]
 
 TRAIN = ROOT / "data/raw/application_train.csv"
 TEST = ROOT / "data/raw/application_test.csv"
-QA = ROOT / "results/a/quality.json"
-PROFILE = ROOT / "results/a/field_profile.csv"
+QA = ROOT / "results/baseline/quality.json"
+PROFILE = ROOT / "results/baseline/field_profile.csv"
 OUT_DIR = ROOT / "results/eda"
 
 TOL = 1e-6
