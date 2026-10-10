@@ -149,7 +149,7 @@ def run(root, n_bootstrap=500, model="xgboost"):
                 p90=float(np.quantile(vals,.9)) if len(vals) else None))
     pd.DataFrame(error_rows).to_csv(out/'error_summary.csv',index=False)
     summary=normalize_summary(pd.read_csv(inp/'model_summary.csv'))
-    summary['source']='C supplied experiments; D independently evaluates both exported prediction files'
+    summary['source']='Modeling experiments; evaluation recomputes metrics from exported predictions'
     summary['caveat']='Development result; feature selection fixed before inner CV'
     for name, rounds, full in [('LightGBM',892,705), ('XGBoost',778,670)]:
         mask = (summary.validation == 'Fixed 80/20') & summary.experiment.str.contains(name)
@@ -197,7 +197,7 @@ def run(root, n_bootstrap=500, model="xgboost"):
     ax.set(xlabel='Risk decile (1 = lowest predicted risk)',ylabel='Observed positive rate',title='Risk concentration',xticks=range(1,len(bins)+1));ax.legend();save_plot(fig,out,'06_risk_deciles')
     fig,ax=plt.subplots(figsize=(7.5,4.5))
     for col,label in [('baseline_v1_auc','Baseline'),('regularized_v1_auc','Regularized'),('weighted_v1_auc','Weighted (corrected)'),('xgboost_auc','XGBoost')]: ax.plot(cv.fold,cv[col],marker='o',label=label)
-    ax.set(xlabel='Fold',ylabel='ROC-AUC',title='Training-partition CV | C supplied results',xticks=range(1,6));ax.legend();save_plot(fig,out,'07_cv_comparison')
+    ax.set(xlabel='Fold',ylabel='ROC-AUC',title='Cross-validation AUC by fold',xticks=range(1,6));ax.legend();save_plot(fig,out,'07_cv_comparison')
     imp=pd.read_csv(inp/spec['importance']).head(15).iloc[::-1]
     fig,ax=plt.subplots(figsize=(8,6));ax.barh(imp.feature,imp.importance,color=blue)
     ax.set(xlabel=spec['importance_label'],title=f"{spec['label']} full-data model | {spec['full_rounds']} rounds");save_plot(fig,out,'08_feature_importance')
